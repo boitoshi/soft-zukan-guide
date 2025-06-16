@@ -8,40 +8,45 @@
       {
         "id": "paldea",
         "name": "🏔️ パルデア",
-        "columns": [0, 1]
+        "columns": [
+          0,
+          1
+        ]
       },
       {
         "id": "kitakami",
-        "name": "🍂 キタカミ", 
-        "columns": [2, 3]
+        "name": "🍂 キタカミ",
+        "columns": [
+          2,
+          3
+        ]
       },
       {
         "id": "blueberry",
         "name": "🫐 ブルーベリー",
-        "columns": [4, 5]
+        "columns": [
+          4,
+          5
+        ]
       }
     ]
   },
   "galar": {
-    "name": "ソード・シールド",
-    "displayName": "⚔️ ガラル図鑑",
-    "csvFile": "swsh_zukan.csv",
-    "encoding": "shift_jis",
+    "name": "剣盾",
+    "displayName": "ポケットモンスター ソード・シールド",
+    "game": "剣盾",
     "regions": [
       {
         "id": "galar",
-        "name": "⚔️ ガラル",
-        "columns": [0, 1]
+        "name": "ガラル図鑑"
       },
       {
         "id": "armor",
-        "name": "🛡️ ヨロイ島",
-        "columns": [2, 3]
+        "name": "ヨロイ図鑑"
       },
       {
         "id": "crown",
-        "name": "👑 カンムリ雪原",
-        "columns": [4, 5]
+        "name": "カンムリ図鑑"
       }
     ]
   },
@@ -54,27 +59,42 @@
       {
         "id": "alola",
         "name": "🌺 アローラ",
-        "columns": [0, 1]
+        "columns": [
+          0,
+          1
+        ]
       },
       {
         "id": "melemele",
         "name": "🌴 メレメレ",
-        "columns": [2, 3]
+        "columns": [
+          2,
+          3
+        ]
       },
       {
         "id": "akala",
         "name": "🌋 アーカラ",
-        "columns": [4, 5]
+        "columns": [
+          4,
+          5
+        ]
       },
       {
         "id": "ulaula",
         "name": "🌙 ウラウラ",
-        "columns": [6, 7]
+        "columns": [
+          6,
+          7
+        ]
       },
       {
         "id": "poni",
         "name": "🦋 ポニ",
-        "columns": [8, 9]
+        "columns": [
+          8,
+          9
+        ]
       }
     ]
   }

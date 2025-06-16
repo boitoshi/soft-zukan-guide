@@ -1,0 +1,5721 @@
+{
+  "meta": {
+    "game": "剣盾",
+    "title": "ポケットモンスター ソード・シールド",
+    "regions": [
+      {
+        "id": "galar",
+        "name": "ガラル図鑑"
+      },
+      {
+        "id": "armor",
+        "name": "ヨロイ図鑑"
+      },
+      {
+        "id": "crown",
+        "name": "カンムリ図鑑"
+      }
+    ],
+    "generated_at": "2025-06-16T15:39:47.132Z",
+    "source": "剣盾図鑑.txt"
+  },
+  "stats": {
+    "total": 435,
+    "galar_only": 208,
+    "armor_only": 0,
+    "crown_only": 0,
+    "duplicates": 227,
+    "regions": {
+      "galar": 435,
+      "armor": 223,
+      "crown": 227
+    }
+  },
+  "pokemon": [
+    {
+      "id": "pokemon_0001",
+      "name": "サルノリ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "001",
+        "armor": "001",
+        "crown": "001"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0002",
+      "name": "バチンキー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "002",
+        "armor": "001",
+        "crown": "002"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0003",
+      "name": "ゴリランダー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "003",
+        "armor": "002",
+        "crown": "003"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0004",
+      "name": "ヒバニー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "004",
+        "armor": "002",
+        "crown": "004"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0005",
+      "name": "ラビフット",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "005",
+        "armor": "003",
+        "crown": "005"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0006",
+      "name": "エースバーン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "006",
+        "armor": "003",
+        "crown": "006"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0007",
+      "name": "メッソン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "007",
+        "armor": "004",
+        "crown": "007"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0008",
+      "name": "ジメレオン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "008",
+        "armor": "005",
+        "crown": "008"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0009",
+      "name": "インテレオン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "009",
+        "armor": "006",
+        "crown": "009"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0010",
+      "name": "サッチムシ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "010",
+        "armor": "007",
+        "crown": "010"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0011",
+      "name": "レドームシ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "011",
+        "armor": "008",
+        "crown": "011"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0012",
+      "name": "イオルブ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "012",
+        "armor": "009",
+        "crown": "011"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0013",
+      "name": "キャタピー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "013",
+        "armor": "010",
+        "crown": "012"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0014",
+      "name": "トランセル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "014",
+        "armor": "011",
+        "crown": "013"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0015",
+      "name": "バタフリー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "015",
+        "armor": "012",
+        "crown": "014"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0016",
+      "name": "アゴジムシ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "016",
+        "armor": "013",
+        "crown": "015"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0017",
+      "name": "デンヂムシ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "017",
+        "armor": "014",
+        "crown": "016"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0018",
+      "name": "クワガノン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "018",
+        "armor": "015",
+        "crown": "017"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0019",
+      "name": "ホーホー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "019",
+        "armor": "016",
+        "crown": "018"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0020",
+      "name": "ヨルノズク",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "020",
+        "armor": "017",
+        "crown": "019"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0021",
+      "name": "ココガラ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "021",
+        "armor": "018",
+        "crown": "020"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0022",
+      "name": "アオガラス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "022",
+        "armor": "019",
+        "crown": "021"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0023",
+      "name": "アーマーガア",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "023",
+        "armor": "020",
+        "crown": "022"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0024",
+      "name": "ホシガリス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "024",
+        "armor": "021",
+        "crown": "023"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0025",
+      "name": "ヨクバリス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "025",
+        "armor": "022",
+        "crown": "024"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0026",
+      "name": "マメパト",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "026",
+        "armor": "023",
+        "crown": "025"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0027",
+      "name": "ハトーボー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "027",
+        "armor": "024",
+        "crown": "026"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0028",
+      "name": "ケンホロウ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "028",
+        "armor": "025",
+        "crown": "027"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0029",
+      "name": "クスネ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "029",
+        "armor": "026",
+        "crown": "028"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0030",
+      "name": "フォクスライ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "030",
+        "armor": "027",
+        "crown": "029"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0031",
+      "name": "ジグザグマ(ガラル)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "031",
+        "armor": "028",
+        "crown": "030"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0032",
+      "name": "マッスグマ(ガラル)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "032",
+        "armor": "029",
+        "crown": "031"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0033",
+      "name": "タチフサグマ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "033",
+        "armor": "030",
+        "crown": "032"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0034",
+      "name": "ウールー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "034",
+        "armor": "031",
+        "crown": "033"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0035",
+      "name": "バイウールー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "035",
+        "armor": "032",
+        "crown": "034"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0036",
+      "name": "ハスボー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "036",
+        "armor": "033",
+        "crown": "035"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0037",
+      "name": "ハスブレロ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "037",
+        "armor": "034",
+        "crown": "036"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0038",
+      "name": "ルンパッパ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "038",
+        "armor": "035",
+        "crown": "037"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0039",
+      "name": "タネボー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "039",
+        "armor": "036",
+        "crown": "038"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0040",
+      "name": "コノハナ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "040",
+        "armor": "037",
+        "crown": "039"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0041",
+      "name": "ダーテング",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "041",
+        "armor": "038",
+        "crown": "040"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0042",
+      "name": "カムカメ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "042",
+        "armor": "039",
+        "crown": "041"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0043",
+      "name": "カジリガメ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "043",
+        "armor": "040",
+        "crown": "042"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0044",
+      "name": "チョロネコ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "044",
+        "armor": "041",
+        "crown": "043"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0045",
+      "name": "レパルダス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "045",
+        "armor": "042",
+        "crown": "044"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0046",
+      "name": "ワンパチ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "046",
+        "armor": "043",
+        "crown": "045"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0047",
+      "name": "パルスワン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "047",
+        "armor": "044",
+        "crown": "046"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0048",
+      "name": "ホルビー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "048",
+        "armor": "045",
+        "crown": "047"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0049",
+      "name": "ホルード",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "049",
+        "armor": "046",
+        "crown": "048"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0050",
+      "name": "チラーミィ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "050",
+        "armor": "047",
+        "crown": "049"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0051",
+      "name": "チラチーノ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "051",
+        "armor": "048",
+        "crown": "050"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0052",
+      "name": "アマカジ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "052",
+        "armor": "049",
+        "crown": "051"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0053",
+      "name": "アママイコ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "053",
+        "armor": "050",
+        "crown": "052"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0054",
+      "name": "アマージョ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "054",
+        "armor": "051",
+        "crown": "053"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0055",
+      "name": "ナゾノクサ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "055",
+        "armor": "052",
+        "crown": "054"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0056",
+      "name": "クサイハナ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "056",
+        "armor": "053",
+        "crown": "055"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0057",
+      "name": "ラフレシア",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "057",
+        "armor": "054",
+        "crown": "056"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0058",
+      "name": "キレイハナ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "058",
+        "armor": "055",
+        "crown": "057"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0059",
+      "name": "スボミー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "059",
+        "armor": "056",
+        "crown": "058"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0060",
+      "name": "ロゼリア",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "060",
+        "armor": "057",
+        "crown": "059"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0061",
+      "name": "ロズレイド",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "061",
+        "armor": "058",
+        "crown": "060"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0062",
+      "name": "キャモメ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "062",
+        "armor": "059",
+        "crown": "061"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0063",
+      "name": "ペリッパー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "063",
+        "armor": "060",
+        "crown": "062"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0064",
+      "name": "バチュル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "064",
+        "armor": "061",
+        "crown": "063"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0065",
+      "name": "デンチュラ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "065",
+        "armor": "062",
+        "crown": "064"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0066",
+      "name": "ラクライ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "066",
+        "armor": "063",
+        "crown": "064"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0067",
+      "name": "ライボルト",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "067",
+        "armor": "064",
+        "crown": "065"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0068",
+      "name": "ロコン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "068",
+        "armor": "065",
+        "crown": "066"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0069",
+      "name": "ロコン(アローラ)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "068",
+        "armor": "066",
+        "crown": "067"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0070",
+      "name": "キュウコン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "069",
+        "armor": "067",
+        "crown": "068"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0071",
+      "name": "キュウコン(アローラ)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "069",
+        "armor": "068",
+        "crown": "069"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0072",
+      "name": "ガーディ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "070",
+        "armor": "069",
+        "crown": "070"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0073",
+      "name": "ウインディ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "071",
+        "armor": "070",
+        "crown": "071"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0074",
+      "name": "バニプッチ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "072",
+        "armor": "071",
+        "crown": "071"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0075",
+      "name": "バニリッチ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "073",
+        "armor": "072",
+        "crown": "072"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0076",
+      "name": "バイバニラ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "074",
+        "armor": "073",
+        "crown": "072"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0077",
+      "name": "ウリムー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "075",
+        "armor": "074",
+        "crown": "073"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0078",
+      "name": "イノムー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "076",
+        "armor": "075",
+        "crown": "074"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0079",
+      "name": "マンムー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "077",
+        "armor": "076",
+        "crown": "075"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0080",
+      "name": "デリバード",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "078",
+        "armor": "077",
+        "crown": "076"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0081",
+      "name": "ユキワラシ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "079",
+        "armor": "078",
+        "crown": "077"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0082",
+      "name": "オニゴーリ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "080",
+        "armor": "079",
+        "crown": "078"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0083",
+      "name": "ユキメノコ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "081",
+        "armor": "080",
+        "crown": "079"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0084",
+      "name": "ヤジロン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "082",
+        "armor": "081",
+        "crown": "080"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0085",
+      "name": "ネンドール",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "083",
+        "armor": "082",
+        "crown": "081"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0086",
+      "name": "ドロバンコ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "084",
+        "armor": "083",
+        "crown": "082"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0087",
+      "name": "バンバドロ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "085",
+        "armor": "084",
+        "crown": "083"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0088",
+      "name": "イシズマイ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "086",
+        "armor": "085",
+        "crown": "084"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0089",
+      "name": "イワパレス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "087",
+        "armor": "086",
+        "crown": "085"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0090",
+      "name": "ゴビット",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "088",
+        "armor": "086",
+        "crown": "086"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0091",
+      "name": "ゴルーグ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "089",
+        "armor": "087",
+        "crown": "087"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0092",
+      "name": "ムンナ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "090",
+        "armor": "088",
+        "crown": "088"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0093",
+      "name": "ムシャーナ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "091",
+        "armor": "089",
+        "crown": "089"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0094",
+      "name": "ネイティ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "092",
+        "armor": "090",
+        "crown": "090"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0095",
+      "name": "ネイティオ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "093",
+        "armor": "091",
+        "crown": "090"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0096",
+      "name": "ヌイコグマ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "094",
+        "armor": "092",
+        "crown": "091"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0097",
+      "name": "キテルグマ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "095",
+        "armor": "093",
+        "crown": "092"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0098",
+      "name": "ユキカブリ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "096",
+        "armor": "094",
+        "crown": "093"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0099",
+      "name": "ユキノオー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "097",
+        "armor": "095",
+        "crown": "094"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0100",
+      "name": "クラブ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "098",
+        "armor": "096",
+        "crown": "095"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0101",
+      "name": "キングラー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "099",
+        "armor": "097",
+        "crown": "096"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0102",
+      "name": "ウパー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "100",
+        "armor": "098",
+        "crown": "097"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0103",
+      "name": "ヌオー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "101",
+        "armor": "099",
+        "crown": "098"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0104",
+      "name": "ヘイガニ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "102",
+        "armor": "100",
+        "crown": "099"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0105",
+      "name": "シザリガー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "103",
+        "armor": "101",
+        "crown": "100"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0106",
+      "name": "ツチニン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "104",
+        "armor": "101",
+        "crown": "101"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0107",
+      "name": "テッカニン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "105",
+        "armor": "102",
+        "crown": "102"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0108",
+      "name": "ヌケニン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "106",
+        "armor": "103",
+        "crown": "103"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0109",
+      "name": "バルキー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "107",
+        "armor": "104",
+        "crown": "103"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0110",
+      "name": "サワムラー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "108",
+        "armor": "105",
+        "crown": "104"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0111",
+      "name": "エビワラー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "109",
+        "armor": "106",
+        "crown": "104"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0112",
+      "name": "カポエラー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "110",
+        "armor": "107",
+        "crown": "104"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0113",
+      "name": "ヤンチャム",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "111",
+        "armor": "108",
+        "crown": "104"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0114",
+      "name": "ゴロンダ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "112",
+        "armor": "109",
+        "crown": "105"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0115",
+      "name": "ギアル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "113",
+        "armor": "110",
+        "crown": "105"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0116",
+      "name": "ギギアル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "114",
+        "armor": "110",
+        "crown": "106"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0117",
+      "name": "ギギギアル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "115",
+        "armor": "111",
+        "crown": "106"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0118",
+      "name": "ミツハニー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "116",
+        "armor": "112",
+        "crown": "107"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0119",
+      "name": "ビークイン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "117",
+        "armor": "113",
+        "crown": "108"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0120",
+      "name": "ドーミラー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "118",
+        "armor": "114",
+        "crown": "109"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0121",
+      "name": "ドータクン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "119",
+        "armor": "115",
+        "crown": "110"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0122",
+      "name": "ラルトス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "120",
+        "armor": "116",
+        "crown": "111"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0123",
+      "name": "キルリア",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "121",
+        "armor": "117",
+        "crown": "112"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0124",
+      "name": "サーナイト",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "122",
+        "armor": "118",
+        "crown": "113"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0125",
+      "name": "エルレイド",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "123",
+        "armor": "119",
+        "crown": "114"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0126",
+      "name": "フワンテ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "124",
+        "armor": "120",
+        "crown": "115"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0127",
+      "name": "フワライド",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "125",
+        "armor": "121",
+        "crown": "116"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0128",
+      "name": "ヒメンカ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "126",
+        "armor": "122",
+        "crown": "117"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0129",
+      "name": "ワタシラガ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "127",
+        "armor": "123",
+        "crown": "118"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0130",
+      "name": "チェリンボ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "128",
+        "armor": "124",
+        "crown": "119"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0131",
+      "name": "チェリム",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "129",
+        "armor": "125",
+        "crown": "120"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0132",
+      "name": "スカンプー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "130",
+        "armor": "126",
+        "crown": "121"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0133",
+      "name": "スカタンク",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "131",
+        "armor": "127",
+        "crown": "122"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0134",
+      "name": "オタマロ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "132",
+        "armor": "128",
+        "crown": "123"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0135",
+      "name": "ガマガル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "133",
+        "armor": "129",
+        "crown": "124"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0136",
+      "name": "ガマゲロゲ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "134",
+        "armor": "130",
+        "crown": "125"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0137",
+      "name": "ヨマワル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "135",
+        "armor": "131",
+        "crown": "126"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0138",
+      "name": "サマヨール",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "136",
+        "armor": "132",
+        "crown": "127"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0139",
+      "name": "ヨノワール",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "137",
+        "armor": "133",
+        "crown": "128"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0140",
+      "name": "ワンリキー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "138",
+        "armor": "134",
+        "crown": "129"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0141",
+      "name": "ゴーリキー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "139",
+        "armor": "135",
+        "crown": "130"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0142",
+      "name": "カイリキー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "140",
+        "armor": "136",
+        "crown": "131"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0143",
+      "name": "ゴース",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "141",
+        "armor": "137",
+        "crown": "132"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0144",
+      "name": "ゴースト",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "142",
+        "armor": "138",
+        "crown": "133"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0145",
+      "name": "ゲンガー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "143",
+        "armor": "139",
+        "crown": "134"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0146",
+      "name": "コイキング",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "144",
+        "armor": "140",
+        "crown": "135"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0147",
+      "name": "ギャラドス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "145",
+        "armor": "141",
+        "crown": "136"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0148",
+      "name": "トサキント",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "146",
+        "armor": "142",
+        "crown": "137"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0149",
+      "name": "アズマオウ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "147",
+        "armor": "143",
+        "crown": "138"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0150",
+      "name": "テッポウオ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "148",
+        "armor": "144",
+        "crown": "139"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0151",
+      "name": "オクタン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "149",
+        "armor": "145",
+        "crown": "140"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0152",
+      "name": "シェルダー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "150",
+        "armor": "146",
+        "crown": "141"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0153",
+      "name": "パルシェン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "151",
+        "armor": "147",
+        "crown": "142"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0154",
+      "name": "ヒンバス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "152",
+        "armor": "148",
+        "crown": "143"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0155",
+      "name": "ミロカロス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "153",
+        "armor": "149",
+        "crown": "144"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0156",
+      "name": "バスラオ(赤)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "154",
+        "armor": "150",
+        "crown": "145"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0157",
+      "name": "バスラオ(青)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "154",
+        "armor": "151",
+        "crown": "146"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0158",
+      "name": "ヨワシ(単独)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "155",
+        "armor": "152",
+        "crown": "147"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0159",
+      "name": "ヨワシ(群れ)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "155",
+        "armor": "153",
+        "crown": "148"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0160",
+      "name": "ナマコブシ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "156",
+        "armor": "154",
+        "crown": "149"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0161",
+      "name": "ヤブクロン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "157",
+        "armor": "155",
+        "crown": "150"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0162",
+      "name": "ダストダス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "158",
+        "armor": "156",
+        "crown": "151"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0163",
+      "name": "ヤクデ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "159",
+        "armor": "157",
+        "crown": "152"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0164",
+      "name": "マルヤクデ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "160",
+        "armor": "158",
+        "crown": "153"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0165",
+      "name": "タンドン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "161",
+        "armor": "158",
+        "crown": "154"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0166",
+      "name": "トロッゴン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "162",
+        "armor": "158",
+        "crown": "155"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0167",
+      "name": "セキタンザン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "163",
+        "armor": "159",
+        "crown": "156"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0168",
+      "name": "ディグダ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "164",
+        "armor": "160",
+        "crown": "157"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0169",
+      "name": "ディグダ(アローラ)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "164",
+        "armor": "161",
+        "crown": "158"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0170",
+      "name": "ダグトリオ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "165",
+        "armor": "162",
+        "crown": "159"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0171",
+      "name": "ダグトリオ(アローラ)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "165",
+        "armor": "163",
+        "crown": "160"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0172",
+      "name": "モグリュー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "166",
+        "armor": "164",
+        "crown": "161"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0173",
+      "name": "ドリュウズ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "167",
+        "armor": "165",
+        "crown": "162"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0174",
+      "name": "ダンゴロ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "168",
+        "armor": "166",
+        "crown": "163"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0175",
+      "name": "ガントル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "169",
+        "armor": "167",
+        "crown": "164"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0176",
+      "name": "ギガイアス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "170",
+        "armor": "168",
+        "crown": "165"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0177",
+      "name": "ドッコラー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "171",
+        "armor": "168",
+        "crown": "166"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0178",
+      "name": "ドテッコツ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "172",
+        "armor": "169",
+        "crown": "167"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0179",
+      "name": "ローブシン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "173",
+        "armor": "169",
+        "crown": "168"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0180",
+      "name": "コロモリ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "174",
+        "armor": "170",
+        "crown": "169"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0181",
+      "name": "ココロモリ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "175",
+        "armor": "171",
+        "crown": "170"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0182",
+      "name": "オンバット",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "176",
+        "armor": "171",
+        "crown": "171"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0183",
+      "name": "オンバーン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "177",
+        "armor": "172",
+        "crown": "171"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0184",
+      "name": "イワーク",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "178",
+        "armor": "173",
+        "crown": "172"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0185",
+      "name": "ハガネール",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "179",
+        "armor": "174",
+        "crown": "173"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0186",
+      "name": "サシカマス",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "180",
+        "armor": "175",
+        "crown": "174"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0187",
+      "name": "カマスジョー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "181",
+        "armor": "176",
+        "crown": "175"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0188",
+      "name": "ニャース",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "182",
+        "armor": "177",
+        "crown": "176"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0189",
+      "name": "ニャース(アローラ)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "182",
+        "armor": "178",
+        "crown": "177"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0190",
+      "name": "ニャース(ガラル)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "182",
+        "armor": "179",
+        "crown": "178"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0191",
+      "name": "ニャイキング",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "183",
+        "armor": "180",
+        "crown": "179"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0192",
+      "name": "ペルシアン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "184",
+        "armor": "181",
+        "crown": "180"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0193",
+      "name": "ペルシアン(アローラ)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "184",
+        "armor": "182",
+        "crown": "181"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0194",
+      "name": "マホミル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "185",
+        "armor": "183",
+        "crown": "182"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0195",
+      "name": "マホイップ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "186",
+        "armor": "184",
+        "crown": "183"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0196",
+      "name": "アブリー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "187",
+        "armor": "185",
+        "crown": "184"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0197",
+      "name": "アブリボン",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "188",
+        "armor": "186",
+        "crown": "185"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0198",
+      "name": "テッシード",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "189",
+        "armor": "187",
+        "crown": "186"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0199",
+      "name": "ナットレイ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "190",
+        "armor": "188",
+        "crown": "187"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0200",
+      "name": "バケッチャ(普通)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "191",
+        "armor": "189",
+        "crown": "188"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0201",
+      "name": "バケッチャ(小)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "191",
+        "armor": "190",
+        "crown": "189"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0202",
+      "name": "バケッチャ(大)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "191",
+        "armor": "191",
+        "crown": "190"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0203",
+      "name": "バケッチャ(特大)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "191",
+        "armor": "192",
+        "crown": "191"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0204",
+      "name": "パンプジン(普通)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "192",
+        "armor": "193",
+        "crown": "192"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0205",
+      "name": "パンプジン(小)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "192",
+        "armor": "194",
+        "crown": "193"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0206",
+      "name": "パンプジン(大)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "192",
+        "armor": "195",
+        "crown": "194"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0207",
+      "name": "パンプジン(特大)",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "192",
+        "armor": "196",
+        "crown": "195"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0208",
+      "name": "ピチュー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "193",
+        "armor": "197",
+        "crown": "196"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0209",
+      "name": "ピカチュウ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "194",
+        "armor": "198",
+        "crown": "197"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0210",
+      "name": "ライチュウ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "195",
+        "armor": "199",
+        "crown": "198"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0211",
+      "name": "イーブイ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "196",
+        "armor": "200",
+        "crown": "199"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0212",
+      "name": "シャワーズ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "197",
+        "armor": "201",
+        "crown": "200"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0213",
+      "name": "サンダース",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "198",
+        "armor": "202",
+        "crown": "201"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0214",
+      "name": "ブースター",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "199",
+        "armor": "203",
+        "crown": "202"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0215",
+      "name": "エーフィ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "200",
+        "armor": "204",
+        "crown": "202"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0216",
+      "name": "ブラッキー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "201",
+        "armor": "205",
+        "crown": "203"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0217",
+      "name": "リーフィア",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "202",
+        "armor": "206",
+        "crown": "203"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0218",
+      "name": "グレイシア",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "203",
+        "armor": "206",
+        "crown": "204"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0219",
+      "name": "ニンフィア",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "204",
+        "armor": "207",
+        "crown": "204"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0220",
+      "name": "カジッチュ",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "205",
+        "armor": "208",
+        "crown": "205"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0221",
+      "name": "アップリュー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "206",
+        "armor": "209",
+        "crown": "206"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0222",
+      "name": "タルップル",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "207",
+        "armor": "210",
+        "crown": "207"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0223",
+      "name": "ニャスパー",
+      "regions": [
+        "galar",
+        "armor",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "208",
+        "armor": "211",
+        "crown": "208"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0224",
+      "name": "ニャオニクス♂",
+      "regions": [
+        "galar",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "209",
+        "crown": "209"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0225",
+      "name": "ニャオニクス♀",
+      "regions": [
+        "galar",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "209",
+        "crown": "210"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0226",
+      "name": "ペロッパフ",
+      "regions": [
+        "galar",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "210",
+        "crown": "210"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0227",
+      "name": "ペロリーム",
+      "regions": [
+        "galar",
+        "crown"
+      ],
+      "pokedex_numbers": {
+        "galar": "211",
+        "crown": "210"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0228",
+      "name": "シュシュプ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "212"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0229",
+      "name": "フレフワン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "213"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0230",
+      "name": "シズクモ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "214"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0231",
+      "name": "オニシズクモ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "215"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0232",
+      "name": "ソーナノ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "216"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0233",
+      "name": "ソーナンス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "217"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0234",
+      "name": "カモネギ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "218"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0235",
+      "name": "カモネギ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "218"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0236",
+      "name": "ネギガナイト",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "219"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0237",
+      "name": "チョンチー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "220"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0238",
+      "name": "ランターン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "221"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0239",
+      "name": "グレッグル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "222"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0240",
+      "name": "ドクロッグ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "223"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0241",
+      "name": "ズルッグ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "224"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0242",
+      "name": "ズルズキン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "225"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0243",
+      "name": "マッギョ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "226"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0244",
+      "name": "マッギョ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "226"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0245",
+      "name": "ツボツボ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "227"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0246",
+      "name": "ドジョッチ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "228"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0247",
+      "name": "ナマズン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "229"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0248",
+      "name": "カラナクシ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "230"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0249",
+      "name": "トリトドン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "231"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0250",
+      "name": "コソクムシ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "232"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0251",
+      "name": "グソクムシャ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "233"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0252",
+      "name": "カメテテ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "234"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0253",
+      "name": "ガメノデス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "235"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0254",
+      "name": "サニーゴ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "236"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0255",
+      "name": "サニーゴ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "236"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0256",
+      "name": "サニゴーン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "237"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0257",
+      "name": "ベロバー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "238"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0258",
+      "name": "ギモー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "239"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0259",
+      "name": "オーロンゲ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "240"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0260",
+      "name": "ミブリム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "241"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0261",
+      "name": "テブリム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "242"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0262",
+      "name": "ブリムオン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "243"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0263",
+      "name": "ヤトウモリ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "244"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0264",
+      "name": "エンニュート",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "245"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0265",
+      "name": "コマタナ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "246"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0266",
+      "name": "キリキザン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "247"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0267",
+      "name": "ナゲキ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "248"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0268",
+      "name": "ダゲキ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "249"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0269",
+      "name": "ドガース",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "250"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0270",
+      "name": "マタドガス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "251"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0271",
+      "name": "マタドガス(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "251"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0272",
+      "name": "ウソハチ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "252"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0273",
+      "name": "ウソッキー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "253"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0274",
+      "name": "ピィ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "254"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0275",
+      "name": "ピッピ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "255"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0276",
+      "name": "ピクシー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "256"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0277",
+      "name": "トゲピー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "257"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0278",
+      "name": "トゲチック",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "258"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0279",
+      "name": "トゲキッス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "259"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0280",
+      "name": "ゴンベ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "260"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0281",
+      "name": "カビゴン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "261"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0282",
+      "name": "モンメン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "262"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0283",
+      "name": "エルフーン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "263"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0284",
+      "name": "サイホーン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "264"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0285",
+      "name": "サイドン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "265"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0286",
+      "name": "ドサイドン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "266"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0287",
+      "name": "ゴチム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "267"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0288",
+      "name": "ゴチミル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "268"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0289",
+      "name": "ゴチルゼル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "269"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0290",
+      "name": "ユニラン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "270"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0291",
+      "name": "ダブラン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "271"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0292",
+      "name": "ランクルス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "272"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0293",
+      "name": "カブルモ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "273"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0294",
+      "name": "シュバルゴ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "274"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0295",
+      "name": "チョボマキ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "275"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0296",
+      "name": "アギルダー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "276"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0297",
+      "name": "リグレー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "277"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0298",
+      "name": "オーベム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "278"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0299",
+      "name": "クマシュン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "279"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0300",
+      "name": "ツンベアー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "280"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0301",
+      "name": "ワシボン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "281"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0302",
+      "name": "ウォーグル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "282"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0303",
+      "name": "バルチャイ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "283"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0304",
+      "name": "バルジーナ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "284"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0305",
+      "name": "スコルピ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "285"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0306",
+      "name": "ドラピオン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "286"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0307",
+      "name": "ヒトモシ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "287"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0308",
+      "name": "ランプラー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "288"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0309",
+      "name": "シャンデラ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "289"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0310",
+      "name": "マーイーカ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "290"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0311",
+      "name": "カラマネロ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "291"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0312",
+      "name": "ニューラ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "292"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0313",
+      "name": "マニューラ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "293"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0314",
+      "name": "ヤミラミ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "294"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0315",
+      "name": "クチート",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "295"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0316",
+      "name": "マラカッチ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "296"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0317",
+      "name": "シンボラー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "297"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0318",
+      "name": "リオル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "298"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0319",
+      "name": "ルカリオ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "299"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0320",
+      "name": "コータス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "300"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0321",
+      "name": "ミミッキュ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "301"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0322",
+      "name": "ゾウドウ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "302"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0323",
+      "name": "ダイオウドウ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "303"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0324",
+      "name": "ハリーセン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "304"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0325",
+      "name": "プルリル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "305"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0326",
+      "name": "ブルンゲル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "306"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0327",
+      "name": "ヒドイデ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "307"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0328",
+      "name": "ドヒドイデ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "308"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0329",
+      "name": "ウッウ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "309"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0330",
+      "name": "エレズン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "310"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0331",
+      "name": "ストリンダー(ハイ)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "311"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0332",
+      "name": "ストリンダー(ロー)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "311"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0333",
+      "name": "スナヘビ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "312"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0334",
+      "name": "サダイジャ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "313"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0335",
+      "name": "ヒポポタス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "314"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0336",
+      "name": "カバルドン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "315"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0337",
+      "name": "アイアント",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "316"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0338",
+      "name": "クイタラン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "317"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0339",
+      "name": "エリキテル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "318"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0340",
+      "name": "エレザード",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "319"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0341",
+      "name": "ルチャブル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "320"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0342",
+      "name": "ナックラー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "321"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0343",
+      "name": "ビブラーバ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "322"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0344",
+      "name": "フライゴン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "323"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0345",
+      "name": "キバゴ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "324"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0346",
+      "name": "オノンド",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "325"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0347",
+      "name": "オノノクス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "326"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0348",
+      "name": "デスマス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "327"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0349",
+      "name": "デスマス(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "327"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0350",
+      "name": "デスバーン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "328"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0351",
+      "name": "デスカーン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "329"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0352",
+      "name": "ヒトツキ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "330"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0353",
+      "name": "ニダンギル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "331"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0354",
+      "name": "ギルガルド(シールド)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "332"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0355",
+      "name": "ギルガルド(ブレード)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "332"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0356",
+      "name": "ポニータ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "333"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0357",
+      "name": "ギャロップ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "334"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0358",
+      "name": "ヤバチャ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "335"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0359",
+      "name": "ポットデス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "336"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0360",
+      "name": "イエッサン♂",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "337"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0361",
+      "name": "イエッサン♀",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "337"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0362",
+      "name": "ボクレー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "338"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0363",
+      "name": "オーロット",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "339"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0364",
+      "name": "ネマシュ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "340"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0365",
+      "name": "マシェード",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "341"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0366",
+      "name": "ヤレユータン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "342"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0367",
+      "name": "ナゲツケサル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "343"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0368",
+      "name": "モルペコ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "344"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0369",
+      "name": "タイレーツ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "345"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0370",
+      "name": "ジジーロン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "346"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0371",
+      "name": "バクガメス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "347"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0372",
+      "name": "トゲデマル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "348"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0373",
+      "name": "ユキハミ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "349"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0374",
+      "name": "モスノウ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "350"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0375",
+      "name": "タタッコ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "351"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0376",
+      "name": "オトスパス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "352"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0377",
+      "name": "バチンウニ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "353"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0378",
+      "name": "タマンタ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "354"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0379",
+      "name": "マンタイン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "355"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0380",
+      "name": "ホエルコ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "356"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0381",
+      "name": "ホエルオー",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "357"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0382",
+      "name": "カチコール",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "358"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0383",
+      "name": "クレベース",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "359"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0384",
+      "name": "ダダリン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "360"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0385",
+      "name": "ラプラス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "361"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0386",
+      "name": "ルナトーン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "362"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0387",
+      "name": "ソルロック",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "363"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0388",
+      "name": "マネネ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "364"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0389",
+      "name": "バリヤード",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "365"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0390",
+      "name": "バリヤード(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "365"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0391",
+      "name": "バリコオル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "366"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0392",
+      "name": "ダルマッカ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "367"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0393",
+      "name": "ヒヒダルマ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "368"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0394",
+      "name": "ヒヒダルマ(ダルマ・ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "368"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0395",
+      "name": "イシヘンジン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "369"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0396",
+      "name": "コオリッポ(アイス)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "370"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0397",
+      "name": "コオリッポ(ナイス)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "370"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0398",
+      "name": "ジュラルドン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "371"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0399",
+      "name": "ロトム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "372"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0400",
+      "name": "ヒートロトム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "372"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0401",
+      "name": "ウォッシュロトム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "372"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0402",
+      "name": "フロストロトム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "372"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0403",
+      "name": "スピンロトム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "372"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0404",
+      "name": "カットロトム",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "372"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0405",
+      "name": "メタモン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "373"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0406",
+      "name": "パッチラゴン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "374"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0407",
+      "name": "パッチルドン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "375"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0408",
+      "name": "ウオノラゴン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "376"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0409",
+      "name": "ウオチルドン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "377"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0410",
+      "name": "ヒトカゲ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "378"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0411",
+      "name": "リザード",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "379"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0412",
+      "name": "リザードン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "380"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0413",
+      "name": "タイプ：ヌル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "381"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0414",
+      "name": "シルヴァディ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "382"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0415",
+      "name": "ヨーギラス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "383"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0416",
+      "name": "サナギラス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "384"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0417",
+      "name": "バンギラス",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "385"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0418",
+      "name": "モノズ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "386"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0419",
+      "name": "ジヘッド",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "387"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0420",
+      "name": "サザンドラ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "388"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0421",
+      "name": "ヌメラ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "389"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0422",
+      "name": "ヌメイル",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "390"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0423",
+      "name": "ヌメルゴン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "391"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0424",
+      "name": "ジャラコ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "392"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0425",
+      "name": "ジャランゴ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "393"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0426",
+      "name": "ジャラランガ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "394"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0427",
+      "name": "ドラメシヤ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "395"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0428",
+      "name": "ドロンチ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "396"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0429",
+      "name": "ドラパルト",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "397"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0430",
+      "name": "ザシアン",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "398"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0431",
+      "name": "ザシアン(王)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "398"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0432",
+      "name": "ザマゼンタ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "399"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0433",
+      "name": "ザマゼンタ(王)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "399"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0434",
+      "name": "ムゲンダイナ",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "400"
+      },
+      "caught": false
+    },
+    {
+      "id": "pokemon_0435",
+      "name": "ムゲンダイナ(ムゲンダイマックス)",
+      "regions": [
+        "galar"
+      ],
+      "pokedex_numbers": {
+        "galar": "400"
+      },
+      "caught": false
+    }
+  ]
+}
