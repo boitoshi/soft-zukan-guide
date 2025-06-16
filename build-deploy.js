@@ -22,6 +22,11 @@ const filesToCopy = [
         description: 'メインアプリケーション'
     },
     {
+        src: 'zukan-overview.html',
+        dest: 'deploy/zukan-overview.html',
+        description: '図鑑一覧タブ表示'
+    },
+    {
         src: 'paldea_zukan_data.json',
         dest: 'deploy/paldea_zukan_data.json',
         description: 'ポケモンデータ'
