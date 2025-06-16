@@ -1,12 +1,8 @@
-name: 🎮 ポケモン図鑑マスター デプロイ
+name: 🎮 Simple Deploy
 
 on:
 push:
 branches: [ main ]
-pull_request:
-branches: [ main ]
-
-# 🔧 重要：権限設定を追加（エラー解決のため）
 
 permissions:
 contents: read
@@ -14,8 +10,7 @@ pages: write
 id-token: write
 
 jobs:
-build-and-deploy:
-# 🌐 GitHub Pages環境を指定
+deploy:
 environment:
 name: github-pages
 url: ${{ steps.deployment.outputs.page_url }}
@@ -23,88 +18,17 @@ runs-on: ubuntu-latest
 
 ```
 steps:
-- name: 📁 リポジトリをチェックアウト
+- name: Checkout
   uses: actions/checkout@v4
-
-- name: 🔧 Node.js をセットアップ
-  uses: actions/setup-node@v4
-  with:
-    node-version: '18'
-
-- name: 📊 CSVからJSONへ変換
-  run: |
-    echo "🔄 ポケモンデータを変換中..."
-    
-    # パルデア図鑑のデータが存在する場合のみ変換
-    if [ -f "SV図鑑.csv" ]; then
-      node universal-csv-converter.js paldea
-      echo "✅ パルデア図鑑データを変換完了"
-    else
-      echo "ℹ️ パルデア図鑑データが見つかりません（スキップ）"
-    fi
-    
-    # 他のゲームのCSVファイルがあれば変換
-    node universal-csv-converter.js --all
-
-- name: 📁 デプロイファイルを準備
-  run: |
-    echo "📦 デプロイ用ファイルを準備中..."
-    
-    # デプロイディレクトリを作成
-    mkdir -p dist
-    
-    # 必要なファイルをコピー
-    cp zukan-master.html dist/index.html
-    cp zukan-config.json dist/
-    cp *.json dist/ 2>/dev/null || echo "JSONファイルが見つかりません"
-    
-    # README for GitHub Pages
-    cat > dist/README.md << 'EOF'
-    # 🎮 ポケモン図鑑マスター
-    
-    **GitHub Pages デプロイ版**
-    
-    このディレクトリには、ポケモン図鑑マスターのデプロイ可能なファイルが含まれています。
-    
-    ## 🌐 アクセス方法
-    
-    https://[ユーザー名].github.io/[リポジトリ名]/
-    
-    ## 🚀 機能
-    
-    - 複数のポケモンゲーム図鑑に対応
-    - 重複ポケモンの分析
-    - 進捗の自動保存
-    - レスポンシブデザイン
-    
-    自動生成されたファイルです 🤖
-    EOF
-    
-    echo "✅ デプロイファイル準備完了"
-    ls -la dist/
-
-# 🆕 GitHub Pages設定（新方式）
-- name: ⚙️ GitHub Pages設定
-  if: github.ref == 'refs/heads/main'
+  
+- name: Setup Pages
   uses: actions/configure-pages@v4
-
-# 📤 アーティファクトをアップロード（新方式）
-- name: 📤 デプロイファイルをアップロード
-  if: github.ref == 'refs/heads/main'
+  
+- name: Upload artifact
   uses: actions/upload-pages-artifact@v3
   with:
-    path: ./dist
-
-# 🚀 GitHub Pages にデプロイ（新方式・権限エラー解決）
-- name: 🚀 GitHub Pages にデプロイ
-  if: github.ref == 'refs/heads/main'
+    path: '.'
+    
+- name: Deploy to GitHub Pages
   id: deployment
   uses: actions/deploy-pages@v4
-    
-- name: 📝 デプロイ結果を出力
-  if: github.ref == 'refs/heads/main'
-  run: |
-    echo "🎉 デプロイ完了！"
-    echo "🌐 アクセスURL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-    echo "📊 変換されたデータファイル:"
-    ls -la dist/*.json 2>/dev/null || echo "   データファイルなし"
