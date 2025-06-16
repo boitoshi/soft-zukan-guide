@@ -102,8 +102,8 @@ node build-deploy.js                     # 直接実行
 # 🌐 開発サーバー起動
 npm run dev                              # 開発サーバー（推奨）
 npm run serve                            # dev のエイリアス
-python -m http.server 8000               # Python直接起動
-php -S localhost:8000                    # PHP直接起動
+npx serve . -p 8000                      # Node.js serve直接起動
+php -S localhost:8000                    # PHP直接起動（要PHP）
 ```
 
 ### Claude Code用

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 ポケモン図鑑マスター - 重複排除版（パターンB: 表示のみ）</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif; 
+        }
+        
+        /* カスタムアニメーション */
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.3s ease;
+        }
+        .fade-enter-from, .fade-leave-to {
+            opacity: 0;
+        }
+
+        .slide-down-enter-active, .slide-down-leave-active {
+            transition: all 0.3s ease;
+        }
+        .slide-down-enter-from, .slide-down-leave-to {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        /* カスタムスクロールバー */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* ホバーエフェクト */
+        .pokemon-card {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .pokemon-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ゲーム選択カード */
+        .game-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .game-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+        .game-card.selected {
+            box-shadow: 0 0 0 4px rgb(168 85 247 / 0.5);
+        }
+
+        /* 重複排除機能のスタイル */
+        .pokemon-card.grayed-out {
+            opacity: 0.4;
+            background-color: #f8fafc;
+            cursor: not-allowed;
+        }
+        .pokemon-card.grayed-out:hover {
+            opacity: 0.6;
+            transform: none;
+            box-shadow: none;
+        }
+        .pokemon-card.grayed-out .pokemon-name {
+            color: #94a3b8 !important;
+        }
+        .pokemon-card.grayed-out .region-tag {
+            background-color: #e2e8f0 !important;
+            color: #64748b !important;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
+    <div id="app" class="container mx-auto px-4 py-8">
+        <!-- ヘッダー -->
+        <div class="text-center mb-8">
+            <h1 class="text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">
+                🎮 ポケモン図鑑マスター
+            </h1>
+            <p class="text-xl text-gray-600 mb-2">全ソフト対応版 - Ultimate Edition</p>
+            <div v-if="selectedGame" class="flex justify-center gap-4 text-sm text-gray-500">
+                <span>{{ selectedGame.game }}: {{ zukanData.stats?.total || 0 }}匹</span>
+                <span>•</span>
+                <span>重複なし: {{ uniquePokemonCount }}匹</span>
+            </div>
+        </div>
+
+        <!-- ゲーム選択セクション -->
+        <transition name="slide-down">
+            <div v-if="!selectedGame" class="mb-8">
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">
+                    🎯 プレイ中のゲームを選択してください
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div v-for="game in availableGames" :key="game.id"
+                         @click="selectGame(game.id)"
+                         class="game-card bg-white rounded-2xl shadow-lg p-6 text-center">
+                        <div class="text-4xl mb-4">{{ getGameIcon(game.id) }}</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">{{ game.name }}</h3>
+                        <p class="text-gray-600 text-sm mb-4">{{ game.displayName }}</p>
+                        <div class="flex flex-wrap justify-center gap-2">
+                            <span v-for="region in game.regions" :key="region.id"
+                                  class="text-xs px-2 py-1 rounded-full bg-purple-100 text-purple-800">
+                                {{ region.name }}
+                            </span>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-500">
+                            {{ game.stats?.total || '?' }}匹のポケモン
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <p class="text-gray-600 mb-4">新しいゲーム図鑑を追加したい場合</p>
+                    <div class="bg-white rounded-lg p-4 max-w-md mx-auto">
+                        <p class="text-sm text-gray-700">
+                            📁 CSVファイルを追加 → 🔧 変換スクリプト実行 → 🎮 図鑑利用可能！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </transition>
+
+        <!-- メイン図鑑アプリ（ゲーム選択後） -->
+        <div v-if="selectedGame">
+            <!-- ゲーム切り替えボタン -->
+            <div class="mb-6 flex justify-between items-center">
+                <button @click="backToGameSelection" 
+                        class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors flex items-center">
+                    ← ゲーム選択に戻る
+                </button>
+                <div class="text-right">
+                    <h2 class="text-2xl font-bold text-gray-800">{{ selectedGame.game }}</h2>
+                    <p class="text-gray-600">{{ selectedGame.displayName }}</p>
+                </div>
+            </div>
+
+            <!-- 進捗サマリー（コンパクト） -->
+            <div class="bg-white rounded-lg shadow-sm p-3 mb-4">
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-gray-600">進捗</span>
+                    <span class="font-bold text-blue-600">{{ caughtCount }}/{{ zukanData.stats?.total || 0 }} ({{ progressPercent }}%)</span>
+                </div>
+                <div class="mt-2 bg-gray-200 rounded-full h-1">
+                    <div class="bg-blue-600 h-1 rounded-full transition-all duration-300" 
+                         :style="{width: progressPercent + '%'}"></div>
+                </div>
+            </div>
+
+            <!-- フィルターエリア（モバイル最適化） -->
+            <div class="bg-white rounded-lg shadow-sm p-4 mb-4">
+                <div class="space-y-3">
+                    <!-- 図鑑選択 -->
+                    <div>
+                        <select v-model="filters.region" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            <option value="">📋 すべて表示</option>
+                            <option v-for="region in selectedGame.regions" :key="region.id" :value="region.id">
+                                {{ region.name }}
+                            </option>
+                            <option value="duplicates">🔄 重複ポケモン</option>
+                            <option value="unique">⭐ 重複なし</option>
+                        </select>
+                    </div>
+                    
+                    <!-- 検索とフィルター -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <select v-model="filters.status" class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            <option value="">全て</option>
+                            <option value="caught">✅ ゲット済み</option>
+                            <option value="not-caught">❌ 未ゲット</option>
+                        </select>
+                        <button @click="resetFilters" 
+                                class="bg-gray-500 hover:bg-gray-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
+                            🔄 リセット
+                        </button>
+                    </div>
+                    
+                    <!-- 検索バー -->
+                    <input v-model="filters.search" type="text" placeholder="🔍 ポケモン名で検索..." 
+                           class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                </div>
+            </div>
+
+            <!-- 検索結果サマリー（コンパクト） -->
+            <div v-if="filteredPokemon.length > 0" class="text-center text-sm text-gray-600 mb-3">
+                {{ filteredPokemon.length }}匹表示中
+                <span v-if="filters.region === 'duplicates'" class="text-purple-600">（重複ポケモン）</span>
+            </div>
+
+            <!-- ポケモンリスト -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-4 border-b bg-gradient-to-r from-purple-50 to-blue-50">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-lg font-bold">📋 ポケモンリスト</h2>
+                        <span class="text-xs text-gray-500">タップで更新</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">
+                        グレーアウト表示のポケモンは他の図鑑で管理されています
+                    </p>
+                </div>
+                
+                <div class="h-96 md:max-h-96 overflow-y-auto custom-scrollbar">
+                    <transition-group name="fade" tag="div">
+                        <div v-for="pokemon in filteredPokemon" 
+                             :key="pokemon.id"
+                             @click="pokemon.displayState?.isGrayedOut ? null : toggleCaught(pokemon.id)"
+                             :class="[
+                                 'pokemon-card flex items-center justify-between p-3 border-b border-gray-100',
+                                 pokemon.displayState?.isGrayedOut ? 'grayed-out' : 'hover:bg-gray-50'
+                             ]">
+                            
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center">
+                                    <span class="text-xl mr-2 flex-shrink-0">
+                                        {{ pokemon.caught ? '✅' : '⭕' }}
+                                    </span>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="pokemon-name text-base font-medium truncate" 
+                                              :class="pokemon.caught ? 'text-green-600' : 'text-gray-700'">
+                                            {{ pokemon.name }}
+                                        </div>
+                                        <div class="flex flex-wrap gap-1 mt-1">
+                                            <!-- 重複排除機能での表示状態を示すタグ -->
+                                            <span v-if="pokemon.displayState?.isGrayedOut" 
+                                                  class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">
+                                                {{ getRegionName(pokemon.displayState.primaryRegion) }}で管理中
+                                            </span>
+                                            <!-- 従来の重複表示 -->
+                                            <span v-else-if="pokemon.regions.length > 1" 
+                                                  class="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded-full">
+                                                🔄 重複
+                                            </span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mt-1 truncate">
+                                            <span v-for="(region, index) in pokemon.regions" :key="region">
+                                                {{ getRegionName(region) }}#{{ pokemon.pokedex_numbers[region] }}
+                                                <span v-if="index < pokemon.regions.length - 1"> / </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 ml-2">
+                                <span class="text-xs px-2 py-1 rounded-full font-medium" 
+                                      :class="pokemon.caught ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'">
+                                    {{ pokemon.caught ? '済' : '未' }}
+                                </span>
+                            </div>
+                        </div>
+                    </transition-group>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- フッター -->
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            <p>🎮 ポケモン図鑑マスター v3.0 Ultimate | ✨ Vue.js で作成</p>
+            <p class="mt-1">データは自動保存されます 💾 | 全ソフト対応版</p>
+        </div>
+    </div>
+
+    <script>
+        const { createApp, ref, computed, onMounted, watch } = Vue;
+
+        createApp({
+            setup() {
+                // リアクティブデータ
+                const zukanData = ref({ stats: {}, pokemon: [] });
+                const availableGames = ref([]);
+                const selectedGame = ref(null);
+                const filters = ref({
+                    region: '',
+                    status: '',
+                    search: ''
+                });
+
+                // 利用可能なゲーム一覧を読み込み
+                const loadAvailableGames = async () => {
+                    try {
+                        const configResponse = await fetch('zukan-config.json');
+                        const config = await configResponse.json();
+                        
+                        const games = [];
+                        for (const [gameId, gameConfig] of Object.entries(config)) {
+                            try {
+                                const dataResponse = await fetch(`${gameId}_zukan_data.json`);
+                                if (dataResponse.ok) {
+                                    const gameData = await dataResponse.json();
+                                    games.push({
+                                        id: gameId,
+                                        ...gameConfig,
+                                        stats: gameData.stats
+                                    });
+                                }
+                            } catch (error) {
+                                console.log(`ゲーム ${gameId} のデータが見つかりません`);
+                            }
+                        }
+                        availableGames.value = games;
+                    } catch (error) {
+                        console.error('設定ファイルの読み込みエラー:', error);
+                    }
+                };
+
+                // ゲーム選択
+                const selectGame = async (gameId) => {
+                    try {
+                        const response = await fetch(`${gameId}_zukan_data.json`);
+                        const data = await response.json();
+                        
+                        // 進捗データを復元
+                        const saved = localStorage.getItem(`pokemonProgress_${gameId}`);
+                        if (saved) {
+                            const savedData = JSON.parse(saved);
+                            data.pokemon.forEach(pokemon => {
+                                const savedPokemon = savedData.find(p => p.id === pokemon.id);
+                                if (savedPokemon) {
+                                    pokemon.caught = savedPokemon.caught;
+                                }
+                            });
+                        }
+                        
+                        zukanData.value = data;
+                        selectedGame.value = availableGames.value.find(g => g.id === gameId);
+                        
+                        // 選択したゲームをローカルストレージに保存
+                        localStorage.setItem('selectedGame', gameId);
+                        
+                    } catch (error) {
+                        console.error('ゲームデータの読み込みエラー:', error);
+                    }
+                };
+
+                // ゲーム選択画面に戻る
+                const backToGameSelection = () => {
+                    selectedGame.value = null;
+                    zukanData.value = { stats: {}, pokemon: [] };
+                    localStorage.removeItem('selectedGame');
+                };
+
+                // 重複排除ロジック：ポケモンがどの図鑑で「メイン表示」されるべきかを判定
+                const getPokemonPrimaryRegion = (pokemon) => {
+                    if (!pokemon.regions || pokemon.regions.length === 0) return null;
+                    if (pokemon.regions.length === 1) return pokemon.regions[0];
+                    
+                    // 優先順位: paldea → kitakami → blueberry
+                    const priority = ['paldea', 'kitakami', 'blueberry'];
+                    for (const region of priority) {
+                        if (pokemon.regions.includes(region)) {
+                            return region;
+                        }
+                    }
+                    return pokemon.regions[0]; // フォールバック
+                };
+
+                // 重複排除用の表示状態判定
+                const getPokemonDisplayState = (pokemon, currentRegion) => {
+                    const primaryRegion = getPokemonPrimaryRegion(pokemon);
+                    
+                    return {
+                        isPrimary: primaryRegion === currentRegion,
+                        isGrayedOut: primaryRegion !== currentRegion && pokemon.regions.includes(currentRegion),
+                        primaryRegion: primaryRegion
+                    };
+                };
+
+                // 計算されたプロパティ
+                const filteredPokemon = computed(() => {
+                    let filtered = zukanData.value.pokemon || [];
+
+                    // 図鑑フィルター
+                    if (filters.value.region) {
+                        if (filters.value.region === 'duplicates') {
+                            filtered = filtered.filter(p => p.regions.length > 1);
+                        } else if (filters.value.region === 'unique') {
+                            filtered = filtered.filter(p => p.regions.length === 1);
+                        } else {
+                            filtered = filtered.filter(p => p.regions.includes(filters.value.region));
+                        }
+                    }
+
+                    // ステータスフィルター
+                    if (filters.value.status === 'caught') {
+                        filtered = filtered.filter(p => p.caught);
+                    } else if (filters.value.status === 'not-caught') {
+                        filtered = filtered.filter(p => !p.caught);
+                    }
+
+                    // 名前検索
+                    if (filters.value.search) {
+                        const search = filters.value.search.toLowerCase();
+                        filtered = filtered.filter(p => p.name.toLowerCase().includes(search));
+                    }
+
+                    // 重複排除表示状態を各ポケモンに追加
+                    if (filters.value.region && filters.value.region !== 'duplicates' && filters.value.region !== 'unique') {
+                        filtered = filtered.map(pokemon => ({
+                            ...pokemon,
+                            displayState: getPokemonDisplayState(pokemon, filters.value.region)
+                        }));
+                    }
+
+                    return filtered;
+                });
+
+                const caughtCount = computed(() => {
+                    return zukanData.value.pokemon.filter(p => p.caught).length;
+                });
+
+                const remainingCount = computed(() => {
+                    return zukanData.value.pokemon.length - caughtCount.value;
+                });
+
+                const progressPercent = computed(() => {
+                    const total = zukanData.value.pokemon.length;
+                    return total > 0 ? Math.round((caughtCount.value / total) * 100) : 0;
+                });
+
+                const uniquePokemonCount = computed(() => {
+                    return zukanData.value.pokemon.filter(p => p.regions.length === 1).length;
+                });
+
+                // メソッド
+                const toggleCaught = (pokemonId) => {
+                    const pokemon = zukanData.value.pokemon.find(p => p.id === pokemonId);
+                    if (pokemon) {
+                        pokemon.caught = !pokemon.caught;
+                        
+                        // ゲーム別にローカルストレージに保存
+                        const gameId = selectedGame.value.id;
+                        const progressData = zukanData.value.pokemon.map(p => ({
+                            id: p.id,
+                            caught: p.caught
+                        }));
+                        localStorage.setItem(`pokemonProgress_${gameId}`, JSON.stringify(progressData));
+                    }
+                };
+
+                const resetFilters = () => {
+                    filters.value = {
+                        region: '',
+                        status: '',
+                        search: ''
+                    };
+                };
+
+                const getRegionName = (regionId) => {
+                    if (!selectedGame.value) return regionId;
+                    const region = selectedGame.value.regions.find(r => r.id === regionId);
+                    return region ? region.name : regionId;
+                };
+
+                const getRegionClass = (regionId) => {
+                    const classes = {
+                        paldea: 'bg-green-100 text-green-800',
+                        kitakami: 'bg-orange-100 text-orange-800',
+                        blueberry: 'bg-purple-100 text-purple-800',
+                        galar: 'bg-blue-100 text-blue-800',
+                        armor: 'bg-yellow-100 text-yellow-800',
+                        crown: 'bg-red-100 text-red-800'
+                    };
+                    return classes[regionId] || 'bg-gray-100 text-gray-800';
+                };
+
+                const getGameIcon = (gameId) => {
+                    const icons = {
+                        paldea: '🏔️',
+                        galar: '⚔️',
+                        alola: '🌺',
+                        kalos: '🗼',
+                        unova: '🏙️',
+                        sinnoh: '⛰️',
+                        hoenn: '🌊',
+                        johto: '🌸',
+                        kanto: '🔥'
+                    };
+                    return icons[gameId] || '🎮';
+                };
+
+                // ライフサイクル
+                onMounted(async () => {
+                    await loadAvailableGames();
+                    
+                    // 前回選択したゲームを復元
+                    const savedGame = localStorage.getItem('selectedGame');
+                    if (savedGame && availableGames.value.find(g => g.id === savedGame)) {
+                        await selectGame(savedGame);
+                    }
+                });
+
+                return {
+                    zukanData,
+                    availableGames,
+                    selectedGame,
+                    filters,
+                    filteredPokemon,
+                    caughtCount,
+                    remainingCount,
+                    progressPercent,
+                    uniquePokemonCount,
+                    selectGame,
+                    backToGameSelection,
+                    toggleCaught,
+                    resetFilters,
+                    getRegionName,
+                    getRegionClass,
+                    getGameIcon
+                };
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

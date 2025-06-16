@@ -9,8 +9,8 @@
     "convert": "node universal-csv-converter.js",
     "convert:paldea": "node universal-csv-converter.js paldea",
     "convert:all": "node universal-csv-converter.js --all",
-    "serve": "python -m http.server 8000",
-    "dev": "python -m http.server 8000"
+    "serve": "npx serve . -p 8000",
+    "dev": "npx serve . -p 8000"
   },
   "keywords": [
     "pokemon",
