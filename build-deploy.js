@@ -29,7 +29,12 @@ const filesToCopy = [
     {
         src: 'paldea_zukan_data.json',
         dest: 'deploy/paldea_zukan_data.json',
-        description: 'ポケモンデータ'
+        description: 'パルデア図鑑データ'
+    },
+    {
+        src: 'galar_zukan_data.json',
+        dest: 'deploy/galar_zukan_data.json',
+        description: 'ガラル図鑑データ'
     },
     {
         src: 'zukan-config.json',
