@@ -1,0 +1,81 @@
+{
+  "paldea": {
+    "name": "スカーレット・バイオレット",
+    "displayName": "🏔️ パルデア図鑑",
+    "csvFile": "SV図鑑.csv",
+    "encoding": "shift_jis",
+    "regions": [
+      {
+        "id": "paldea",
+        "name": "🏔️ パルデア",
+        "columns": [0, 1]
+      },
+      {
+        "id": "kitakami",
+        "name": "🍂 キタカミ", 
+        "columns": [2, 3]
+      },
+      {
+        "id": "blueberry",
+        "name": "🫐 ブルーベリー",
+        "columns": [4, 5]
+      }
+    ]
+  },
+  "galar": {
+    "name": "ソード・シールド",
+    "displayName": "⚔️ ガラル図鑑",
+    "csvFile": "swsh_zukan.csv",
+    "encoding": "shift_jis",
+    "regions": [
+      {
+        "id": "galar",
+        "name": "⚔️ ガラル",
+        "columns": [0, 1]
+      },
+      {
+        "id": "armor",
+        "name": "🛡️ ヨロイ島",
+        "columns": [2, 3]
+      },
+      {
+        "id": "crown",
+        "name": "👑 カンムリ雪原",
+        "columns": [4, 5]
+      }
+    ]
+  },
+  "alola": {
+    "name": "サン・ムーン",
+    "displayName": "🌺 アローラ図鑑",
+    "csvFile": "sm_zukan.csv",
+    "encoding": "shift_jis",
+    "regions": [
+      {
+        "id": "alola",
+        "name": "🌺 アローラ",
+        "columns": [0, 1]
+      },
+      {
+        "id": "melemele",
+        "name": "🌴 メレメレ",
+        "columns": [2, 3]
+      },
+      {
+        "id": "akala",
+        "name": "🌋 アーカラ",
+        "columns": [4, 5]
+      },
+      {
+        "id": "ulaula",
+        "name": "🌙 ウラウラ",
+        "columns": [6, 7]
+      },
+      {
+        "id": "poni",
+        "name": "🦋 ポニ",
+        "columns": [8, 9]
+      }
+    ]
+  }
+}

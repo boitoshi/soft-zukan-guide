@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモン図鑑コンプリートガイド 🎮</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        body { font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- ヘッダー -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-purple-700 mb-2">🎮 ポケモン図鑑コンプリートガイド</h1>
+            <p class="text-gray-600">スカーレット・バイオレット完全攻略版 ✨</p>
+        </div>
+
+        <!-- 統計ダッシュボード -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+                <div class="text-2xl font-bold text-purple-600" id="totalCount">710</div>
+                <div class="text-sm text-gray-500">総ポケモン数</div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+                <div class="text-2xl font-bold text-green-600" id="caughtCount">0</div>
+                <div class="text-sm text-gray-500">ゲット済み</div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+                <div class="text-2xl font-bold text-red-600" id="remainingCount">710</div>
+                <div class="text-sm text-gray-500">未ゲット</div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+                <div class="text-2xl font-bold text-blue-600" id="progressPercent">0%</div>
+                <div class="text-sm text-gray-500">完成度</div>
+            </div>
+        </div>
+
+        <!-- フィルターエリア -->
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">🔍 フィルター</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label class="block text-sm font-medium mb-2">図鑑で絞り込み</label>
+                    <select id="regionFilter" class="w-full border rounded px-3 py-2">
+                        <option value="">すべて</option>
+                        <option value="paldea">パルデア図鑑</option>
+                        <option value="kitakami">キタカミ図鑑</option>
+                        <option value="blueberry">ブルーベリー図鑑</option>
+                        <option value="duplicates">重複ポケモン</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">ゲット状況</label>
+                    <select id="statusFilter" class="w-full border rounded px-3 py-2">
+                        <option value="">すべて</option>
+                        <option value="caught">ゲット済み</option>
+                        <option value="not-caught">未ゲット</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">ポケモン名で検索</label>
+                    <input type="text" id="nameSearch" placeholder="ポケモン名を入力..." class="w-full border rounded px-3 py-2">
+                </div>
+            </div>
+        </div>
+
+        <!-- ポケモンリスト -->
+        <div class="bg-white rounded-lg shadow">
+            <div class="p-6 border-b">
+                <h2 class="text-xl font-bold">📋 ポケモンリスト</h2>
+                <p class="text-gray-600">クリックでゲット状況を切り替え</p>
+            </div>
+            <div id="pokemonList" class="max-h-96 overflow-y-auto">
+                <!-- ポケモンリストがここに動的に生成されます -->
+            </div>
+        </div>
+
+        <!-- 重複分析セクション -->
+        <div class="mt-8 bg-white rounded-lg shadow p-6">
+            <h2 class="text-xl font-bold mb-4">📊 重複分析</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center p-4 bg-blue-50 rounded">
+                    <div class="text-2xl font-bold text-blue-600">168</div>
+                    <div class="text-sm">重複ポケモン</div>
+                </div>
+                <div class="text-center p-4 bg-green-50 rounded">
+                    <div class="text-2xl font-bold text-green-600">253</div>
+                    <div class="text-sm">パルデア専用</div>
+                </div>
+                <div class="text-center p-4 bg-purple-50 rounded">
+                    <div class="text-2xl font-bold text-purple-600">357</div>
+                    <div class="text-sm">DLC専用</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // サンプルデータ（実際のデータは外部JSONから読み込み）
+        let pokemonData = [];
+        
+        // 初期化
+        async function initialize() {
+            // 実際の使用時はここでJSONファイルを読み込み
+            // const response = await fetch('pokemon_data.json');
+            // pokemonData = await response.json();
+            
+            // デモ用サンプルデータ
+            pokemonData = [
+                {
+                    id: 1,
+                    name: "ニャオハ",
+                    regions: ["paldea"],
+                    pokedex_numbers: { paldea: 1, kitakami: null, blueberry: null },
+                    caught: false
+                },
+                {
+                    id: 2,
+                    name: "アップリュー",
+                    regions: ["paldea", "kitakami"],
+                    pokedex_numbers: { paldea: 109, kitakami: 34, blueberry: null },
+                    caught: false
+                },
+                {
+                    id: 3,
+                    name: "ドードー",
+                    regions: ["blueberry"],
+                    pokedex_numbers: { paldea: null, kitakami: null, blueberry: 1 },
+                    caught: true
+                }
+                // ... 実際のデータは710匹分
+            ];
+            
+            renderPokemonList();
+            updateStats();
+            setupEventListeners();
+        }
+
+        // ポケモンリストの描画
+        function renderPokemonList() {
+            const listContainer = document.getElementById('pokemonList');
+            const regionFilter = document.getElementById('regionFilter').value;
+            const statusFilter = document.getElementById('statusFilter').value;
+            const nameSearch = document.getElementById('nameSearch').value.toLowerCase();
+            
+            let filteredData = pokemonData.filter(pokemon => {
+                // 図鑑フィルター
+                if (regionFilter) {
+                    if (regionFilter === 'duplicates') {
+                        if (pokemon.regions.length <= 1) return false;
+                    } else {
+                        if (!pokemon.regions.includes(regionFilter)) return false;
+                    }
+                }
+                
+                // ステータスフィルター
+                if (statusFilter === 'caught' && !pokemon.caught) return false;
+                if (statusFilter === 'not-caught' && pokemon.caught) return false;
+                
+                // 名前検索
+                if (nameSearch && !pokemon.name.toLowerCase().includes(nameSearch)) return false;
+                
+                return true;
+            });
+            
+            listContainer.innerHTML = filteredData.map(pokemon => `
+                <div class="flex items-center justify-between p-4 border-b hover:bg-gray-50 cursor-pointer" 
+                     onclick="toggleCaught(${pokemon.id})">
+                    <div class="flex-1">
+                        <div class="flex items-center">
+                            <span class="text-lg font-medium ${pokemon.caught ? 'text-green-600' : 'text-gray-700'}">
+                                ${pokemon.caught ? '✅' : '⭕'} ${pokemon.name}
+                            </span>
+                            ${pokemon.regions.length > 1 ? '<span class="ml-2 text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">重複</span>' : ''}
+                        </div>
+                        <div class="text-sm text-gray-500 mt-1">
+                            ${pokemon.regions.map(region => {
+                                const regionNames = { paldea: 'パルデア', kitakami: 'キタカミ', blueberry: 'ブルーベリー' };
+                                const number = pokemon.pokedex_numbers[region];
+                                return `${regionNames[region]}図鑑 #${number}`;
+                            }).join(' / ')}
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs px-2 py-1 rounded ${pokemon.caught ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}">
+                            ${pokemon.caught ? 'ゲット済み' : '未ゲット'}
+                        </span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ゲット状況を切り替え
+        function toggleCaught(pokemonId) {
+            const pokemon = pokemonData.find(p => p.id === pokemonId);
+            if (pokemon) {
+                pokemon.caught = !pokemon.caught;
+                renderPokemonList();
+                updateStats();
+                
+                // ローカルストレージに保存（実際の使用時）
+                localStorage.setItem('pokemonProgress', JSON.stringify(pokemonData));
+            }
+        }
+
+        // 統計の更新
+        function updateStats() {
+            const total = pokemonData.length;
+            const caught = pokemonData.filter(p => p.caught).length;
+            const remaining = total - caught;
+            const progress = total > 0 ? Math.round((caught / total) * 100) : 0;
+            
+            document.getElementById('totalCount').textContent = total;
+            document.getElementById('caughtCount').textContent = caught;
+            document.getElementById('remainingCount').textContent = remaining;
+            document.getElementById('progressPercent').textContent = progress + '%';
+        }
+
+        // イベントリスナーの設定
+        function setupEventListeners() {
+            document.getElementById('regionFilter').addEventListener('change', renderPokemonList);
+            document.getElementById('statusFilter').addEventListener('change', renderPokemonList);
+            document.getElementById('nameSearch').addEventListener('input', renderPokemonList);
+        }
+
+        // ページ読み込み時に初期化
+        document.addEventListener('DOMContentLoaded', initialize);
+    </script>
+</body>
+</html>
