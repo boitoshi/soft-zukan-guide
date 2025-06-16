@@ -1,0 +1,28 @@
+{
+  "name": "soft-zukan-guide",
+  "version": "3.0.0",
+  "description": "🎮 ポケモン図鑑マスター - 全ソフト対応版",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build-deploy.js",
+    "deploy": "node build-deploy.js",
+    "convert": "node universal-csv-converter.js",
+    "convert:paldea": "node universal-csv-converter.js paldea",
+    "convert:all": "node universal-csv-converter.js --all",
+    "serve": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "pokemon",
+    "pokedex",
+    "vue",
+    "tailwindcss",
+    "scarlet",
+    "violet"
+  ],
+  "author": "Pokemon Zukan Master Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

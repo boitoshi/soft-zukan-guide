@@ -61,26 +61,49 @@
 
 ### ファイル構成
 ```
-pokemon-zukan-master/
-├── index.html              # メインアプリケーション（Vue.js）
-├── pokemon_data.json       # ポケモンデータ（自動生成）
-├── convert-csv-to-json.js  # データ変換スクリプト
-├── pokemon_data.csv        # UTF-8変換後のCSVデータ
-├── SV図鑑.csv              # 元データ（Shift-JIS）
-├── app.html                # 旧版HTMLアプリ（参考用）
-├── README.md               # プロジェクト説明
-├── CLAUDE.md               # このファイル
-└── .gitignore              # Git除外設定
+soft-zukan-guide/
+├── 📝 開発用ファイル
+│   ├── index.html                    # 🎯 メインアプリケーション（開発用マスター）
+│   ├── paldea_zukan_data.json       # 📊 ポケモンデータ（自動生成）
+│   ├── zukan-config.json            # ⚙️ 図鑑設定ファイル
+│   ├── universal-csv-converter.js   # 🔧 汎用データ変換スクリプト
+│   ├── build-deploy.js              # 🚀 デプロイ用ビルドスクリプト
+│   ├── package.json                 # 📦 npm設定・スクリプト定義
+│   └── SV図鑑.csv                   # 📄 元データ（Shift-JIS）
+├── 🚀 デプロイ用フォルダ（自動生成）
+│   ├── deploy/
+│   │   ├── index.html              # 🔄 自動コピー（本番用）
+│   │   ├── paldea_zukan_data.json  # 🔄 自動コピー（本番用データ）
+│   │   ├── zukan-config.json       # 🔄 自動コピー（本番用設定）
+│   │   └── README.md               # ℹ️ デプロイフォルダ説明
+├── 📚 ドキュメント
+│   ├── README.md                    # 🎮 プロジェクト説明
+│   ├── CLAUDE.md                    # 👨‍💻 このファイル（開発ガイドライン）
+│   └── .gitignore                   # 🚫 Git除外設定
+└── 🤖 CI/CD
+    └── .github/workflows/deploy.yml # ⚡ GitHub Actions自動デプロイ
 ```
 
 ## 便利なコマンド
 
-### データ変換・開発用
+### 🔧 開発・ビルド用コマンド
 ```bash
-node convert-csv-to-json.js  # CSVからJSONへ変換
-python -m http.server 8000   # 開発サーバー起動
-php -S localhost:8000        # PHPサーバー起動
-npx serve .                  # Node.jsサーバー起動
+# 📊 データ変換
+npm run convert                          # デフォルト変換
+npm run convert:paldea                   # パルデア図鑑のみ変換
+npm run convert:all                      # 全図鑑を変換
+node universal-csv-converter.js --list  # 利用可能図鑑一覧
+
+# 🚀 ビルド・デプロイ
+npm run build                            # デプロイ用ファイル生成（推奨）
+npm run deploy                           # build のエイリアス
+node build-deploy.js                     # 直接実行
+
+# 🌐 開発サーバー起動
+npm run dev                              # 開発サーバー（推奨）
+npm run serve                            # dev のエイリアス
+python -m http.server 8000               # Python直接起動
+php -S localhost:8000                    # PHP直接起動
 ```
 
 ### Claude Code用
@@ -89,66 +112,122 @@ claude           # 対話モードで開始
 claude --help    # ヘルプ表示
 ```
 
-## 推奨ワークフロー
+## 🔄 推奨ワークフロー
 
-1. **新機能開発時**
-   - フィーチャーブランチを作成
-   - Claude Codeで設計・実装を相談
-   - Vue.jsコンポーネントとして実装
-   - ブラウザでテスト実行
+### 1. **開発時のワークフロー**
+```bash
+# 🛠️ 開発開始
+git checkout -b feature/new-awesome-feature
+npm run dev                              # 開発サーバー起動
 
-2. **データ更新時**
-   - CSVファイルを更新
-   - `node convert-csv-to-json.js` でJSONに変換
-   - アプリで表示確認
+# ✏️ 編集
+# ルートの index.html を編集（メインソース）
+# 必要に応じて CSS やデータ変換スクリプトも編集
 
-3. **UI/UX改善時**
-   - 既存デザインを分析
-   - TailwindCSSクラスで調整
-   - レスポンシブ対応も確認
+# 🔍 ローカルテスト
+# http://localhost:8000 でテスト
 
-## よくあるタスク
+# 🚀 デプロイ準備
+npm run build                            # deploy/ フォルダを更新
+git add . && git commit -m "新機能追加"
+git push origin feature/new-awesome-feature
+```
 
-### ポケモンデータ関連
-「新しいポケモンゲームに対応してください」
-「図鑑データの形式を変更してください」
-「統計情報を追加してください」
+### 2. **データ更新時**
+```bash
+# 📊 CSVファイルを更新
+# SV図鑑.csv などを編集
 
-### UI/UX改善
-「フィルター機能を追加してください」
-「アニメーション効果を改善してください」
-「ダークモードに対応してください」
+# 🔄 データ変換
+npm run convert:all                      # JSON変換
 
-### パフォーマンス最適化
-「ポケモンリストの表示を高速化してください」
-「データの読み込み速度を改善してください」
+# 🚀 デプロイファイル更新  
+npm run build                            # deploy/ に反映
 
-### デバッグ
-「フィルターが正しく動作しません」
-「データが表示されません」
-「進捗が保存されません」
+# ✅ 確認・コミット
+npm run dev                              # ローカル確認
+git add . && git commit -m "ポケモンデータ更新"
+```
 
-## 注意事項
+### 3. **本番デプロイ**
+```bash
+# 🌍 本番反映
+git checkout main
+git merge feature/new-awesome-feature
+git push origin main                     # GitHub Actions が自動実行！
 
-### ポケモンデータの取り扱い
-- CSVファイルはShift-JISエンコーディングで保存される場合があるので、UTF-8に変換してから処理する
-- データ変更時は必ず `convert-csv-to-json.js` を実行してJSONを更新する
-- 元データ（SV図鑑.csv）は変更せず、変換後のデータを編集する
+# 🎉 完了！GitHub Pages に自動デプロイ
+```
 
-### アプリケーション開発
-- Vue.js 3 Composition APIを使用する
-- TailwindCSSのクラス名を使用してスタイリング
-- ローカルストレージを使用した進捗保存に配慮
-- HTTPサーバーで起動が必要（file://プロトコルでは動作しない）
+## 🎯 よくあるタスクと対応方法
 
-### 汎用性を保つための配慮
-- 他のポケモンゲームにも対応できるような設計を心がける
-- 図鑑名やポケモン数がハードコードされないようにする
-- データ構造の変更に柔軟に対応できるようにする
+### 🔧 開発関連のタスク
 
-## トラブルシューティング
+#### ポケモンデータ関連
+| タスク | 対応方法 |
+|-------|---------|
+| 「新しいポケモンゲームに対応してください」 | 1. CSVファイルを追加<br>2. `zukan-config.json`に設定追加<br>3. `npm run convert:all`でデータ変換<br>4. `npm run build`でデプロイ準備 |
+| 「図鑑データの形式を変更してください」 | 1. `universal-csv-converter.js`を編集<br>2. テスト変換実行<br>3. `index.html`の表示ロジック調整 |
+| 「統計情報を追加してください」 | 1. `index.html`のVue.jsコンポーネント編集<br>2. 計算ロジックを追加<br>3. TailwindCSSでスタイリング |
 
-### Claude Codeが起動しない
+#### UI/UX改善
+| タスク | 対応方法 |
+|-------|---------|
+| 「フィルター機能を追加してください」 | 1. `index.html`のfiltersオブジェクト拡張<br>2. filteredPokemon computed追加<br>3. HTMLテンプレート更新 |
+| 「アニメーション効果を改善してください」 | 1. Vue.js transitionコンポーネント活用<br>2. TailwindCSS transition-*クラス使用<br>3. カスタムCSSアニメーション追加 |
+| 「ダークモードに対応してください」 | 1. Vue.js reactiveでテーマ状態管理<br>2. TailwindCSS dark:クラス活用<br>3. localStorageでテーマ保存 |
+
+#### パフォーマンス最適化
+| タスク | 対応方法 |
+|-------|---------|
+| 「ポケモンリストの表示を高速化してください」 | 1. Vue.js v-for key最適化<br>2. 仮想スクロール検討<br>3. 表示件数制限 |
+| 「データの読み込み速度を改善してください」 | 1. JSONファイル圧縮<br>2. 遅延読み込み実装<br>3. Service Worker活用 |
+
+### 🐛 デバッグ関連
+
+#### よくあるエラーと解決方法
+| エラー | 原因 | 解決方法 |
+|-------|------|---------|
+| 「フィルターが正しく動作しません」 | Vue.js reactivityの問題 | 1. `ref()`や`reactive()`使用確認<br>2. computed再計算確認<br>3. ブラウザコンソールでエラーチェック |
+| 「データが表示されません」 | JSONファイル読み込み失敗 | 1. HTTPサーバーで起動確認<br>2. ファイルパス確認<br>3. `npm run build`でファイル更新 |
+| 「進捗が保存されません」 | localStorage問題 | 1. ブラウザのプライベートモード確認<br>2. localStorageクォータ確認<br>3. JSON.stringify/parse確認 |
+| 「ビルドが失敗します」 | Node.js環境問題 | 1. Node.js 14+ インストール確認<br>2. `package.json`のscripts確認<br>3. ファイル権限確認 |
+
+## ⚠️ 重要な注意事項
+
+### 🔄 ファイル管理の鉄則
+| ⭕ やること | ❌ やっちゃダメ |
+|------------|----------------|
+| ✅ ルートの `index.html` を編集 | ❌ `deploy/index.html` を直接編集 |
+| ✅ `npm run build` でデプロイ準備 | ❌ `deploy/` フォルダを手動で更新 |
+| ✅ Git で `deploy/` も一緒にコミット | ❌ `deploy/` を `.gitignore` に追加 |
+
+### 📊 ポケモンデータの取り扱い
+- **エンコーディング**: CSVファイルはShift-JIS → UTF-8変換が必要
+- **変換フロー**: `SV図鑑.csv` → `npm run convert` → `*.json` 生成
+- **元データ保護**: `SV図鑑.csv`は変更せず、設定で調整する
+
+### 🎨 アプリケーション開発ルール
+- **Vue.js**: Composition API必須、Options APIは使わない
+- **スタイリング**: TailwindCSSクラス使用、カスタムCSSは最小限
+- **状態管理**: Vue 3のreactivity活用、複雑な場合はPinia検討
+- **サーバー**: 必ずHTTPサーバーで起動（`file://`は動作しない）
+
+### 🌍 汎用性を保つ配慮
+- **設定駆動**: ハードコードを避け、`zukan-config.json`で制御
+- **多言語対応**: 将来の国際化を考慮した構造
+- **アクセシビリティ**: セマンティックHTML、ARIA属性の活用
+
+### 🚀 デプロイ関連
+- **ビルド必須**: デプロイ前に必ず `npm run build` 実行
+- **環境分離**: 開発用（ルート）と本番用（deploy/）を混同しない
+- **自動化推奨**: 手動デプロイよりGitHub Actions活用
+
+## 🛠️ トラブルシューティング
+
+### 🔧 開発環境の問題
+
+#### Claude Codeが起動しない
 ```bash
 # 再インストール
 npm uninstall -g @anthropic-ai/claude-code
@@ -158,10 +237,105 @@ npm install -g @anthropic-ai/claude-code
 claude auth status
 ```
 
-### Codespacesが重い
-- 不要なファイルは.gitignoreに追加
-- 大きなファイルはGit LFSを使用
-- ターミナルの履歴をクリア
+#### ローカルサーバーが起動しない
+```bash
+# Python版
+python3 -m http.server 8000  # Python 3
+python -m SimpleHTTPServer 8000  # Python 2
+
+# Node.js版（要インストール）
+npm install -g serve
+npx serve . -p 8000
+
+# その他の方法
+php -S localhost:8000  # PHP
+ruby -run -e httpd . -p 8000  # Ruby
+```
+
+#### ビルドスクリプトでエラー
+```bash
+# 権限エラーの場合
+chmod +x build-deploy.js
+
+# Node.js バージョン確認
+node --version  # 14.0.0以上が必要
+
+# ファイル存在確認
+ls -la index.html paldea_zukan_data.json zukan-config.json
+```
+
+### 📊 データ関連の問題
+
+#### CSVファイルが文字化け
+```bash
+# 文字エンコーディング確認
+file -I SV図鑑.csv
+
+# 手動でUTF-8変換（macOS/Linux）
+iconv -f shift_jis -t utf-8 SV図鑑.csv > SV図鑑_utf8.csv
+
+# Windows PowerShell
+Get-Content "SV図鑑.csv" -Encoding Default | Set-Content "SV図鑑_utf8.csv" -Encoding UTF8
+```
+
+#### JSONデータが古い
+```bash
+# 全データを再変換
+npm run convert:all
+
+# 特定ゲームのみ再変換
+npm run convert:paldea
+
+# 変換後にビルド
+npm run build
+```
+
+### 🌐 デプロイ関連の問題
+
+#### GitHub Actionsが失敗
+1. **Actions タブ**でエラーログ確認
+2. **Node.js バージョン**確認（18推奨）
+3. **ファイル権限**確認（特にLinux環境）
+4. **CSVファイルのエンコーディング**確認
+
+#### GitHub Pagesにアクセスできない
+1. **Settings → Pages**で有効化確認
+2. **カスタムドメイン**設定確認
+3. **DNS設定**確認（カスタムドメイン使用時）
+4. **HTTPS強制**の設定確認
+
+### 🎮 アプリケーションの問題
+
+#### データが表示されない
+```javascript
+// ブラウザの開発者ツールで確認
+console.log('Current URL:', window.location.href);
+console.log('Is HTTPS?', window.location.protocol === 'https:');
+
+// ネットワークタブでファイル読み込み確認
+// 404エラーがないかチェック
+```
+
+#### フィルターが動作しない
+```javascript
+// Vue.js Devtools でリアクティブデータ確認
+// filters.value の変更が反映されているかチェック
+```
+
+### 🔍 デバッグのコツ
+
+#### ブラウザ開発者ツールの活用
+1. **Console**: エラーメッセージ確認
+2. **Network**: ファイル読み込み状況
+3. **Application**: localStorage の内容
+4. **Vue Devtools**: Vue.js コンポーネント状態
+
+#### ログ出力の追加
+```javascript
+// デバッグ用ログ追加例
+console.log('🔍 Debug: filters changed', filters.value);
+console.log('📊 Debug: filtered pokemon count', filteredPokemon.value.length);
+```
 
 ## セキュリティとプライバシー
 
@@ -228,6 +402,36 @@ claude auth status
 
 このテンプレートを使用して効率的な開発を行ってください。質問や改善提案があれば、Issueやプルリクエストでお知らせください。
 
+## 🎉 最後に
+
+### 📈 プロジェクトの成長に合わせて
+
+このCLAUDE.mdファイルは、プロジェクトの成長に合わせて定期的に見直し、更新していくことが重要だよ！✨
+
+### 🤝 コミュニティとの連携
+
+- **Issues**: バグ報告や機能要望はGitHub Issuesで
+- **Pull Requests**: 改善提案は歓迎！
+- **Discussions**: アイデアやベストプラクティスの共有
+
+### 📚 さらなる学習リソース
+
+#### 公式ドキュメント
+- [Vue.js 3 公式ガイド](https://v3.ja.vuejs.org/)
+- [TailwindCSS 公式ドキュメント](https://tailwindcss.com/docs)
+- [GitHub Actions 公式ドキュメント](https://docs.github.com/ja/actions)
+
+#### おすすめツール
+- [Vue Devtools](https://devtools.vuejs.org/) - Vue.js デバッグ必須ツール
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - VS Code拡張
+- [GitHub CLI](https://cli.github.com/) - コマンドラインからGitHub操作
+
+### 🎮 Happy Pokémon Development!
+
+このプロジェクトで、楽しく効率的なポケモン図鑑コンプリートと、モダンな Web 開発の両方を楽しんでね〜！🎉✨
+
+何か困ったことがあったら、いつでもClaude Codeに相談してよ！一緒に素晴らしいアプリを作っていこう！🚀
+
 ---
 
-**💡 ヒント**: CLAUDE.mdファイルを定期的に見直し、プロジェクトの成長に合わせて内容を更新していくことをお勧めします！
+**💡 最終更新**: このドキュメントは最新のプロジェクト構造（ビルドスクリプト導入・自動デプロイ対応）に合わせて更新されています。
