@@ -15,9 +15,9 @@ const path = require('path');
 console.log('🗡️ 剣盾図鑑CSV（新版）の変換を開始...');
 
 // 入力ファイル確認
-const inputFile = '剣盾図鑑.csv';
+const inputFile = '../data/raw/剣盾図鑑.csv';
 if (!fs.existsSync(inputFile)) {
-    console.error('❌ 剣盾図鑑.csv が見つかりません');
+    console.error('❌ data/raw/剣盾図鑑.csv が見つかりません');
     process.exit(1);
 }
 
@@ -126,11 +126,11 @@ const jsonData = {
 };
 
 // JSONファイルに出力
-const outputFile = 'galar_zukan_data.json';
+const outputFile = '../data/galar_zukan_data.json';
 fs.writeFileSync(outputFile, JSON.stringify(jsonData, null, 2), 'utf-8');
 
 // 設定ファイルの更新
-const configFile = 'zukan-config.json';
+const configFile = '../zukan-config.json';
 let config = {};
 
 try {

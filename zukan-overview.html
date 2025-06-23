@@ -242,6 +242,25 @@
                                         </td>
                                         <td class="px-3 py-2">
                                             <div class="flex flex-wrap gap-1">
+                                                <!-- バージョン限定表示 -->
+                                                <div v-if="getVersionInfo(pokemon)" class="relative group">
+                                                    <span :class="[
+                                                              'text-xs px-1 py-0.5 rounded font-medium cursor-help',
+                                                              getVersionInfo(pokemon).color || 'bg-gray-100 text-gray-800'
+                                                          ]">
+                                                        {{ getVersionInfo(pokemon).display }}
+                                                    </span>
+                                                    <!-- ツールチップ -->
+                                                    <div v-if="getAlternativeSources(pokemon).length > 0" 
+                                                         class="absolute left-0 top-full mt-1 bg-gray-800 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 whitespace-nowrap">
+                                                        <div class="font-medium mb-1">他ソフトでも入手可能:</div>
+                                                        <div v-for="alt in getAlternativeSources(pokemon)" :key="alt.seriesId" class="flex items-center gap-1">
+                                                            <span>{{ alt.icon }}</span>
+                                                            <span>{{ alt.name }}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 他の図鑑の表示 -->
                                                 <span v-for="region in pokemon.regions" :key="region"
                                                       v-if="region !== activeTab"
                                                       :class="[
@@ -273,6 +292,25 @@
                                             <div class="flex-1 min-w-0">
                                                 <div class="font-medium text-gray-900 mb-1">{{ pokemon.name }}</div>
                                                 <div class="flex flex-wrap gap-1">
+                                                    <!-- バージョン限定表示 -->
+                                                    <div v-if="getVersionInfo(pokemon)" class="relative group">
+                                                        <span :class="[
+                                                                  'text-xs px-2 py-1 rounded-full font-medium cursor-help',
+                                                                  getVersionInfo(pokemon).color || 'bg-gray-100 text-gray-800'
+                                                              ]">
+                                                            {{ getVersionInfo(pokemon).display }}
+                                                        </span>
+                                                        <!-- ツールチップ -->
+                                                        <div v-if="getAlternativeSources(pokemon).length > 0" 
+                                                             class="absolute left-0 top-full mt-1 bg-gray-800 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 whitespace-nowrap">
+                                                            <div class="font-medium mb-1">他ソフトでも入手可能:</div>
+                                                            <div v-for="alt in getAlternativeSources(pokemon)" :key="alt.seriesId" class="flex items-center gap-1">
+                                                                <span>{{ alt.icon }}</span>
+                                                                <span>{{ alt.name }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 他の図鑑の表示 -->
                                                     <span v-for="region in pokemon.regions" :key="region"
                                                           v-if="region !== activeTab"
                                                           :class="[
@@ -298,6 +336,25 @@
                                             <div class="flex-1 min-w-0">
                                                 <div class="font-medium text-gray-900 mb-1">{{ pokemon.name }}</div>
                                                 <div class="flex flex-wrap gap-1">
+                                                    <!-- バージョン限定表示 -->
+                                                    <div v-if="getVersionInfo(pokemon)" class="relative group">
+                                                        <span :class="[
+                                                                  'text-xs px-2 py-1 rounded-full font-medium cursor-help',
+                                                                  getVersionInfo(pokemon).color || 'bg-gray-100 text-gray-800'
+                                                              ]">
+                                                            {{ getVersionInfo(pokemon).display }}
+                                                        </span>
+                                                        <!-- ツールチップ -->
+                                                        <div v-if="getAlternativeSources(pokemon).length > 0" 
+                                                             class="absolute left-0 top-full mt-1 bg-gray-800 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 whitespace-nowrap">
+                                                            <div class="font-medium mb-1">他ソフトでも入手可能:</div>
+                                                            <div v-for="alt in getAlternativeSources(pokemon)" :key="alt.seriesId" class="flex items-center gap-1">
+                                                                <span>{{ alt.icon }}</span>
+                                                                <span>{{ alt.name }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 他の図鑑の表示 -->
                                                     <span v-for="region in pokemon.regions" :key="region"
                                                           v-if="region !== activeTab"
                                                           :class="[
@@ -521,6 +578,72 @@
                     return classes[regionId] || 'bg-gray-100 text-gray-800';
                 };
 
+                // バージョン限定情報を取得（現在のゲーム専用）
+                const getVersionInfo = (pokemon) => {
+                    if (!pokemon.versions || !selectedGame.value) return null;
+                    
+                    const gameConfig = selectedGame.value;
+                    if (!gameConfig.versions) return null;
+                    
+                    // 現在のゲームのバージョンのみをチェック
+                    const gameVersions = Object.keys(gameConfig.versions);
+                    const availableVersions = gameVersions.filter(version => pokemon.versions[version]);
+                    
+                    if (availableVersions.length === 0) {
+                        return { type: 'none', display: '❌ 入手不可' };
+                    } else if (availableVersions.length === gameVersions.length) {
+                        return { type: 'both', display: '✅ 両バージョン' };
+                    } else {
+                        const version = availableVersions[0];
+                        const versionConfig = gameConfig.versions[version];
+                        return {
+                            type: 'exclusive',
+                            version: version,
+                            display: `${versionConfig.icon} ${versionConfig.name}限定`,
+                            color: versionConfig.color
+                        };
+                    }
+                };
+
+                // 他ソフトでの入手可能性をチェック
+                const getAlternativeSources = (pokemon) => {
+                    if (!pokemon.availableIn || !selectedGame.value) return [];
+                    
+                    const currentSeriesId = selectedGame.value.seriesId;
+                    const alternatives = [];
+                    
+                    // 他のソフトシリーズで入手可能かチェック
+                    Object.entries(pokemon.availableIn).forEach(([seriesId, available]) => {
+                        if (seriesId !== currentSeriesId && available) {
+                            // ソフトシリーズ名を取得
+                            const seriesNames = {
+                                'sv': 'スカーレット・バイオレット',
+                                'swsh': 'ソード・シールド', 
+                                'sm': 'サン・ムーン',
+                                'xy': 'X・Y',
+                                'bw': 'ブラック・ホワイト'
+                            };
+                            const seriesIcons = {
+                                'sv': '🏔️',
+                                'swsh': '⚔️',
+                                'sm': '🌺',
+                                'xy': '🗼',
+                                'bw': '🏙️'
+                            };
+                            
+                            if (seriesNames[seriesId]) {
+                                alternatives.push({
+                                    seriesId,
+                                    name: seriesNames[seriesId],
+                                    icon: seriesIcons[seriesId] || '🎮'
+                                });
+                            }
+                        }
+                    });
+                    
+                    return alternatives;
+                };
+
                 // 重複フィルターの排他的切り替え
                 const toggleDuplicateFilter = (type) => {
                     if (type === 'only') {
@@ -586,6 +709,8 @@
                     getRegionIcon,
                     getGameIcon,
                     getRegionBadgeClass,
+                    getVersionInfo,
+                    getAlternativeSources,
                     toggleDuplicateFilter,
                     resetFilters,
                     scrollToTop,

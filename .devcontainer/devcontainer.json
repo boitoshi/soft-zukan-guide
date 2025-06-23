@@ -1,19 +1,65 @@
 {
-  "name": "Claude Code Space",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "name": "🎮 ポケモン図鑑マスター開発環境",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
   "customizations": {
     "vscode": {
-      "extensions": [
-        "ms-vscode.vscode-typescript-next",
-        "esbenp.prettier-vscode",
-        "ms-vscode.vscode-json"
-      ],
       "settings": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "files.eol": "\n",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "explicit"
+        },
+        "emmet.includeLanguages": {
+          "vue": "html"
+        },
+        "typescript.preferences.quoteStyle": "single",
+        "javascript.preferences.quoteStyle": "single",
         "terminal.integrated.defaultProfile.linux": "bash"
-      }
+      },
+      "extensions": [
+        "Vue.vscode-typescript-vue-plugin",
+        "ms-vscode.vscode-typescript-next",
+        "bradlc.vscode-tailwindcss",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.path-intellisense",
+        "ms-vscode.vscode-json",
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens",
+        "ms-vscode.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "PKief.material-icon-theme",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ]
     }
   },
-  "forwardPorts": [3000, 8000],
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+
+  "forwardPorts": [8000, 3000, 5173],
+  "portsAttributes": {
+    "8000": {
+      "label": "🌐 開発サーバー (serve)",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "⚡ Vue DevServer",
+      "onAutoForward": "notify"
+    },
+    "5173": {
+      "label": "🚀 Vite DevServer",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code serve && echo '🎉 ポケモン図鑑マスター開発環境の準備完了！\\n\\n📝 開発を始める手順:\\n1. npm run dev でサーバー起動\\n2. ポート8000でアクセス\\n3. index.htmlを編集してアプリ開発\\n\\n🚀 Happy Pokémon Development!' && ls -la",
+  
   "remoteUser": "node"
 }

@@ -149,11 +149,11 @@ const jsonData = {
 };
 
 // JSONファイルに出力
-const outputFile = 'galar_zukan_data.json';
+const outputFile = '../data/galar_zukan_data.json';
 fs.writeFileSync(outputFile, JSON.stringify(jsonData, null, 2), 'utf-8');
 
 // 設定ファイルの更新
-const configFile = 'zukan-config.json';
+const configFile = '../zukan-config.json';
 let config = {};
 
 try {

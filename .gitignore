@@ -43,6 +43,7 @@ out/
 # Temporary files
 tmp/
 temp/
+temp_*.csv
 
 # Local environment variables
 .env

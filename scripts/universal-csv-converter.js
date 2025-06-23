@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 設定ファイルを読み込み
-const config = JSON.parse(fs.readFileSync('zukan-config.json', 'utf8'));
+const config = JSON.parse(fs.readFileSync('../zukan-config.json', 'utf8'));
 
 /**
  * 汎用CSV→JSON変換関数
@@ -117,7 +117,7 @@ function convertZukanData(gameId) {
       pokemon: pokemonData
     };
 
-    const outputFile = `${gameId}_zukan_data.json`;
+    const outputFile = `../data/${gameId}_zukan_data.json`;
     fs.writeFileSync(outputFile, JSON.stringify(outputData, null, 2));
 
     console.log(`\n🎉 変換完了！ファイル: ${outputFile}`);

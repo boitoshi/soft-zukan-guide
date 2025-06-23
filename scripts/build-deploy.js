@@ -14,38 +14,38 @@ const path = require('path');
 
 console.log('🚀 デプロイ用ビルドを開始...');
 
-// コピーするファイル一覧
+// コピーするファイル一覧（ルートディレクトリからの相対パス）
 const filesToCopy = [
     {
-        src: 'index.html',
-        dest: 'deploy/index.html',
+        src: '../index.html',
+        dest: '../deploy/index.html',
         description: 'メインアプリケーション'
     },
     {
-        src: 'zukan-overview.html',
-        dest: 'deploy/zukan-overview.html',
+        src: '../zukan-overview.html',
+        dest: '../deploy/zukan-overview.html',
         description: '図鑑一覧タブ表示'
     },
     {
-        src: 'paldea_zukan_data.json',
-        dest: 'deploy/paldea_zukan_data.json',
+        src: '../data/paldea_zukan_data.json',
+        dest: '../deploy/paldea_zukan_data.json',
         description: 'パルデア図鑑データ'
     },
     {
-        src: 'galar_zukan_data.json',
-        dest: 'deploy/galar_zukan_data.json',
+        src: '../data/galar_zukan_data.json',
+        dest: '../deploy/galar_zukan_data.json',
         description: 'ガラル図鑑データ'
     },
     {
-        src: 'zukan-config.json',
-        dest: 'deploy/zukan-config.json',
+        src: '../zukan-config.json',
+        dest: '../deploy/zukan-config.json',
         description: '図鑑設定'
     }
 ];
 
 // deploy フォルダが存在しない場合は作成
-if (!fs.existsSync('deploy')) {
-    fs.mkdirSync('deploy');
+if (!fs.existsSync('../deploy')) {
+    fs.mkdirSync('../deploy');
     console.log('📁 deploy フォルダを作成しました');
 }
 
