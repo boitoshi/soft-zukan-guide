@@ -1,31 +1,26 @@
 {
-  "name": "🎮 ポケモン図鑑マスター開発環境",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
-  
+  "name": "✨ Claude + ポケモン図鑑マスター統合環境",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "TZ": "${localEnv:TZ:Asia/Tokyo}" // 時間設定を日本に✨
+    }
+  },
+  "runArgs": [
+    "--cap-add=NET_ADMIN",
+    "--cap-add=NET_RAW"
+  ],
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-
   "customizations": {
     "vscode": {
-      "settings": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "editor.detectIndentation": false,
-        "files.eol": "\n",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-          "source.fixAll": "explicit"
-        },
-        "emmet.includeLanguages": {
-          "vue": "html"
-        },
-        "typescript.preferences.quoteStyle": "single",
-        "javascript.preferences.quoteStyle": "single",
-        "terminal.integrated.defaultProfile.linux": "bash"
-      },
       "extensions": [
+        // Claude系 + ポケモン系 開発向け
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
         "Vue.vscode-typescript-vue-plugin",
         "ms-vscode.vscode-typescript-next",
         "bradlc.vscode-tailwindcss",
@@ -34,15 +29,39 @@
         "ms-vscode.vscode-json",
         "streetsidesoftware.code-spell-checker",
         "usernamehw.errorlens",
-        "ms-vscode.vscode-eslint",
-        "esbenp.prettier-vscode",
         "PKief.material-icon-theme",
         "GitHub.copilot",
         "GitHub.copilot-chat"
-      ]
+      ],
+      "settings": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "explicit",
+          "source.fixAll.eslint": "explicit"
+        },
+        "emmet.includeLanguages": {
+          "vue": "html"
+        },
+        "typescript.preferences.quoteStyle": "single",
+        "javascript.preferences.quoteStyle": "single",
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+          },
+          "zsh": {
+            "path": "zsh"
+          }
+        },
+        "files.eol": "\n"
+      }
     }
   },
-
   "forwardPorts": [8000, 3000, 5173],
   "portsAttributes": {
     "8000": {
@@ -58,8 +77,17 @@
       "onAutoForward": "notify"
     }
   },
-
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code serve && echo '🎉 ポケモン図鑑マスター開発環境の準備完了！\\n\\n📝 開発を始める手順:\\n1. npm run dev でサーバー起動\\n2. ポート8000でアクセス\\n3. index.htmlを編集してアプリ開発\\n\\n🚀 Happy Pokémon Development!' && ls -la",
-  
-  "remoteUser": "node"
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code serve && sudo /usr/local/bin/init-firewall.sh && echo '✅ Claude + Pokédex 環境セットアップ完了！'",
+  "remoteUser": "node",
+  "remoteEnv": {
+    "NODE_OPTIONS": "--max-old-space-size=4096",
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude",
+    "POWERLEVEL9K_DISABLE_GITSTATUS": "true"
+  },
+  "mounts": [
+    "source=claude-code-bashhistory,target=/commandhistory,type=volume",
+    "source=claude-code-config,target=/home/node/.claude,type=volume"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
+  "workspaceFolder": "/workspace"
 }
