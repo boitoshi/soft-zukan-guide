@@ -35,7 +35,7 @@
 
 🎮 **ポケモン図鑑マスター** - Vue 3 + TypeScript + Vite 完全版
 
-このプロジェクトはVue 3 + TypeScript + Viteの最新技術を活用したモダンなWebアプリケーションです。2025年6月にVue 3 Composition API + コンポーネント化 + TypeScript化の大幅なリファクタリングが完了しており、高い保守性と拡張性を実現しています。
+このプロジェクトはVue 3 + TypeScript + Viteの最新技術を活用したモダンなWebアプリケーションです。2025年6月にVue 3 Composition API + コンポーネント化 + TypeScript化の大幅なリファクタリングが完了し、**ソード・シールド（ガラル・ヨロイ島・カンムリ雪原図鑑）対応**も実装済みで、高い保守性と拡張性を実現しています。
 
 ### 技術的特徴
 - **Vue 3 + `<script setup>`**: 最新のSFC形式とComposition API

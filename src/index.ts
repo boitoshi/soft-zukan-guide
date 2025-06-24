@@ -29,7 +29,7 @@ export interface PokemonProgress {
 export interface ZukanRegion {
   id: string;
   name: string;
-  columns: number[];
+  columns?: number[]; // 旧形式との互換性のためオプショナル
 }
 
 export interface GameConfig {
@@ -38,8 +38,15 @@ export interface GameConfig {
   displayName: string;
   game: string;
   seriesId: string;
+  dataFile: string; // データファイルのパス
   regions: ZukanRegion[];
   stats?: ZukanStats;
+}
+
+// 新しい設定ファイル構造
+export interface ZukanConfigFile {
+  games: GameConfig[];
+  test?: any; // 旧形式のテストデータ
 }
 
 // 統計情報の型定義

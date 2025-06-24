@@ -9,7 +9,8 @@ import type {
   Pokemon,
   UseLocalStorageReturn, 
   UseGameDataReturn,
-  ZukanStats
+  ZukanStats,
+  ZukanConfigFile
 } from '../index.js'
 import type { Ref, ComputedRef } from 'vue'
 
@@ -30,21 +31,43 @@ export function useGameData(): UseGameDataReturn {
   const loadAvailableGames = async (): Promise<GameConfig[]> => {
     try {
       const configResponse = await fetch('/zukan-config.json');
-      const config = await configResponse.json() as Record<string, Omit<GameConfig, 'id'>>;
+      const config = await configResponse.json() as ZukanConfigFile;
       
       const games: GameConfig[] = [];
-      for (const [gameId, gameConfig] of Object.entries(config)) {        try {
-          const dataResponse = await fetch(`/${gameId}_zukan_data.json`);
+      
+      // 新形式: gamesプロパティから読み込み
+      if (config.games && Array.isArray(config.games)) {
+        for (const gameConfig of config.games) {
+          try {
+            const dataResponse = await fetch(gameConfig.dataFile);
+            if (dataResponse.ok) {
+              const gameData = await dataResponse.json() as ZukanData;
+              games.push({
+                ...gameConfig,
+                stats: gameData.stats
+              });
+            }
+          } catch (error) {
+            console.log(`ゲーム ${gameConfig.id} のデータが見つかりません`);
+          }
+        }
+      }
+      
+      // 旧形式との互換性: testプロパティがある場合
+      if (config.test) {
+        try {
+          const dataResponse = await fetch('/test_zukan_data.json');
           if (dataResponse.ok) {
             const gameData = await dataResponse.json() as ZukanData;
             games.push({
-              id: gameId,
-              ...gameConfig,
+              id: 'test',
+              ...config.test,
+              dataFile: '/test_zukan_data.json',
               stats: gameData.stats
             });
           }
         } catch (error) {
-          console.log(`ゲーム ${gameId} のデータが見つかりません`);
+          console.log('テストデータが見つかりません');
         }
       }
       
@@ -62,7 +85,13 @@ export function useGameData(): UseGameDataReturn {
     localStorage?: UseLocalStorageReturn
   ): Promise<ZukanData> => {
     try {
-      const response = await fetch(`/${gameId}_zukan_data.json`);
+      // ゲーム設定を取得
+      const gameInfo = availableGames.value.find(g => g.id === gameId);
+      if (!gameInfo) {
+        throw new Error(`ゲーム ${gameId} の設定が見つかりません`);
+      }
+      
+      const response = await fetch(gameInfo.dataFile);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -77,13 +106,7 @@ export function useGameData(): UseGameDataReturn {
       zukanData.value = data;
       
       // 選択されたゲーム情報を更新
-      const gameInfo = availableGames.value.find(g => g.id === gameId);
-      if (gameInfo) {
-        selectedGame.value = {
-          ...gameInfo,
-          ...data
-        };
-      }
+      selectedGame.value = gameInfo;
       
       return data;
     } catch (error) {

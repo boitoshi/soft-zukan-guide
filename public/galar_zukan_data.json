@@ -1,1 +1,6624 @@
-src/data/galar_zukan_data.json
+{
+  "stats": {
+    "total": 642,
+    "duplicates": 231,
+    "regions": {
+      "galar": {
+        "total": 435,
+        "only": 205
+      },
+      "isle_of_armor": {
+        "total": 223,
+        "only": 120
+      },
+      "crown_tundra": {
+        "total": 227,
+        "only": 86
+      }
+    }
+  },
+  "pokemon": [
+    {
+      "id": "001",
+      "name": "サルノリ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "001",
+      "name": "ヤドン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "001",
+      "name": "ユキハミ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "001",
+      "name": "ヤドン(ガラル)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "002",
+      "name": "バチンキー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "002",
+      "name": "モスノウ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "002",
+      "name": "ヤドラン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "002",
+      "name": "ヤドラン(ガラル)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "003",
+      "name": "ゴリランダー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "003",
+      "name": "ウールー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "003",
+      "name": "ヤドキング",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "003",
+      "name": "ヤドキング(ガラル)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "004",
+      "name": "ヒバニー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "004",
+      "name": "バイウールー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "004",
+      "name": "ミミロル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "005",
+      "name": "ラビフット",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "005",
+      "name": "ホシガリス",
+      "regions": [
+        "crown_tundra",
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "005",
+      "name": "ミミロップ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "006",
+      "name": "エースバーン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "006",
+      "name": "ヨクバリス",
+      "regions": [
+        "crown_tundra",
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "006",
+      "name": "ピンプク",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "007",
+      "name": "メッソン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "007",
+      "name": "ウリムー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "007",
+      "name": "ラッキー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "008",
+      "name": "ジメレオン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "008",
+      "name": "イノムー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "008",
+      "name": "ハピナス",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "009",
+      "name": "インテレオン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "009",
+      "name": "マンムー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "010",
+      "name": "サッチムシ",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "010",
+      "name": "マネネ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "011",
+      "name": "レドームシ",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "011",
+      "name": "バリヤード",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "011",
+      "name": "バリヤード(ガラル)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "011",
+      "name": "ププリン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "012",
+      "name": "イオルブ",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "012",
+      "name": "バリコオル",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "012",
+      "name": "プリン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "013",
+      "name": "キャタピー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "013",
+      "name": "ムチュール",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "013",
+      "name": "プクリン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "014",
+      "name": "トランセル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "014",
+      "name": "ルージュラ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "015",
+      "name": "バタフリー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "015",
+      "name": "エレキッド",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "016",
+      "name": "アゴジムシ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "016",
+      "name": "エレブー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "017",
+      "name": "デンヂムシ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "017",
+      "name": "エレキブル",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "017",
+      "name": "カリキリ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "018",
+      "name": "クワガノン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "018",
+      "name": "ブビィ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "018",
+      "name": "ラランテス",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "019",
+      "name": "ホーホー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "019",
+      "name": "ブーバー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "019",
+      "name": "カジッチュ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "020",
+      "name": "ヨルノズク",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "020",
+      "name": "ブーバーン",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "020",
+      "name": "アップリュー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "021",
+      "name": "ココガラ",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "021",
+      "name": "タブンネ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "021",
+      "name": "タルップル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "022",
+      "name": "アオガラス",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "022",
+      "name": "バニプッチ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "022",
+      "name": "ヤヤコマ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "023",
+      "name": "アーマーガア",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "023",
+      "name": "バニリッチ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "023",
+      "name": "ヒノヤコマ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "024",
+      "name": "バイバニラ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "024",
+      "name": "ファイアロー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "025",
+      "name": "ユキワラシ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "025",
+      "name": "コリンク",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "026",
+      "name": "マメパト",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "026",
+      "name": "オニゴーリ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "026",
+      "name": "ルクシオ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "027",
+      "name": "ハトーボー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "027",
+      "name": "ユキメノコ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "027",
+      "name": "レントラー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "028",
+      "name": "ケンホロウ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "028",
+      "name": "ニューラ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "028",
+      "name": "クレッフィ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "029",
+      "name": "クスネ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "029",
+      "name": "マニューラ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "029",
+      "name": "コマタナ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "030",
+      "name": "フォクスライ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "030",
+      "name": "フリージオ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "030",
+      "name": "キリキザン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "031",
+      "name": "ジグザグマ(ガラル)",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "031",
+      "name": "ユキカブリ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "031",
+      "name": "ケーシィ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "032",
+      "name": "マッスグマ(ガラル)",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "032",
+      "name": "ユキノオー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "032",
+      "name": "ユンゲラー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "033",
+      "name": "タチフサグマ",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "033",
+      "name": "ボクレー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "033",
+      "name": "フーディン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "034",
+      "name": "オーロット",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "034",
+      "name": "ラルトス",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "035",
+      "name": "チルット",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "035",
+      "name": "キルリア",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "036",
+      "name": "ハスボー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "036",
+      "name": "チルタリス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "036",
+      "name": "サーナイト",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "037",
+      "name": "ハスブレロ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "037",
+      "name": "ベロバー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "037",
+      "name": "エルレイド",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "038",
+      "name": "ルンパッパ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "038",
+      "name": "ギモー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "038",
+      "name": "クラブ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "039",
+      "name": "タネボー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "039",
+      "name": "オーロンゲ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "039",
+      "name": "キングラー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "040",
+      "name": "コノハナ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "040",
+      "name": "ミブリム",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "040",
+      "name": "メノクラゲ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "041",
+      "name": "ダーテング",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "041",
+      "name": "テブリム",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "041",
+      "name": "ドククラゲ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "042",
+      "name": "カムカメ",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "042",
+      "name": "ブリムオン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "042",
+      "name": "コイキング",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "043",
+      "name": "カジリガメ",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "043",
+      "name": "ピィ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "043",
+      "name": "ギャラドス",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "044",
+      "name": "チョロネコ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "044",
+      "name": "ピッピ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "044",
+      "name": "テッポウオ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "045",
+      "name": "レパルダス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "045",
+      "name": "ピクシー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "045",
+      "name": "オクタン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "046",
+      "name": "ワンパチ",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "046",
+      "name": "ミミッキュ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "046",
+      "name": "タマンタ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "047",
+      "name": "パルスワン",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "047",
+      "name": "ミカルゲ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "047",
+      "name": "マンタイン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "048",
+      "name": "ホルビー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "048",
+      "name": "ヒトモシ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "048",
+      "name": "キャモメ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "049",
+      "name": "ホルード",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "049",
+      "name": "ランプラー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "049",
+      "name": "ペリッパー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "050",
+      "name": "チラーミィ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "050",
+      "name": "シャンデラ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "050",
+      "name": "スコルピ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "051",
+      "name": "チラチーノ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "051",
+      "name": "ゴチム",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "051",
+      "name": "ドラピオン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "052",
+      "name": "アマカジ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "052",
+      "name": "ゴチミル",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "052",
+      "name": "ノコッチ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "053",
+      "name": "アママイコ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "053",
+      "name": "ゴチルゼル",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "053",
+      "name": "バッフロン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "054",
+      "name": "アマージョ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "054",
+      "name": "ユニラン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "054",
+      "name": "ベロリンガ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "055",
+      "name": "ナゾノクサ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "055",
+      "name": "ダブラン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "055",
+      "name": "ベロベルト",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "056",
+      "name": "クサイハナ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "056",
+      "name": "ランクルス",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "057",
+      "name": "ラフレシア",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "057",
+      "name": "ドッコラー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "058",
+      "name": "キレイハナ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "058",
+      "name": "ドテッコツ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "058",
+      "name": "ウパー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "059",
+      "name": "スボミー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "059",
+      "name": "ローブシン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "059",
+      "name": "ヌオー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "060",
+      "name": "ロゼリア",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "060",
+      "name": "ドジョッチ",
+      "regions": [
+        "crown_tundra",
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "060",
+      "name": "ヌメラ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "061",
+      "name": "ロズレイド",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "061",
+      "name": "ナマズン",
+      "regions": [
+        "crown_tundra",
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "061",
+      "name": "ヌメイル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "062",
+      "name": "ヌメルゴン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "063",
+      "name": "クリムガン",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "064",
+      "name": "バチュル",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "064",
+      "name": "バスラオ(赤)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "064",
+      "name": "バスラオ(青)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "064",
+      "name": "チョボマキ",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "065",
+      "name": "デンチュラ",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "065",
+      "name": "ニドラン♀",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "065",
+      "name": "アギルダー",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "066",
+      "name": "ラクライ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "066",
+      "name": "ニドリーナ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "066",
+      "name": "カブルモ",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "067",
+      "name": "ライボルト",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "067",
+      "name": "ニドクイン",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "067",
+      "name": "シュバルゴ",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "068",
+      "name": "ロコン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "068",
+      "name": "ロコン(アローラ)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "068",
+      "name": "ニドラン♂",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "068",
+      "name": "フシギダネ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "069",
+      "name": "キュウコン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "069",
+      "name": "キュウコン(アローラ)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "069",
+      "name": "ニドリーノ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "069",
+      "name": "フシギソウ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "070",
+      "name": "ガーディ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "070",
+      "name": "ニドキング",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "070",
+      "name": "フシギバナ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "071",
+      "name": "ウインディ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "071",
+      "name": "ゼニガメ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "071",
+      "name": "ジグザグマ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "072",
+      "name": "カメール",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "072",
+      "name": "マッスグマ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "073",
+      "name": "カメックス",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "074",
+      "name": "フシデ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "074",
+      "name": "イーブイ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "075",
+      "name": "ホイーガ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "075",
+      "name": "シャワーズ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "076",
+      "name": "ペンドラー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "076",
+      "name": "サンダース",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "077",
+      "name": "タマゲタケ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "077",
+      "name": "ブースター",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "078",
+      "name": "デリバード",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "078",
+      "name": "モロバレル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "078",
+      "name": "ブラッキー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "079",
+      "name": "キュワワー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "079",
+      "name": "エーフィ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "080",
+      "name": "モンジャラ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "080",
+      "name": "グレイシア",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "081",
+      "name": "モジャンボ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "081",
+      "name": "リーフィア",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "082",
+      "name": "ヤジロン",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "082",
+      "name": "グレッグル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "082",
+      "name": "ニンフィア",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "083",
+      "name": "ネンドール",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "083",
+      "name": "ドクロッグ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "083",
+      "name": "チゴラス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "084",
+      "name": "ドロバンコ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "084",
+      "name": "ピチュー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "084",
+      "name": "ガチゴラス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "085",
+      "name": "バンバドロ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "085",
+      "name": "ピカチュウ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "085",
+      "name": "アマルス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "086",
+      "name": "イシズマイ",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "086",
+      "name": "ライチュウ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "086",
+      "name": "ライチュウ(アローラ)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "086",
+      "name": "アマルルガ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "087",
+      "name": "イワパレス",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "087",
+      "name": "ゾロア",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "087",
+      "name": "ドーミラー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "088",
+      "name": "ゴビット",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "088",
+      "name": "ゾロアーク",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "088",
+      "name": "ドータクン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "089",
+      "name": "ゴルーグ",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "089",
+      "name": "ヤレユータン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "089",
+      "name": "イシヘンジン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "090",
+      "name": "ムンナ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "090",
+      "name": "ナゲツケサル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "090",
+      "name": "コオリッポ(アイス)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "090",
+      "name": "コオリッポ(ナイス)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "091",
+      "name": "ムシャーナ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "091",
+      "name": "ヘイガニ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "091",
+      "name": "シズクモ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "092",
+      "name": "ネイティ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "092",
+      "name": "シザリガー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "092",
+      "name": "オニシズクモ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "093",
+      "name": "ネイティオ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "093",
+      "name": "ウッウ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "094",
+      "name": "ヌイコグマ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "094",
+      "name": "トサキント",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "095",
+      "name": "キテルグマ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "095",
+      "name": "アズマオウ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "096",
+      "name": "サシカマス",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "097",
+      "name": "カマスジョー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "098",
+      "name": "ヒトデマン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "099",
+      "name": "スターミー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "099",
+      "name": "ヤクデ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "100",
+      "name": "ダクマ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "100",
+      "name": "マルヤクデ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "101",
+      "name": "ウーラオス(いちげき)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "101",
+      "name": "ウーラオス(れんげき)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "101",
+      "name": "アイアント",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "102",
+      "name": "エモンガ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "102",
+      "name": "クイタラン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "103",
+      "name": "デデンネ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "103",
+      "name": "ダルマッカ(ガラル)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "103",
+      "name": "ダルマッカ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "104",
+      "name": "ツチニン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "104",
+      "name": "モルペコ",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "104",
+      "name": "ヒヒダルマ(ガラル)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "104",
+      "name": "ヒヒダルマ(ダルマ・ガラル)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "104",
+      "name": "ヒヒダルマ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "104",
+      "name": "ヒヒダルマ(ダルマ)",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "105",
+      "name": "テッカニン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "105",
+      "name": "コイル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "105",
+      "name": "ポニータ(ガラル)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "105",
+      "name": "ポニータ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "106",
+      "name": "ヌケニン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "106",
+      "name": "レアコイル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "106",
+      "name": "ギャロップ(ガラル)",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "106",
+      "name": "ギャロップ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "107",
+      "name": "バルキー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "107",
+      "name": "ジバコイル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "107",
+      "name": "アブソル",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "108",
+      "name": "サワムラー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "108",
+      "name": "マーイーカ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "108",
+      "name": "ゾウドウ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "109",
+      "name": "エビワラー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "109",
+      "name": "カラマネロ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "109",
+      "name": "ダイオウドウ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "110",
+      "name": "カポエラー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "110",
+      "name": "ヨワシ(単独)",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "110",
+      "name": "ヨワシ(群れ)",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "110",
+      "name": "ドラメシヤ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "111",
+      "name": "ヤンチャム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "111",
+      "name": "キバニア",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "111",
+      "name": "ドロンチ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "112",
+      "name": "ゴロンダ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "112",
+      "name": "サメハダー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "112",
+      "name": "ドラパルト",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "113",
+      "name": "ギアル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "113",
+      "name": "ヨーテリー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "113",
+      "name": "タツベイ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "114",
+      "name": "ギギアル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "114",
+      "name": "ハーデリア",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "114",
+      "name": "コモルー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "115",
+      "name": "ギギギアル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "115",
+      "name": "ムーランド",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "115",
+      "name": "ボーマンダ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "116",
+      "name": "ミツハニー",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "116",
+      "name": "ケンタロス",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "116",
+      "name": "フカマル",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "117",
+      "name": "ビークイン",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "117",
+      "name": "ミルタンク",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "117",
+      "name": "ガバイト",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "118",
+      "name": "ストライク",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "118",
+      "name": "ガブリアス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "119",
+      "name": "ハッサム",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "120",
+      "name": "カイロス",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "121",
+      "name": "ヘラクロス",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "121",
+      "name": "クマシュン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "122",
+      "name": "ツンベアー",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "123",
+      "name": "オムナイト",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "124",
+      "name": "フワンテ",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "124",
+      "name": "コソクムシ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "124",
+      "name": "オムスター",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "125",
+      "name": "フワライド",
+      "regions": [
+        "galar",
+        "isle_of_armor"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "125",
+      "name": "グソクムシャ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "125",
+      "name": "カブト",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "126",
+      "name": "ヒメンカ",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "126",
+      "name": "バチンウニ",
+      "regions": [
+        "isle_of_armor",
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "126",
+      "name": "カブトプス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "127",
+      "name": "ワタシラガ",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "127",
+      "name": "ヒドイデ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "127",
+      "name": "プテラ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "128",
+      "name": "チェリンボ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "128",
+      "name": "ドヒドイデ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "128",
+      "name": "メレシー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "129",
+      "name": "チェリム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "129",
+      "name": "タタッコ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "129",
+      "name": "ダンバル",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "130",
+      "name": "スカンプー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "130",
+      "name": "オトスパス",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "130",
+      "name": "メタング",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "131",
+      "name": "スカタンク",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "131",
+      "name": "シェルダー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "131",
+      "name": "メタグロス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "132",
+      "name": "オタマロ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "132",
+      "name": "パルシェン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "132",
+      "name": "ヤバチャ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "133",
+      "name": "ガマガル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "133",
+      "name": "スナバァ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "133",
+      "name": "ポットデス",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "134",
+      "name": "ガマゲロゲ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "134",
+      "name": "シロデスナ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "134",
+      "name": "リオル",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "135",
+      "name": "ヨマワル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "135",
+      "name": "ルカリオ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "136",
+      "name": "サマヨール",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "136",
+      "name": "モノズ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "137",
+      "name": "ヨノワール",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "137",
+      "name": "ジヘッド",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "138",
+      "name": "ワンリキー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "138",
+      "name": "サザンドラ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "139",
+      "name": "ゴーリキー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "139",
+      "name": "ルリリ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "139",
+      "name": "ヨーギラス",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "140",
+      "name": "カイリキー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "140",
+      "name": "マリル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "140",
+      "name": "サナギラス",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "141",
+      "name": "ゴース",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "141",
+      "name": "マリルリ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "141",
+      "name": "バンギラス",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "142",
+      "name": "ゴースト",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "142",
+      "name": "ニョロモ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "142",
+      "name": "カチコール",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "143",
+      "name": "ゲンガー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "143",
+      "name": "ニョロゾ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "143",
+      "name": "クレベース",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "144",
+      "name": "ニョロボン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "144",
+      "name": "ズバット",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "145",
+      "name": "ニョロトノ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "145",
+      "name": "ゴルバット",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "146",
+      "name": "コダック",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "146",
+      "name": "クロバット",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "147",
+      "name": "ゴルダック",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "147",
+      "name": "プロトーガ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "148",
+      "name": "ゴニョニョ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "148",
+      "name": "アバゴーラ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "149",
+      "name": "ドゴーム",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "149",
+      "name": "アーケン",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "150",
+      "name": "バクオング",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "150",
+      "name": "アーケオス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "151",
+      "name": "コロモリ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "152",
+      "name": "ヒンバス",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "152",
+      "name": "ココロモリ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "153",
+      "name": "ミロカロス",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "153",
+      "name": "エアームド",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "154",
+      "name": "ダンゴロ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "155",
+      "name": "ガントル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "156",
+      "name": "ナマコブシ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "156",
+      "name": "ギガイアス",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "157",
+      "name": "ヤブクロン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "157",
+      "name": "イワンコ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "158",
+      "name": "ダストダス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "158",
+      "name": "ルガルガン(まひる)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "158",
+      "name": "ルガルガン(まよなか)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "158",
+      "name": "ルガルガン(たそがれ)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "159",
+      "name": "ヤトウモリ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "159",
+      "name": "タマザラシ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "160",
+      "name": "エンニュート",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "160",
+      "name": "トドグラー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "161",
+      "name": "タンドン",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "161",
+      "name": "ズルッグ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "161",
+      "name": "トドゼルガ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "162",
+      "name": "トロッゴン",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "162",
+      "name": "ズルズキン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "162",
+      "name": "ダダリン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "163",
+      "name": "セキタンザン",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "163",
+      "name": "コジョフー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "164",
+      "name": "ディグダ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "164",
+      "name": "ディグダ(アローラ)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "164",
+      "name": "コジョンド",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "165",
+      "name": "ダグトリオ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "165",
+      "name": "ダグトリオ(アローラ)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "165",
+      "name": "ジャラコ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "166",
+      "name": "モグリュー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "166",
+      "name": "ジャランゴ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "167",
+      "name": "ドリュウズ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "167",
+      "name": "ジャラランガ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "168",
+      "name": "サンド",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "168",
+      "name": "サンド(アローラ)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "168",
+      "name": "モンメン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "169",
+      "name": "サンドパン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "169",
+      "name": "サンドパン(アローラ)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "169",
+      "name": "エルフーン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "170",
+      "name": "カラカラ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "170",
+      "name": "ツボツボ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "171",
+      "name": "ガラガラ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "171",
+      "name": "ガラガラ(アローラ)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "171",
+      "name": "イエッサン♂",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "171",
+      "name": "イエッサン♀",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "172",
+      "name": "ガルーラ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "172",
+      "name": "ゴンベ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "173",
+      "name": "コータス",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "173",
+      "name": "カビゴン",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "174",
+      "name": "スナヘビ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "174",
+      "name": "ヤミラミ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "175",
+      "name": "サダイジャ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "175",
+      "name": "クチート",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "176",
+      "name": "オンバット",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "176",
+      "name": "メグロコ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "177",
+      "name": "オンバーン",
+      "regions": [
+        "galar",
+        "crown_tundra"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "177",
+      "name": "ワルビル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "178",
+      "name": "イワーク",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "178",
+      "name": "ワルビアル",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "179",
+      "name": "ハガネール",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "179",
+      "name": "ワシボン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "179",
+      "name": "テッシード",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "180",
+      "name": "ウォーグル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "180",
+      "name": "ナットレイ",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "181",
+      "name": "バルチャイ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "182",
+      "name": "ニャース",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "182",
+      "name": "ニャース(アローラ)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "182",
+      "name": "ニャース(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "182",
+      "name": "バルジーナ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "183",
+      "name": "ニャイキング",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "183",
+      "name": "サイホーン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "183",
+      "name": "リリーラ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "184",
+      "name": "ペルシアン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "184",
+      "name": "ペルシアン(アローラ)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "184",
+      "name": "サイドン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "184",
+      "name": "ユレイドル",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "185",
+      "name": "マホミル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "185",
+      "name": "ドサイドン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "185",
+      "name": "アノプス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "186",
+      "name": "マホイップ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "186",
+      "name": "メラルバ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "186",
+      "name": "アーマルド",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "187",
+      "name": "アブリー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "187",
+      "name": "ウルガモス",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "187",
+      "name": "ジーランス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "188",
+      "name": "アブリボン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "188",
+      "name": "チョンチー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "189",
+      "name": "ランターン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "190",
+      "name": "ホエルコ",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "190",
+      "name": "ラプラス",
+      "regions": [
+        "crown_tundra",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "191",
+      "name": "バケッチャ(普通)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "191",
+      "name": "バケッチャ(小)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "191",
+      "name": "バケッチャ(大)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "191",
+      "name": "ホエルオー",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "191",
+      "name": "バケッチャ(特大)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "191",
+      "name": "ココドラ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "192",
+      "name": "プルリル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "192",
+      "name": "パンプジン(普通)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "192",
+      "name": "コドラ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "192",
+      "name": "パンプジン(小)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "192",
+      "name": "パンプジン(大)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "192",
+      "name": "パンプジン(特大)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "193",
+      "name": "ブルンゲル",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "193",
+      "name": "ボスゴドラ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "194",
+      "name": "クズモー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "194",
+      "name": "ミニリュウ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "195",
+      "name": "ドラミドロ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "195",
+      "name": "ハクリュー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "196",
+      "name": "ウデッポウ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "196",
+      "name": "カイリュー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "197",
+      "name": "ブロスター",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "197",
+      "name": "レジロック",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "198",
+      "name": "タッツー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "198",
+      "name": "レジアイス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "199",
+      "name": "シードラ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "199",
+      "name": "レジスチル",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "200",
+      "name": "キングドラ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "200",
+      "name": "レジエレキ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "201",
+      "name": "チュリネ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "201",
+      "name": "レジドラゴ",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "202",
+      "name": "ドレディア",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "202",
+      "name": "フリーザー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "202",
+      "name": "フリーザー(ガラル)",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "203",
+      "name": "サンダー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "203",
+      "name": "サンダー(ガラル)",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "204",
+      "name": "ファイヤー",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "204",
+      "name": "ファイヤー(ガラル)",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "205",
+      "name": "タマタマ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "205",
+      "name": "コバルオン",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "206",
+      "name": "ナッシー",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "206",
+      "name": "ナッシー(アローラ)",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "206",
+      "name": "テラキオン",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "207",
+      "name": "メタモン",
+      "regions": [
+        "isle_of_armor",
+        "galar"
+      ],
+      "caught": false
+    },
+    {
+      "id": "207",
+      "name": "ビリジオン",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "208",
+      "name": "ポリゴン",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "208",
+      "name": "ニャスパー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "208",
+      "name": "ブリザポス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "209",
+      "name": "ポリゴン2",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "209",
+      "name": "ニャオニクス♂",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "209",
+      "name": "レイスポス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "209",
+      "name": "ニャオニクス♀",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "210",
+      "name": "ポリゴンZ",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "210",
+      "name": "バドレックス",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "210",
+      "name": "ペロッパフ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "210",
+      "name": "バドレックス(はくば)",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "210",
+      "name": "バドレックス(こくば",
+      "regions": [
+        "crown_tundra"
+      ],
+      "caught": false
+    },
+    {
+      "id": "211",
+      "name": "ザルード",
+      "regions": [
+        "isle_of_armor"
+      ],
+      "caught": false
+    },
+    {
+      "id": "211",
+      "name": "ペロリーム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "212",
+      "name": "シュシュプ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "213",
+      "name": "フレフワン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "216",
+      "name": "ソーナノ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "217",
+      "name": "ソーナンス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "カモネギ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "name": "カモネギ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "219",
+      "name": "ネギガナイト",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "226",
+      "name": "マッギョ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "226",
+      "name": "マッギョ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "230",
+      "name": "カラナクシ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "231",
+      "name": "トリトドン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "234",
+      "name": "カメテテ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "235",
+      "name": "ガメノデス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "236",
+      "name": "サニーゴ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "236",
+      "name": "サニーゴ(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "237",
+      "name": "サニゴーン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "248",
+      "name": "ナゲキ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "249",
+      "name": "ダゲキ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "250",
+      "name": "ドガース",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "251",
+      "name": "マタドガス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "251",
+      "name": "マタドガス(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "252",
+      "name": "ウソハチ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "253",
+      "name": "ウソッキー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "257",
+      "name": "トゲピー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "258",
+      "name": "トゲチック",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "259",
+      "name": "トゲキッス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "277",
+      "name": "リグレー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "278",
+      "name": "オーベム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "296",
+      "name": "マラカッチ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "297",
+      "name": "シンボラー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "304",
+      "name": "ハリーセン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "310",
+      "name": "エレズン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "311",
+      "name": "ストリンダー(ハイ)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "311",
+      "name": "ストリンダー(ロー)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "314",
+      "name": "ヒポポタス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "315",
+      "name": "カバルドン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "318",
+      "name": "エリキテル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "319",
+      "name": "エレザード",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "320",
+      "name": "ルチャブル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "321",
+      "name": "ナックラー",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "322",
+      "name": "ビブラーバ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "323",
+      "name": "フライゴン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "324",
+      "name": "キバゴ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "325",
+      "name": "オノンド",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "326",
+      "name": "オノノクス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "327",
+      "name": "デスマス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "327",
+      "name": "デスマス(ガラル)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "328",
+      "name": "デスバーン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "329",
+      "name": "デスカーン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "330",
+      "name": "ヒトツキ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "331",
+      "name": "ニダンギル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "332",
+      "name": "ギルガルド(シールド)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "332",
+      "name": "ギルガルド(ブレード)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "340",
+      "name": "ネマシュ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "341",
+      "name": "マシェード",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "345",
+      "name": "タイレーツ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "346",
+      "name": "ジジーロン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "347",
+      "name": "バクガメス",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "348",
+      "name": "トゲデマル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "362",
+      "name": "ルナトーン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "363",
+      "name": "ソルロック",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "371",
+      "name": "ジュラルドン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "372",
+      "name": "ロトム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "372",
+      "name": "ヒートロトム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "372",
+      "name": "ウォッシュロトム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "372",
+      "name": "フロストロトム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "372",
+      "name": "スピンロトム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "372",
+      "name": "カットロトム",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "374",
+      "name": "パッチラゴン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "375",
+      "name": "パッチルドン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "376",
+      "name": "ウオノラゴン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "377",
+      "name": "ウオチルドン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "378",
+      "name": "ヒトカゲ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "379",
+      "name": "リザード",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "380",
+      "name": "リザードン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "381",
+      "name": "タイプ：ヌル",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "382",
+      "name": "シルヴァディ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "398",
+      "name": "ザシアン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "398",
+      "name": "ザシアン(王)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "399",
+      "name": "ザマゼンタ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "399",
+      "name": "ザマゼンタ(王)",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "400",
+      "name": "ムゲンダイナ",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "400",
+      "name": "ムゲンダイナ(ムゲン",
+      "regions": [
+        "galar"
+      ],
+      "caught": false,
+      "version_info": {
+        "sword_shield": {
+          "availability": "both"
+        }
+      }
+    }
+  ],
+  "version_filters": {
+    "sword_shield": {
+      "name": "⚔️ ソード・シールド",
+      "options": [
+        {
+          "value": "",
+          "label": "🌍 全て表示"
+        },
+        {
+          "value": "both",
+          "label": "🟢 両バージョン"
+        },
+        {
+          "value": "sword",
+          "label": "⚔️ ソード限定"
+        },
+        {
+          "value": "shield",
+          "label": "🛡️ シールド限定"
+        }
+      ]
+    }
+  }
+}
