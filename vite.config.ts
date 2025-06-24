@@ -22,7 +22,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        overview: resolve(__dirname, 'overview.html')
+        overview: resolve(__dirname, 'overview.html'),
+        'zukan-overview': resolve(__dirname, 'zukan-overview.html')
       },
       output: {
         manualChunks: {
