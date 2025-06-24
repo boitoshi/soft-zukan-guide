@@ -2,27 +2,40 @@
   "name": "soft-zukan-guide",
   "version": "3.0.0",
   "description": "🎮 ポケモン図鑑マスター - 全ソフト対応版",
-  "main": "index.html",
+  "type": "module",
   "scripts": {
-    "build": "node scripts/build-deploy.js",
-    "deploy": "node scripts/build-deploy.js",
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "serve": "vite preview",
     "convert": "node scripts/universal-csv-converter.js",
     "convert:paldea": "node scripts/universal-csv-converter.js paldea",
-    "convert:all": "node scripts/universal-csv-converter.js --all",
-    "serve": "npx serve . -p 8000",
-    "dev": "npx serve . -p 8000"
+    "convert:all": "node scripts/universal-csv-converter.js --all"
   },
   "keywords": [
     "pokemon",
     "pokedex",
     "vue",
     "tailwindcss",
-    "scarlet",
-    "violet"
+    "typescript"
   ],
   "author": "Pokemon Zukan Master Team",
   "license": "MIT",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "npm-run-all2": "^7.0.2",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.3",
+    "vue-tsc": "^2.1.10"
   }
 }

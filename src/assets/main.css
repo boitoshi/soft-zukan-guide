@@ -1,0 +1,71 @@
+/* ポケモン図鑑マスター - メインスタイル */
+
+/* Vue 3 + Vite環境用カスタムスタイル */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+.slide-down-enter-active, .slide-down-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-down-enter-from, .slide-down-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* カスタムスクロールバー */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ホバーエフェクト */
+.pokemon-card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pokemon-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ゲーム選択カード */
+.game-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+.game-card.selected {
+  box-shadow: 0 0 0 4px rgb(168 85 247 / 0.5);
+}
+
+/* グローバルリセット（TailwindCSSと併用） */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* アプリケーション固有のスタイル */
+#app {
+  min-height: 100vh;
+}

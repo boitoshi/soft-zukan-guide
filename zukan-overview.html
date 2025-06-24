@@ -415,9 +415,15 @@
                 <path d="m18 15-6-6-6 6"/>
             </svg>
         </button>
-    </div>
+    </div>    <script>
+        // Vue.js読み込み確認
+        if (typeof Vue === 'undefined') {
+            console.error('Vue.js が読み込まれていません！');
+            document.body.innerHTML = '<div style="padding: 20px; text-align: center; color: red;">Vue.js の読み込みに失敗しました。インターネット接続を確認してください。</div>';
+        } else {
+            console.log('Vue.js 正常に読み込まれました:', Vue.version);
+        }
 
-    <script>
         const { createApp, ref, computed, onMounted, onUnmounted } = Vue;
 
         createApp({
