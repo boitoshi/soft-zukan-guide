@@ -206,14 +206,14 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
+  <div class="bg-gray-50 min-h-screen">
     <div class="container mx-auto px-4 py-6">
       <!-- ナビゲーションヘッダー -->
       <PageNavigation current-page="overview" />
 
       <!-- ヘッダー -->
       <div v-if="!selectedGame" class="text-center mb-4">
-        <h1 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-2">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
           📋 ポケモン図鑑一覧
         </h1>
         <p class="text-sm text-gray-600">図鑑別表示 - 備考欄で重複確認</p>
@@ -238,7 +238,7 @@ onUnmounted(() => {
               v-for="game in availableGames" 
               :key="game.id"
               @click="selectGame(game.id)"
-              class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-1 border-2 border-transparent hover:border-purple-200"
+              class="bg-white border-2 border-gray-200 hover:border-blue-400 rounded-lg p-6 transition-colors duration-200 cursor-pointer"
             >
               <div class="text-center">
                 <div class="text-4xl mb-3">{{ getGameIcon(game.id) }}</div>
@@ -251,7 +251,7 @@ onUnmounted(() => {
                 </div>
                 
                 <div class="mt-4">
-                  <span class="text-xs bg-purple-100 text-purple-800 px-3 py-1 rounded-full">
+                  <span class="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded-md border border-blue-200">
                     クリックして選択
                   </span>
                 </div>
@@ -268,7 +268,7 @@ onUnmounted(() => {
       </div>
 
       <!-- エラー表示 -->
-      <div v-if="loadError" class="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
+      <div v-if="loadError" class="bg-red-50 border-2 border-red-200 rounded-lg p-6 mb-6">
         <div class="flex items-center">
           <span class="text-2xl mr-3">⚠️</span>
           <div>
@@ -281,7 +281,7 @@ onUnmounted(() => {
       <!-- メインコンテンツ -->
       <div v-if="isDataLoaded">
         <!-- ゲーム情報 -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
+        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center">
               <span class="text-3xl mr-3">{{ getGameIcon(selectedGame.id) }}</span>
@@ -292,7 +292,7 @@ onUnmounted(() => {
             </div>
             <button 
               @click="selectedGame = null; loading = false"
-              class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              class="border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-800 px-4 py-2 rounded-md text-sm font-medium transition-colors"
             >
               🔄 ゲーム変更
             </button>
@@ -300,9 +300,9 @@ onUnmounted(() => {
         </div>
 
         <!-- 検索とタブ -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-6">
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden mb-6">
           <!-- 検索バー -->
-          <div class="p-6 border-b bg-gradient-to-r from-purple-50 to-blue-50">
+          <div class="p-6 border-b bg-gray-50">
             <div class="flex items-center space-x-4">
               <div class="flex-1">
                 <input
@@ -317,10 +317,10 @@ onUnmounted(() => {
               <button
                 @click="toggleDuplicates"
                 :class="[
-                  'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
+                  'px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 border-2',
                   hideDuplicates
-                    ? 'bg-orange-500 text-white hover:bg-orange-600'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    ? 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600 hover:border-orange-600'
+                    : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-800'
                 ]"
               >
                 {{ hideDuplicates ? '🔄 重複表示' : '❌ 重複削除' }}
@@ -340,10 +340,10 @@ onUnmounted(() => {
                 :key="tab.id"
                 @click="activeTab = tab.id"
                 :class="[
-                  'tab-button px-3 py-3 sm:px-6 text-xs sm:text-sm font-medium border-b-2 transition-all duration-300 whitespace-nowrap',
+                  'tab-button px-3 py-3 sm:px-6 text-xs sm:text-sm font-medium border-b-2 transition-colors duration-200 whitespace-nowrap',
                   activeTab === tab.id
-                    ? 'border-purple-500 text-purple-600 bg-purple-50'
-                    : 'border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300'
+                    ? 'border-blue-600 text-blue-600 bg-blue-50'
+                    : 'border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-400'
                 ]"
               >
                 <span class="block sm:inline">{{ tab.icon }}</span>
@@ -448,15 +448,15 @@ onUnmounted(() => {
   z-index: 50;
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3b82f6;
   color: white;
-  border-radius: 50%;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   transform: translateY(100px);
   opacity: 0;
 }
@@ -467,8 +467,8 @@ onUnmounted(() => {
 }
 
 .scroll-to-top:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
+  background: #2563eb;
+  border-color: #2563eb;
 }
 
 /* タブスタイル */

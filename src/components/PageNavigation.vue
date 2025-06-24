@@ -55,7 +55,7 @@ const toggleMobileMenu = () => {
 </script>
 
 <template>
-  <div class="bg-white rounded-2xl shadow-lg p-4 mb-6">
+  <div class="bg-white border border-gray-200 rounded-lg p-4 mb-6">
     <div class="flex justify-between items-center">
       <!-- デスクトップナビゲーション -->
       <div class="hidden md:flex space-x-4">
@@ -63,7 +63,7 @@ const toggleMobileMenu = () => {
           <!-- アクティブなページ -->
           <div 
             v-if="isActive(item.id)"
-            class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 rounded-lg font-bold text-sm shadow-md"
+            class="bg-blue-600 text-white px-4 py-2 rounded-md font-medium text-sm border-2 border-blue-600"
           >
             {{ item.icon }} {{ item.label }}
           </div>
@@ -72,7 +72,7 @@ const toggleMobileMenu = () => {
           <a 
             v-else
             :href="item.href" 
-            class="bg-gray-200 hover:bg-gradient-to-r hover:from-gray-300 hover:to-gray-400 text-gray-700 hover:text-gray-800 px-4 py-2 rounded-lg font-bold text-sm transition-all duration-300 hover:shadow-md transform hover:-translate-y-0.5"
+            class="border-2 border-gray-300 hover:border-blue-600 text-gray-700 hover:text-blue-600 px-4 py-2 rounded-md font-medium text-sm transition-colors duration-200"
             :title="item.description"
           >
             {{ item.icon }} {{ item.label }}
@@ -145,29 +145,12 @@ const toggleMobileMenu = () => {
 </template>
 
 <style scoped>
-/* ホバーアニメーション強化 */
-a {
-  position: relative;
-  overflow: hidden;
+/* モダンフラットデザイン */
+.slide-down-enter-active, .slide-down-leave-active {
+  transition: all 0.2s ease;
 }
-
-a:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: left 0.5s;
-}
-
-a:hover:before {
-  left: 100%;
+.slide-down-enter-from, .slide-down-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
 }
 </style>
