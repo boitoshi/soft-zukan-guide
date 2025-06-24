@@ -1,0 +1,2 @@
+declare const _default: import("vue", { with: { "resolution-mode": "import" } }).DefineComponent<{}, {}, {}, {}, {}, import("vue", { with: { "resolution-mode": "import" } }).ComponentOptionsMixin, import("vue", { with: { "resolution-mode": "import" } }).ComponentOptionsMixin, {}, string, import("vue", { with: { "resolution-mode": "import" } }).PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, import("vue", { with: { "resolution-mode": "import" } }).ComponentProvideOptions, true, {}, any>;
+export default _default;

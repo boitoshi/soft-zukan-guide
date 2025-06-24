@@ -1,5 +1,5 @@
-<script lang="ts">
-import { defineComponent, onMounted } from 'vue'
+<script setup lang="ts">
+import { onMounted } from 'vue'
 import AppNavigation from './components/AppNavigation.vue'
 import GameSelector from './components/GameSelector.vue'
 import StatsPanel from './components/StatsPanel.vue'
@@ -8,76 +8,52 @@ import PokemonCard from './components/PokemonCard.vue'
 import { useGameData } from './composables/useGameData.js'
 import { useLocalStorage } from './composables/useLocalStorage.js'
 import { usePokemonFilter } from './composables/usePokemonFilter.js'
+import type { GameConfig } from './index.js'
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    AppNavigation,
-    GameSelector,
-    StatsPanel,
-    FilterPanel,
-    PokemonCard
-  },
-  setup() {
-    // Composables
-    const gameDataComposable = useGameData()
-    const localStorageComposable = useLocalStorage()
+// Composables
+const gameDataComposable = useGameData()
+const localStorageComposable = useLocalStorage()
 
-    // Reactive refs for template access
-    const zukanData = gameDataComposable.zukanData
-    const availableGames = gameDataComposable.availableGames  
-    const selectedGame = gameDataComposable.selectedGame
-    const caughtCount = gameDataComposable.caughtCount
-    const progressPercent = gameDataComposable.progressPercent
-    const uniquePokemonCount = gameDataComposable.uniquePokemonCount
+// Reactive refs for template access
+const zukanData = gameDataComposable.zukanData
+const availableGames = gameDataComposable.availableGames  
+const selectedGame = gameDataComposable.selectedGame
+const caughtCount = gameDataComposable.caughtCount
+const progressPercent = gameDataComposable.progressPercent
+const uniquePokemonCount = gameDataComposable.uniquePokemonCount
 
-    // Initialize pokemon filter after game data is available
-    const pokemonFilterComposable = usePokemonFilter(zukanData, selectedGame)
-    const filters = pokemonFilterComposable.filters
-    const filteredPokemon = pokemonFilterComposable.filteredPokemon
+// Initialize pokemon filter after game data is available
+const pokemonFilterComposable = usePokemonFilter(zukanData, selectedGame)
+const filters = pokemonFilterComposable.filters
+const filteredPokemon = pokemonFilterComposable.filteredPokemon
 
-    // Methods
-    const handleSelectGame = async (gameId: string) => {
-      await gameDataComposable.selectGame(gameId, localStorageComposable)
-    }
+// Methods
+const handleSelectGame = async (gameId: string) => {
+  await gameDataComposable.selectGame(gameId, localStorageComposable)
+}
 
-    const handleBackToGameSelection = () => {
-      gameDataComposable.backToGameSelection(localStorageComposable)
-    }
+const handleBackToGameSelection = () => {
+  gameDataComposable.backToGameSelection(localStorageComposable)
+}
 
-    const handleToggleCaught = (pokemonId: string) => {
-      gameDataComposable.toggleCaught(pokemonId, localStorageComposable)
-    }
+const handleToggleCaught = (pokemonId: string) => {
+  gameDataComposable.toggleCaught(pokemonId, localStorageComposable)
+}
 
-    const resetFilters = () => {
-      pokemonFilterComposable.resetFilters()
-    }
+const resetFilters = () => {
+  pokemonFilterComposable.resetFilters()
+}
 
-    // Lifecycle
-    onMounted(async () => {
-      await gameDataComposable.loadAvailableGames()
-      
-      // Restore previously selected game
-      const savedGame = localStorageComposable.loadSelectedGame()
-      if (savedGame && gameDataComposable.availableGames.value.find((g: any) => g.id === savedGame)) {
-        await handleSelectGame(savedGame)
-      }
-    })
-    
-    // Return all reactive values and methods for template
-    return {
-      zukanData,
-      availableGames,
-      selectedGame,
-      caughtCount,
-      progressPercent,
-      uniquePokemonCount,
-      filters,
-      filteredPokemon,
-      handleSelectGame,
-      handleBackToGameSelection,
-      handleToggleCaught,
-      resetFilters
+// Lifecycle
+onMounted(async () => {
+  await gameDataComposable.loadAvailableGames()
+  
+  // Restore previously selected game with type safety
+  const savedGame = localStorageComposable.loadSelectedGame()
+  if (savedGame) {
+    const gameExists = gameDataComposable.availableGames.value.find((g: GameConfig) => g.id === savedGame)
+    if (gameExists) {
+      await handleSelectGame(savedGame)
     }
   }
 })

@@ -32,6 +32,17 @@ const updateFilter = (key: keyof FilterState, value: string): void => {
   emit('update:modelValue', newFilters)
 }
 
+// 型安全なイベントハンドラー
+const handleSelectChange = (key: keyof FilterState) => (event: Event) => {
+  const target = event.target as HTMLSelectElement
+  updateFilter(key, target.value)
+}
+
+const handleInputChange = (key: keyof FilterState) => (event: Event) => {
+  const target = event.target as HTMLInputElement
+  updateFilter(key, target.value)
+}
+
 // フィルターリセット
 const resetFilters = (): void => {
   emit('reset-filters')
@@ -105,7 +116,7 @@ const getActiveFilterCount = (): number => {
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">📍 地域・図鑑</label>          <select
             :value="modelValue.region"
-            @change="updateFilter('region', ($event.target as any).value)"
+            @change="handleSelectChange('region')"
             class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >
             <option v-for="option in getRegionOptions()" :key="option.value" :value="option.value">
@@ -118,7 +129,7 @@ const getActiveFilterCount = (): number => {
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">📊 進捗状況</label>          <select
             :value="modelValue.status"
-            @change="updateFilter('status', ($event.target as any).value)"
+            @change="handleSelectChange('status')"
             class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >
             <option v-for="option in statusOptions" :key="option.value" :value="option.value">
@@ -132,7 +143,7 @@ const getActiveFilterCount = (): number => {
           <label class="block text-sm font-medium text-gray-700 mb-2">🔍 ポケモン名検索</label>          <input
             type="text"
             :value="modelValue.search"
-            @input="updateFilter('search', ($event.target as any).value)"
+            @input="handleInputChange('search')"
             placeholder="ポケモン名を入力..."
             class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           />
@@ -146,7 +157,7 @@ const getActiveFilterCount = (): number => {
           <div v-for="(filter, key) in versionFilters" :key="key">
             <label class="block text-sm font-medium text-gray-700 mb-2">{{ filter.name }}</label>            <select
               :value="modelValue[key as keyof FilterState] || ''"
-              @change="updateFilter(key as keyof FilterState, ($event.target as any).value)"
+              @change="handleSelectChange(key as keyof FilterState)"
               class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="">全て</option>

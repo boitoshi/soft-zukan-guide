@@ -33,25 +33,28 @@
 
 ## プロジェクト概要（Claude Code向け）
 
-🎮 **ポケモン図鑑マスター** - Vue 3 Composition API + コンポーネント化 完全版
+🎮 **ポケモン図鑑マスター** - Vue 3 + TypeScript + Vite 完全版
 
-このプロジェクトはVue 3の最新機能を活用したモダンなWebアプリケーションです。2025年6月にVue 3 Composition API + コンポーネント化の大幅なリファクタリングが完了しており、高い保守性と拡張性を実現しています。
+このプロジェクトはVue 3 + TypeScript + Viteの最新技術を活用したモダンなWebアプリケーションです。2025年6月にVue 3 Composition API + コンポーネント化 + TypeScript化の大幅なリファクタリングが完了しており、高い保守性と拡張性を実現しています。
 
 ### 技術的特徴
-- **Vue 3 Composition API**: setup()関数ベースのモダンな構成
-- **コンポーネント分離**: 5つの独立したコンポーネント設計
-- **Composables パターン**: 3つのロジック分離モジュール
+- **Vue 3 + `<script setup>`**: 最新のSFC形式とComposition API
+- **TypeScript完全対応**: 型安全性を重視した設計
+- **Vite開発環境**: 高速な開発体験とビルド最適化
+- **コンポーネント分離**: 5つの独立したSFCコンポーネント設計
+- **Composables パターン**: 3つのTypeScriptロジック分離モジュール
 - **設定駆動型**: zukan-config.json による柔軟な設定管理
-- **型安全性**: TypeScript移行準備済みの構造
 
 ## 開発環境・技術スタック詳細
 
 ### フロントエンド
-- **Vue.js**: 3.x (Composition API専用、Options API使用禁止)
+- **Vue.js**: 3.5+ (`<script setup>` + Composition API専用、Options API使用禁止)
+- **TypeScript**: 5.6+ (厳格な型チェック有効)
+- **Vite**: 6.0+ (開発サーバー + ビルドツール)
 - **CSS Framework**: TailwindCSS 3.x (カスタムCSS最小限)
 - **状態管理**: Vue 3 Reactivity System + Composables
-- **ビルドツール**: 不要（CDN経由でVue.js読み込み）
-- **TypeScript**: 未導入（次期予定）
+- **ビルドツール**: Vite 6.0 (開発・本番ビルド環境)
+- **パッケージ管理**: npm (Node.js 18+)
 
 ### データ・インフラ
 - **データ形式**: JSON（構造化されたポケモンデータ）

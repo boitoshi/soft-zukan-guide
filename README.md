@@ -2,10 +2,10 @@
 
 **ポケモンHOMEソフト図鑑完成ガイド - Ultimate Edition**
 
-効率的にポケモン図鑑をコンプリートするためのWebアプリケーションです！  
-スカーレット・バイオレット（パルデア、キタカミ、ブルーベリー図鑑）の重複ポケモンを整理し、どのポケモンを捕まえればいいかが一目で分かります。
+効率的にポケモン図鑑をコンプリートするためのモダンWebアプリケーションです！  
+スカーレット・バイオレット（パルデア、キタカミ、ブルーベリー図鑑）とソード・シールド（ガラル図鑑）に対応し、重複ポケモンを整理して効率的な図鑑コンプリートをサポートします。
 
-![ポケモン図鑑マスター](https://img.shields.io/badge/ポケモン-図鑑対応-blue) ![Vue.js](https://img.shields.io/badge/Vue.js-3.x-4FC08D) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC) ![License](https://img.shields.io/badge/License-MIT-green)
+![ポケモン図鑑マスター](https://img.shields.io/badge/ポケモン-図鑑対応-blue) ![Vue.js](https://img.shields.io/badge/Vue.js-3.5-4FC08D) ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6) ![Vite](https://img.shields.io/badge/Vite-6.0-646CFF) ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## ✨ 何ができるの？
 
@@ -30,7 +30,7 @@
 
 ## 🚀 使い方
 
-### すぐに始める（推奨）
+### 開発環境で動作確認
 
 1. **このリポジトリをクローン**
    ```bash
@@ -38,18 +38,29 @@
    cd pokemon-zukan-master
    ```
 
-2. **ブラウザで開く**
-   - `index.html` をダブルクリック、または
-   - HTTPサーバーで起動（推奨）:
-     ```bash
-     python -m http.server 8000
-     # ブラウザで http://localhost:8000/index.html にアクセス
-     ```
+2. **依存関係をインストール**
+   ```bash
+   npm install
+   ```
 
-3. **使ってみる**
+3. **開発サーバーを起動**
+   ```bash
+   npm run dev
+   # ブラウザで http://localhost:8000 にアクセス
+   ```
+
+4. **使ってみる**
+   - ゲームを選択（スカーレット・バイオレット or ソード・シールド）
    - ポケモンをクリックして「ゲット済み」に変更
    - フィルターで図鑑別・状況別に絞り込み
    - 進捗を確認して効率的にコンプリート！
+
+### 本番環境用ビルド
+
+```bash
+npm run build    # dist/ディレクトリにビルド出力
+npm run preview  # ビルド結果をプレビュー
+```
 
 ### 📱 アプリの画面
 
@@ -112,6 +123,19 @@
 
 ### 開発者向け情報
 技術的な詳細は `CLAUDE.md` を参照してください。
+
+## 🏗️ 技術スタック
+
+### フロントエンド
+- **Vue 3.5** - Composition API + `<script setup>`
+- **TypeScript 5.6** - 型安全なコード
+- **Vite 6.0** - 高速開発環境
+- **TailwindCSS** - ユーティリティファーストCSS
+
+### アーキテクチャ
+- **Single File Components (SFC)** - Vue 3標準
+- **Composables パターン** - ロジック再利用
+- **型安全なprops/emit** - TypeScript統合
 
 ## 📄 ライセンス
 

@@ -8,7 +8,9 @@
       "Bash(cp:*)",
       "Bash(rm:*)",
       "Bash(mkdir:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }
