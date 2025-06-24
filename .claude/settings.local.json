@@ -10,7 +10,8 @@
       "Bash(mkdir:*)",
       "Bash(find:*)",
       "Bash(npm run type-check:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(rg:*)"
     ],
     "deny": []
   }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import AppNavigation from './components/AppNavigation.vue'
+import PageNavigation from './components/PageNavigation.vue'
 import GameSelector from './components/GameSelector.vue'
 import StatsPanel from './components/StatsPanel.vue'
 import FilterPanel from './components/FilterPanel.vue'
@@ -63,7 +63,7 @@ onMounted(async () => {
   <div class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
     <div class="container mx-auto px-4 py-8">
       <!-- Navigation Header -->
-      <AppNavigation current-page="index" />
+      <PageNavigation current-page="index" />
 
       <!-- Header -->
       <div class="text-center mb-8">
