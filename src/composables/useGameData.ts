@@ -26,11 +26,26 @@ export function useGameData(): UseGameDataReturn {
   });
   const availableGames = ref<GameConfig[]>([]);
   const selectedGame = ref<GameConfig | null>(null);
+  
+  // エラー状態管理
+  const error = ref<string | null>(null);
+  const isLoading = ref<boolean>(false);
+
+  // エラー状態をクリア
+  const clearError = (): void => {
+    error.value = null;
+  };
 
   // 利用可能なゲーム一覧を読み込み
   const loadAvailableGames = async (): Promise<GameConfig[]> => {
+    isLoading.value = true;
+    error.value = null;
+    
     try {
       const configResponse = await fetch('/zukan-config.json');
+      if (!configResponse.ok) {
+        throw new Error(`設定ファイルの読み込みに失敗しました (${configResponse.status})`);
+      }
       const config = await configResponse.json() as ZukanConfigFile;
       
       const games: GameConfig[] = [];
@@ -73,9 +88,13 @@ export function useGameData(): UseGameDataReturn {
       
       availableGames.value = games;
       return games;
-    } catch (error) {
-      console.error('ゲーム設定の読み込みに失敗しました:', error);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : '不明なエラーが発生しました';
+      error.value = `ゲーム設定の読み込みに失敗しました: ${errorMessage}`;
+      console.error('ゲーム設定の読み込みに失敗しました:', err);
       return [];
+    } finally {
+      isLoading.value = false;
     }
   };
 
@@ -84,16 +103,19 @@ export function useGameData(): UseGameDataReturn {
     gameId: string, 
     localStorage?: UseLocalStorageReturn
   ): Promise<ZukanData> => {
+    isLoading.value = true;
+    error.value = null;
+    
     try {
       // ゲーム設定を取得
       const gameInfo = availableGames.value.find(g => g.id === gameId);
       if (!gameInfo) {
-        throw new Error(`ゲーム ${gameId} の設定が見つかりません`);
+        throw new Error(`ゲーム「${gameId}」の設定が見つかりません`);
       }
       
       const response = await fetch(gameInfo.dataFile);
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`データファイルの読み込みに失敗しました (${response.status})`);
       }
       
       const data = await response.json() as ZukanData;
@@ -109,9 +131,13 @@ export function useGameData(): UseGameDataReturn {
       selectedGame.value = gameInfo;
       
       return data;
-    } catch (error) {
-      console.error(`ゲーム ${gameId} のデータ読み込みに失敗しました:`, error);
-      throw error;
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : '不明なエラーが発生しました';
+      error.value = `ゲーム「${gameId}」のデータ読み込みに失敗しました: ${errorMessage}`;
+      console.error(`ゲーム ${gameId} のデータ読み込みに失敗しました:`, err);
+      throw err;
+    } finally {
+      isLoading.value = false;
     }
   };
 
@@ -126,8 +152,9 @@ export function useGameData(): UseGameDataReturn {
         localStorage.saveSelectedGame(gameId);
       }
       return true;
-    } catch (error) {
-      console.error('ゲーム選択に失敗しました:', error);
+    } catch (err) {
+      // エラーはloadGameDataで既に設定されているので、ここでは追記のみ
+      console.error('ゲーム選択に失敗しました:', err);
       return false;
     }
   };
@@ -202,6 +229,8 @@ export function useGameData(): UseGameDataReturn {
     zukanData,
     availableGames,
     selectedGame,
+    error,
+    isLoading,
     
     // メソッド
     loadAvailableGames,
@@ -210,6 +239,7 @@ export function useGameData(): UseGameDataReturn {
     backToGameSelection,
     getGameIcon,
     toggleCaught,
+    clearError,
     
     // 計算済みプロパティ
     caughtCount,

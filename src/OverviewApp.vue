@@ -20,19 +20,29 @@ const filteredPokemon = computed(() => {
   
   let filtered = zukanData.value.pokemon
   
-  // 検索フィルター
+  // 検索フィルター（完全一致優先、前方一致、部分一致の順）
   if (searchTerm.value) {
-    filtered = filtered.filter((pokemon: any) => 
-      pokemon.name.toLowerCase().includes(searchTerm.value.toLowerCase())
-    )
+    const searchLower = searchTerm.value.toLowerCase().trim()
+    filtered = filtered.filter((pokemon: any) => {
+      const pokemonName = pokemon.name.toLowerCase()
+      // 完全一致、前方一致、または3文字以上の場合のみ部分一致
+      return pokemonName === searchLower || 
+             pokemonName.startsWith(searchLower) ||
+             (searchLower.length >= 3 && pokemonName.includes(searchLower))
+    })
   }
   
   // タブフィルター（地域別）
-  if (activeTab.value !== 'all') {
-    filtered = filtered.filter((pokemon: any) => 
-      pokemon.regions.includes(activeTab.value)
-    )
-  }
+  filtered = filtered.filter((pokemon: any) => 
+    pokemon.regions.includes(activeTab.value)
+  )
+  
+  // 選択された図鑑のNo順でソート
+  filtered.sort((a: any, b: any) => {
+    const aNum = parseInt(a.pokedex_numbers?.[activeTab.value] || '999999')
+    const bNum = parseInt(b.pokedex_numbers?.[activeTab.value] || '999999')
+    return aNum - bNum
+  })
   
   return filtered
 })
@@ -40,9 +50,7 @@ const filteredPokemon = computed(() => {
 const regionTabs = computed(() => {
   if (!selectedGame.value?.regions) return []
   
-  const tabs = [
-    { id: 'all', name: '全て', icon: '🌍' }
-  ]
+  const tabs: any[] = []
   
   selectedGame.value.regions.forEach((region: any) => {
     tabs.push({
@@ -55,6 +63,17 @@ const regionTabs = computed(() => {
   return tabs
 })
 
+// 選択された図鑑での番号を取得
+const getPokemonNumber = (pokemon: any): string => {
+  // 特定図鑑の場合はその図鑑の番号（そのポケモンがその図鑑にいる場合のみ）
+  if (pokemon.regions.includes(activeTab.value) && pokemon.pokedex_numbers?.[activeTab.value]) {
+    return pokemon.pokedex_numbers[activeTab.value]
+  }
+  // フォールバック: そのポケモンが選択された図鑑にいない場合は最初の地域の番号
+  const firstRegion = pokemon.regions[0]
+  return pokemon.pokedex_numbers?.[firstRegion] || pokemon.id
+}
+
 // メソッド
 const loadAvailableGames = async () => {
   try {
@@ -64,9 +83,8 @@ const loadAvailableGames = async () => {
     const config = await response.json()
     availableGames.value = config.games || []
     
-    if (availableGames.value.length > 0) {
-      selectGame(availableGames.value[0].id)
-    }
+    // 図鑑選択画面を表示（自動選択しない）
+    loading.value = false
   } catch (error) {
     console.error('ゲーム設定の読み込みエラー:', error)
     loadError.value = 'ゲーム設定の読み込みに失敗しました'
@@ -123,21 +141,24 @@ const getGameIcon = (gameId: string): string => {
   return iconMap[gameId] || '🎮'
 }
 
-const getPokemonVersionBadges = (pokemon: any): string[] => {
-  const badges: string[] = []
+const getPokemonVersionBadges = (pokemon: any): { text: string, color: string }[] => {
+  const badges: { text: string, color: string }[] = []
   
   if (pokemon.version_info?.scarlet_violet) {
     const sv = pokemon.version_info.scarlet_violet
-    if (sv.availability === 'scarlet') badges.push('S')
-    else if (sv.availability === 'violet') badges.push('V')
-    else if (sv.availability === 'both') badges.push('SV')
+    if (sv.availability === 'scarlet') {
+      badges.push({ text: 'S', color: 'bg-red-100 text-red-800' })
+    } else if (sv.availability === 'violet') {
+      badges.push({ text: 'V', color: 'bg-purple-100 text-purple-800' })
+    }
+    // 'both'の場合は表示しない（当然両方で入手可能だから）
   }
   
   if (pokemon.version_info?.sword_shield) {
     const ss = pokemon.version_info.sword_shield
-    if (ss.availability === 'sword') badges.push('剣')
-    else if (ss.availability === 'shield') badges.push('盾')
-    else if (ss.availability === 'both') badges.push('剣盾')
+    if (ss.availability === 'sword') badges.push({ text: '剣', color: 'bg-blue-100 text-blue-800' })
+    else if (ss.availability === 'shield') badges.push({ text: '盾', color: 'bg-pink-100 text-pink-800' })
+    // 'both'の場合は表示しない
   }
   
   return badges
@@ -145,6 +166,28 @@ const getPokemonVersionBadges = (pokemon: any): string[] => {
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+// 重複ポケモンを除外した表示用データ
+const uniquePokemon = computed(() => {
+  if (!zukanData.value?.pokemon) return []
+  
+  let filtered = filteredPokemon.value
+  
+  // 重複除外フィルターが有効な場合
+  if (hideDuplicates.value) {
+    filtered = filtered.filter((pokemon: any) => pokemon.regions.length === 1)
+  }
+  
+  return filtered
+})
+
+// 重複除外フラグ
+const hideDuplicates = ref(false)
+
+// 重複除外トグル
+const toggleDuplicates = () => {
+  hideDuplicates.value = !hideDuplicates.value
 }
 
 const handleScroll = () => {
@@ -169,11 +212,18 @@ onUnmounted(() => {
       <PageNavigation current-page="overview" />
 
       <!-- ヘッダー -->
-      <div class="text-center mb-6">
-        <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-2">
+      <div v-if="!selectedGame" class="text-center mb-4">
+        <h1 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-2">
           📋 ポケモン図鑑一覧
         </h1>
-        <p class="text-lg text-gray-600">全図鑑タブ表示 - 備考欄で重複確認</p>
+        <p class="text-sm text-gray-600">図鑑別表示 - 備考欄で重複確認</p>
+      </div>
+      
+      <!-- 図鑑選択後の小さなヘッダー -->
+      <div v-else class="text-center mb-2">
+        <h1 class="text-lg font-bold text-gray-700 mb-1">
+          📋 図鑑一覧
+        </h1>
       </div>
 
       <!-- ゲーム選択セクション -->
@@ -262,13 +312,27 @@ onUnmounted(() => {
                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
                 />
               </div>
+              
+              <!-- 重複削除ボタン -->
+              <button
+                @click="toggleDuplicates"
+                :class="[
+                  'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
+                  hideDuplicates
+                    ? 'bg-orange-500 text-white hover:bg-orange-600'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                ]"
+              >
+                {{ hideDuplicates ? '🔄 重複表示' : '❌ 重複削除' }}
+              </button>
+              
               <div class="text-sm text-gray-600">
-                {{ filteredPokemon.length }}匹
+                {{ uniquePokemon.length }}匹
               </div>
             </div>
           </div>
 
-          <!-- タブナビゲーション -->
+          <!-- 図鑑選択ナビゲーション（従来通りタブ） -->
           <div class="border-b border-gray-200 overflow-x-auto">
             <nav class="flex space-x-0 min-w-max">
               <button
@@ -276,13 +340,14 @@ onUnmounted(() => {
                 :key="tab.id"
                 @click="activeTab = tab.id"
                 :class="[
-                  'tab-button px-6 py-4 text-sm font-medium border-b-2 transition-all duration-300',
+                  'tab-button px-3 py-3 sm:px-6 text-xs sm:text-sm font-medium border-b-2 transition-all duration-300 whitespace-nowrap',
                   activeTab === tab.id
                     ? 'border-purple-500 text-purple-600 bg-purple-50'
                     : 'border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300'
                 ]"
               >
-                {{ tab.icon }} {{ tab.name }}
+                <span class="block sm:inline">{{ tab.icon }}</span>
+                <span class="block sm:inline sm:ml-1">{{ tab.name.replace(/図鑑$/, '') }}</span>
               </button>
             </nav>
           </div>
@@ -292,22 +357,22 @@ onUnmounted(() => {
             <table class="w-full">
               <thead class="bg-gray-50">
                 <tr>
-                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
-                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">ポケモン名</th>
-                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">登録図鑑</th>
-                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">バージョン</th>
-                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">備考</th>
+                  <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
+                  <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">ポケモン名</th>
+                  <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">登録図鑑</th>
+                  <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">バージョン</th>
+                  <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">備考</th>
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
                 <tr 
-                  v-for="pokemon in filteredPokemon" 
+                  v-for="pokemon in uniquePokemon" 
                   :key="pokemon.id"
                   class="pokemon-row hover:bg-gray-50 transition-colors duration-200"
                 >
-                  <td class="px-4 py-3 text-sm text-gray-900">{{ pokemon.id }}</td>
-                  <td class="px-4 py-3 text-sm font-medium text-gray-900">{{ pokemon.name }}</td>
-                  <td class="px-4 py-3 text-sm">
+                  <td class="px-4 py-2 text-sm text-gray-900">#{{ getPokemonNumber(pokemon) }}</td>
+                  <td class="px-4 py-2 text-sm font-medium text-gray-900">{{ pokemon.name }}</td>
+                  <td class="px-4 py-2 text-sm">
                     <div class="flex flex-wrap gap-1">
                       <span
                         v-for="region in pokemon.regions"
@@ -318,18 +383,18 @@ onUnmounted(() => {
                       </span>
                     </div>
                   </td>
-                  <td class="px-4 py-3 text-sm">
+                  <td class="px-4 py-2 text-sm">
                     <div class="flex flex-wrap gap-1">
                       <span
                         v-for="badge in getPokemonVersionBadges(pokemon)"
-                        :key="badge"
-                        class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-medium"
+                        :key="badge.text"
+                        :class="['inline-block text-xs px-2 py-1 rounded-full font-medium', badge.color]"
                       >
-                        {{ badge }}
+                        {{ badge.text }}
                       </span>
                     </div>
                   </td>
-                  <td class="px-4 py-3 text-sm text-gray-600">
+                  <td class="px-4 py-2 text-sm text-gray-600">
                     <span v-if="pokemon.regions.length > 1" class="text-orange-600 font-medium">
                       🔄 重複（{{ pokemon.regions.length }}図鑑）
                     </span>

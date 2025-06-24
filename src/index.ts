@@ -98,12 +98,15 @@ export interface UseGameDataReturn {
   zukanData: import('vue').Ref<ZukanData>;
   availableGames: import('vue').Ref<GameConfig[]>;
   selectedGame: import('vue').Ref<GameConfig | null>;
+  error: import('vue').Ref<string | null>;
+  isLoading: import('vue').Ref<boolean>;
   loadAvailableGames: () => Promise<GameConfig[]>;
   loadGameData: (gameId: string, localStorage?: UseLocalStorageReturn) => Promise<ZukanData>;
   selectGame: (gameId: string, localStorage?: UseLocalStorageReturn) => Promise<boolean>;
   backToGameSelection: (localStorage?: UseLocalStorageReturn) => void;
   getGameIcon: (gameId: string) => string;
   toggleCaught: (pokemonId: string, localStorage?: UseLocalStorageReturn) => void;
+  clearError: () => void;
   caughtCount: import('vue').ComputedRef<number>;
   remainingCount: import('vue').ComputedRef<number>;
   progressPercent: import('vue').ComputedRef<number>;

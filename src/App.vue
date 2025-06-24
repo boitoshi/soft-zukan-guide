@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import PageNavigation from './components/PageNavigation.vue'
 import GameSelector from './components/GameSelector.vue'
 import StatsPanel from './components/StatsPanel.vue'
 import FilterPanel from './components/FilterPanel.vue'
 import PokemonCard from './components/PokemonCard.vue'
+import ExportPanel from './components/ExportPanel.vue'
 import { useGameData } from './composables/useGameData.js'
 import { useLocalStorage } from './composables/useLocalStorage.js'
 import { usePokemonFilter } from './composables/usePokemonFilter.js'
+import { installPWA, isPWA } from './utils/pwa.js'
 import type { GameConfig } from './index.js'
 
 // Composables
@@ -18,6 +20,8 @@ const localStorageComposable = useLocalStorage()
 const zukanData = gameDataComposable.zukanData
 const availableGames = gameDataComposable.availableGames  
 const selectedGame = gameDataComposable.selectedGame
+const error = gameDataComposable.error
+const isLoading = gameDataComposable.isLoading
 const caughtCount = gameDataComposable.caughtCount
 const progressPercent = gameDataComposable.progressPercent
 const uniquePokemonCount = gameDataComposable.uniquePokemonCount
@@ -42,6 +46,31 @@ const handleToggleCaught = (pokemonId: string) => {
 
 const resetFilters = () => {
   pokemonFilterComposable.resetFilters()
+}
+
+const clearError = () => {
+  gameDataComposable.clearError()
+}
+
+// Export modal state
+const showExportModal = ref(false)
+
+const openExportModal = () => {
+  showExportModal.value = true
+}
+
+const closeExportModal = () => {
+  showExportModal.value = false
+}
+
+// PWA Install
+const showPWAInstall = ref(!isPWA())
+
+const handlePWAInstall = async () => {
+  const success = await installPWA()
+  if (success) {
+    showPWAInstall.value = false
+  }
 }
 
 // Lifecycle
@@ -75,7 +104,50 @@ onMounted(async () => {
           <span>•</span>
           <span>重複なし: {{ uniquePokemonCount }}匹</span>
         </div>
-      </div>      <!-- Game Selector -->
+      </div>
+
+      <!-- PWA Install Button -->
+      <div v-if="showPWAInstall" class="text-center mb-6">
+        <button
+          id="pwa-install-button"
+          @click="handlePWAInstall"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-medium rounded-lg hover:from-purple-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all"
+        >
+          <span class="text-lg">📱</span>
+          アプリをインストール
+        </button>
+      </div>
+
+      <!-- Loading Indicator -->
+      <div v-if="isLoading" class="text-center mb-8">
+        <div class="inline-flex items-center gap-3 bg-white rounded-2xl shadow-lg px-6 py-4">
+          <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-purple-600"></div>
+          <span class="text-lg font-medium text-gray-700">データを読み込み中...</span>
+        </div>
+      </div>
+
+      <!-- Error Display -->
+      <div v-if="error" class="mb-8">
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-6">
+          <div class="flex items-start">
+            <div class="flex-shrink-0">
+              <span class="text-2xl">❌</span>
+            </div>
+            <div class="ml-3 flex-1">
+              <h3 class="text-lg font-medium text-red-800 mb-2">エラーが発生しました</h3>
+              <p class="text-red-700 mb-4">{{ error }}</p>
+              <button 
+                @click="clearError"
+                class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-red-700 bg-red-100 hover:bg-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors"
+              >
+                エラーを閉じる
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Selector -->
       <GameSelector 
         :available-games="availableGames"
         :selected-game="selectedGame"
@@ -93,6 +165,17 @@ onMounted(async () => {
           :total-count="zukanData.stats?.total || 0"
           :progress-percent="progressPercent" 
         />
+
+        <!-- Export Button -->
+        <div class="text-center mb-6">
+          <button
+            @click="openExportModal"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500 to-blue-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all transform hover:scale-105"
+          >
+            <span class="text-xl">📤</span>
+            進捗をエクスポート
+          </button>
+        </div>
 
         <!-- Filter Panel -->
         <FilterPanel 
@@ -172,6 +255,15 @@ onMounted(async () => {
         <p>🎮 ポケモン図鑑マスター v3.0 Ultimate | ✨ Vue.js 3 + TypeScript で作成</p>
         <p class="mt-1">データは自動保存されます 💾 | 全ソフト対応版</p>
       </div>
+
+      <!-- Export Modal -->
+      <ExportPanel 
+        v-if="selectedGame"
+        :game-data="zukanData"
+        :game-info="selectedGame"
+        :is-visible="showExportModal"
+        @close="closeExportModal"
+      />
     </div>
   </div>
 </template>
