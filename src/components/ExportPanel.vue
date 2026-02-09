@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
-import { useExport } from '../composables/useExport.js'
-import type { ZukanData, GameConfig } from '../index.js'
+import { useExport } from '@/composables/useExport'
+import type { ZukanData, GameConfig } from '@/types'
 
 // Props
 interface Props {

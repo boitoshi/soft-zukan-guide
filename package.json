@@ -12,7 +12,12 @@
     "serve": "vite preview",
     "convert": "node scripts/universal-csv-converter.js",
     "convert:paldea": "node scripts/universal-csv-converter.js paldea",
-    "convert:all": "node scripts/universal-csv-converter.js --all"
+    "convert:all": "node scripts/universal-csv-converter.js --all",
+    "convert:usum": "node scripts/convert-manual-data.js usum",
+    "convert:sm": "node scripts/convert-manual-data.js sm",
+    "convert:oras": "node scripts/convert-manual-data.js oras",
+    "convert:xy": "node scripts/convert-manual-data.js xy",
+    "convert:manual": "node scripts/convert-manual-data.js --all"
   },
   "keywords": [
     "pokemon",
@@ -27,7 +32,8 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",

@@ -1,0 +1,30 @@
+{
+  "pokemon": [
+    { "id": 1, "name": "Rowlet", "availability": "both" },
+    { "id": 2, "name": "Dartrix", "availability": "both" },
+    { "id": 3, "name": "Decidueye", "availability": "both" },
+    { "id": 4, "name": "Litten", "availability": "both" },
+    { "id": 5, "name": "Torracat", "availability": "both" },
+    { "id": 6, "name": "Incineroar", "availability": "both" },
+    { "id": 7, "name": "Popplio", "availability": "both" },
+    { "id": 8, "name": "Brionne", "availability": "both" },
+    { "id": 9, "name": "Primarina", "availability": "both" },
+    { "id": 10, "name": "Pikipek", "availability": "both" },
+    { "id": 27, "name": "Sandshrew", "availability": "sun" },
+    { "id": 28, "name": "Sandslash", "availability": "sun" },
+    { "id": 37, "name": "Vulpix", "availability": "moon" },
+    { "id": 38, "name": "Ninetales", "availability": "moon" },
+    { "id": 127, "name": "Pinsir", "availability": "sun" },
+    { "id": 214, "name": "Heracross", "availability": "moon" },
+    { "id": 228, "name": "Houndour", "availability": "sun" },
+    { "id": 229, "name": "Houndoom", "availability": "sun" },
+    { "id": 246, "name": "Larvitar", "availability": "sun" },
+    { "id": 247, "name": "Pupitar", "availability": "sun" },
+    { "id": 248, "name": "Tyranitar", "availability": "sun" },
+    { "id": 443, "name": "Gible", "availability": "moon" },
+    { "id": 444, "name": "Gabite", "availability": "moon" },
+    { "id": 445, "name": "Garchomp", "availability": "moon" },
+    { "id": 791, "name": "Solgaleo", "availability": "sun" },
+    { "id": 792, "name": "Lunala", "availability": "moon" }
+  ]
+}

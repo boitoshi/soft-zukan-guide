@@ -1,0 +1,2805 @@
+{
+  "stats": {
+    "total": 173,
+    "duplicates": 0,
+    "regions": {
+      "hoenn": {
+        "total": 173,
+        "only": 173
+      }
+    }
+  },
+  "pokemon": [
+    {
+      "id": "041",
+      "name": "Zubat",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "41"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "042",
+      "name": "Golbat",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "42"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "063",
+      "name": "Abra",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "63"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "064",
+      "name": "Kadabra",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "64"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "065",
+      "name": "Alakazam",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "65"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "066",
+      "name": "Machop",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "66"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "067",
+      "name": "Machoke",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "67"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "068",
+      "name": "Machamp",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "68"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "072",
+      "name": "Tentacool",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "72"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "073",
+      "name": "Tentacruel",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "73"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "074",
+      "name": "Geodude",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "74"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "075",
+      "name": "Graveler",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "75"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "076",
+      "name": "Golem",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "76"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "118",
+      "name": "Goldeen",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "118"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "119",
+      "name": "Seaking",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "119"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "129",
+      "name": "Magikarp",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "129"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "130",
+      "name": "Gyarados",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "130"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "169",
+      "name": "Crobat",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "169"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "183",
+      "name": "Marill",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "183"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "184",
+      "name": "Azumarill",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "184"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "202",
+      "name": "Wobbuffet",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "202"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "249",
+      "name": "Lugia",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "249"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "250",
+      "name": "Ho-Oh",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "250"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "252",
+      "name": "Treecko",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "252"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "253",
+      "name": "Grovyle",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "253"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "254",
+      "name": "Sceptile",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "254"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "255",
+      "name": "Torchic",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "255"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "256",
+      "name": "Combusken",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "256"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "257",
+      "name": "Blaziken",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "257"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "258",
+      "name": "Mudkip",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "258"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "259",
+      "name": "Marshtomp",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "259"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "260",
+      "name": "Swampert",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "260"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "261",
+      "name": "Poochyena",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "261"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "262",
+      "name": "Mightyena",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "262"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "263",
+      "name": "Zigzagoon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "263"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "264",
+      "name": "Linoone",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "264"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "265",
+      "name": "Wurmple",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "265"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "266",
+      "name": "Silcoon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "266"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "267",
+      "name": "Beautifly",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "267"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "268",
+      "name": "Cascoon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "268"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "269",
+      "name": "Dustox",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "269"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "270",
+      "name": "Lotad",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "270"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "271",
+      "name": "Lombre",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "271"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "272",
+      "name": "Ludicolo",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "272"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "273",
+      "name": "Seedot",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "273"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "274",
+      "name": "Nuzleaf",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "274"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "275",
+      "name": "Shiftry",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "275"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "276",
+      "name": "Taillow",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "276"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "277",
+      "name": "Swellow",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "277"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "278",
+      "name": "Wingull",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "278"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "279",
+      "name": "Pelipper",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "279"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "280",
+      "name": "Ralts",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "280"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "281",
+      "name": "Kirlia",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "281"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "282",
+      "name": "Gardevoir",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "282"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "283",
+      "name": "Surskit",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "283"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "284",
+      "name": "Masquerain",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "284"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "285",
+      "name": "Shroomish",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "285"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "286",
+      "name": "Breloom",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "286"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "287",
+      "name": "Slakoth",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "287"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "288",
+      "name": "Vigoroth",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "288"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "289",
+      "name": "Slaking",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "289"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "290",
+      "name": "Nincada",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "290"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "291",
+      "name": "Ninjask",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "291"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "292",
+      "name": "Shedinja",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "292"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "293",
+      "name": "Whismur",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "293"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "294",
+      "name": "Loudred",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "294"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "295",
+      "name": "Exploud",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "295"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "296",
+      "name": "Makuhita",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "296"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "297",
+      "name": "Hariyama",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "297"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "298",
+      "name": "Azurill",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "298"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "299",
+      "name": "Nosepass",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "299"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "300",
+      "name": "Skitty",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "300"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "301",
+      "name": "Delcatty",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "301"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "302",
+      "name": "Sableye",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "302"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "303",
+      "name": "Mawile",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "303"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "304",
+      "name": "Aron",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "304"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "305",
+      "name": "Lairon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "305"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "306",
+      "name": "Aggron",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "306"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "307",
+      "name": "Meditite",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "307"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "308",
+      "name": "Medicham",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "308"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "309",
+      "name": "Electrike",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "309"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "310",
+      "name": "Manectric",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "310"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "311",
+      "name": "Plusle",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "311"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "312",
+      "name": "Minun",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "312"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "313",
+      "name": "Volbeat",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "313"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "314",
+      "name": "Illumise",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "314"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "315",
+      "name": "Roselia",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "315"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "316",
+      "name": "Gulpin",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "316"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "317",
+      "name": "Swalot",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "317"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "318",
+      "name": "Carvanha",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "318"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "319",
+      "name": "Sharpedo",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "319"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "320",
+      "name": "Wailmer",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "320"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "321",
+      "name": "Wailord",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "321"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "322",
+      "name": "Numel",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "322"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "323",
+      "name": "Camerupt",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "323"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "324",
+      "name": "Torkoal",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "324"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "325",
+      "name": "Spoink",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "325"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "326",
+      "name": "Grumpig",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "326"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "327",
+      "name": "Spinda",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "327"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "328",
+      "name": "Trapinch",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "328"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "329",
+      "name": "Vibrava",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "329"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "330",
+      "name": "Flygon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "330"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "331",
+      "name": "Cacnea",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "331"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "332",
+      "name": "Cacturne",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "332"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "333",
+      "name": "Swablu",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "333"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "334",
+      "name": "Altaria",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "334"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "335",
+      "name": "Zangoose",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "335"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "336",
+      "name": "Seviper",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "336"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "337",
+      "name": "Lunatone",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "337"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "338",
+      "name": "Solrock",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "338"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "339",
+      "name": "Barboach",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "339"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "340",
+      "name": "Whiscash",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "340"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "341",
+      "name": "Corphish",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "341"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "342",
+      "name": "Crawdaunt",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "342"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "343",
+      "name": "Baltoy",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "343"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "344",
+      "name": "Claydol",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "344"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "345",
+      "name": "Lileep",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "345"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "346",
+      "name": "Cradily",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "346"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "347",
+      "name": "Anorith",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "347"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "348",
+      "name": "Armaldo",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "348"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "349",
+      "name": "Feebas",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "349"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "350",
+      "name": "Milotic",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "350"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "351",
+      "name": "Castform",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "351"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "352",
+      "name": "Kecleon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "352"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "353",
+      "name": "Shuppet",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "353"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "354",
+      "name": "Banette",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "354"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "355",
+      "name": "Duskull",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "355"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "356",
+      "name": "Dusclops",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "356"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "357",
+      "name": "Tropius",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "357"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "358",
+      "name": "Chimecho",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "358"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "359",
+      "name": "Absol",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "359"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "360",
+      "name": "Wynaut",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "360"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "361",
+      "name": "Snorunt",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "361"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "362",
+      "name": "Glalie",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "362"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "363",
+      "name": "Spheal",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "363"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "364",
+      "name": "Sealeo",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "364"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "365",
+      "name": "Walrein",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "365"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "366",
+      "name": "Clamperl",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "366"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "367",
+      "name": "Huntail",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "367"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "368",
+      "name": "Gorebyss",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "368"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "369",
+      "name": "Relicanth",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "369"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "370",
+      "name": "Luvdisc",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "370"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "371",
+      "name": "Bagon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "371"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "372",
+      "name": "Shelgon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "372"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "373",
+      "name": "Salamence",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "373"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "374",
+      "name": "Beldum",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "374"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "375",
+      "name": "Metang",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "375"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "376",
+      "name": "Metagross",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "376"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "377",
+      "name": "Regirock",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "377"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "378",
+      "name": "Regice",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "378"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "379",
+      "name": "Registeel",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "379"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "380",
+      "name": "Latias",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "380"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "381",
+      "name": "Latios",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "381"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "382",
+      "name": "Kyogre",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "382"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "383",
+      "name": "Groudon",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "383"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "384",
+      "name": "Rayquaza",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "384"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "385",
+      "name": "Jirachi",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "385"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "386",
+      "name": "Deoxys",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "386"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "406",
+      "name": "Budew",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "406"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "407",
+      "name": "Roserade",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "407"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "433",
+      "name": "Chingling",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "433"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "475",
+      "name": "Gallade",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "475"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "476",
+      "name": "Probopass",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "476"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "477",
+      "name": "Dusknoir",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "477"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "478",
+      "name": "Froslass",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "478"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "483",
+      "name": "Dialga",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "483"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "484",
+      "name": "Palkia",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "484"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "641",
+      "name": "Tornadus",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "641"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "642",
+      "name": "Thundurus",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "642"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "643",
+      "name": "Reshiram",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "643"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "omega_ruby"
+        }
+      }
+    },
+    {
+      "id": "644",
+      "name": "Zekrom",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "644"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "alpha_sapphire"
+        }
+      }
+    },
+    {
+      "id": "645",
+      "name": "Landorus",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "645"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "646",
+      "name": "Kyurem",
+      "regions": [
+        "hoenn"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "hoenn": "646"
+      },
+      "version_info": {
+        "omega_ruby_alpha_sapphire": {
+          "availability": "both"
+        }
+      }
+    }
+  ],
+  "version_filters": {
+    "omega_ruby_alpha_sapphire": {
+      "name": "🔥 オメガルビー・アルファサファイア",
+      "options": [
+        {
+          "value": "",
+          "label": "🌍 全て表示"
+        },
+        {
+          "value": "both",
+          "label": "🟢 両バージョン"
+        },
+        {
+          "value": "omega_ruby",
+          "label": "🔥 オメガルビー限定"
+        },
+        {
+          "value": "alpha_sapphire",
+          "label": "💧 アルファサファイア限定"
+        }
+      ]
+    }
+  }
+}

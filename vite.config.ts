@@ -20,15 +20,9 @@ export default defineConfig({
     assetsDir: 'assets',
     target: 'es2015',
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        overview: resolve(__dirname, 'overview.html'),
-        'zukan-overview': resolve(__dirname, 'zukan-overview.html')
-      },
       output: {
         manualChunks: {
-          vendor: ['vue'],
-          utils: ['./src/composables/useLocalStorage', './src/composables/useGameData', './src/composables/usePokemonFilter']
+          vendor: ['vue', 'vue-router'],
         }
       }
     },
@@ -36,7 +30,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000
   },
   optimizeDeps: {
-    include: ['vue']
+    include: ['vue', 'vue-router']
   },
   css: {
     devSourcemap: true

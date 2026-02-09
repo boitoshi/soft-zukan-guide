@@ -1,51 +1,46 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 
 /**
  * PageNavigation Component
- * ハンバーガーメニュー対応版
+ * Vue Router 対応版ハンバーガーメニュー
  */
-interface Props {
-  currentPage: 'index' | 'overview'
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  currentPage: 'index'
-})
+const route = useRoute()
 
 const showMobileMenu = ref(false)
 
 // ナビゲーションアイテムの定義
 const navigationItems = [
   {
+    id: 'home',
+    to: '/',
+    icon: '🎮',
+    label: '詳細フィルター',
+    description: '高機能な図鑑管理'
+  },
+  {
     id: 'overview',
-    href: 'overview.html',
+    to: '/overview',
     icon: '📋',
     label: '図鑑一覧表示',
     description: 'タブ表示で全図鑑を確認'
   },
-  {
-    id: 'index',
-    href: 'index.html',
-    icon: '🎮',
-    label: '詳細フィルター',
-    description: '高機能な図鑑管理'
-  }
 ]
 
-// アクティブ状態の判定
-const isActive = (itemId: string): boolean => {
-  return props.currentPage === itemId
+// 現在のルートに一致するか判定
+const isActive = (item: typeof navigationItems[number]): boolean => {
+  return route.path === item.to
 }
 
 // アクティブアイテムの取得
 const getActiveItem = () => {
-  return navigationItems.find(item => isActive(item.id))
+  return navigationItems.find(item => isActive(item)) ?? navigationItems[0]
 }
 
 // 非アクティブアイテムの取得
 const getInactiveItems = () => {
-  return navigationItems.filter(item => !isActive(item.id))
+  return navigationItems.filter(item => !isActive(item))
 }
 
 // モバイルメニュートグル
@@ -61,22 +56,22 @@ const toggleMobileMenu = () => {
       <div class="hidden md:flex space-x-4">
         <template v-for="item in navigationItems" :key="item.id">
           <!-- アクティブなページ -->
-          <div 
-            v-if="isActive(item.id)"
+          <div
+            v-if="isActive(item)"
             class="bg-blue-600 text-white px-4 py-2 rounded-md font-medium text-sm border-2 border-blue-600"
           >
             {{ item.icon }} {{ item.label }}
           </div>
-          
-          <!-- 非アクティブなページ（リンク） -->
-          <a 
+
+          <!-- 非アクティブなページ（router-link） -->
+          <router-link
             v-else
-            :href="item.href" 
+            :to="item.to"
             class="border-2 border-gray-300 hover:border-blue-600 text-gray-700 hover:text-blue-600 px-4 py-2 rounded-md font-medium text-sm transition-colors duration-200"
             :title="item.description"
           >
             {{ item.icon }} {{ item.label }}
-          </a>
+          </router-link>
         </template>
       </div>
 
@@ -104,15 +99,11 @@ const toggleMobileMenu = () => {
           </div>
         </button>
       </div>
-      
+
       <!-- ブランド表示 -->
       <div class="hidden md:flex items-center space-x-2">
-        <div class="text-sm text-gray-500 font-medium">
-          🎯 ポケモン図鑑マスター
-        </div>
-        <div class="hidden sm:block text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">
-          v3.0
-        </div>
+        <div class="text-sm text-gray-500 font-medium">🎯 ポケモン図鑑マスター</div>
+        <div class="hidden sm:block text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">v3.0</div>
       </div>
     </div>
 
@@ -120,9 +111,9 @@ const toggleMobileMenu = () => {
     <Transition name="slide-down">
       <div v-if="showMobileMenu" class="md:hidden mt-4 pt-4 border-t border-gray-200">
         <template v-for="item in getInactiveItems()" :key="item.id">
-          <a 
-            :href="item.href"
-            @click="showMobileMenu = false" 
+          <router-link
+            :to="item.to"
+            @click="showMobileMenu = false"
             class="flex items-center w-full px-4 py-3 text-left text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
           >
             <span class="mr-3 text-lg">{{ item.icon }}</span>
@@ -130,16 +121,14 @@ const toggleMobileMenu = () => {
               <div class="font-medium">{{ item.label }}</div>
               <div class="text-xs text-gray-500">{{ item.description }}</div>
             </div>
-          </a>
+          </router-link>
         </template>
       </div>
     </Transition>
-    
+
     <!-- 現在のページ説明（デスクトップのみ） -->
     <div v-if="getActiveItem()" class="hidden md:block mt-2 pt-2 border-t border-gray-100">
-      <p class="text-xs text-gray-500 text-center">
-        {{ getActiveItem()?.description }}
-      </p>
+      <p class="text-xs text-gray-500 text-center">{{ getActiveItem()?.description }}</p>
     </div>
   </div>
 </template>

@@ -1,0 +1,4693 @@
+{
+  "stats": {
+    "total": 291,
+    "duplicates": 0,
+    "regions": {
+      "alola": {
+        "total": 291,
+        "only": 291
+      }
+    }
+  },
+  "pokemon": [
+    {
+      "id": "010",
+      "name": "Caterpie",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "10"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "011",
+      "name": "Metapod",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "11"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "012",
+      "name": "Butterfree",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "12"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "019",
+      "name": "Rattata",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "19"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "020",
+      "name": "Raticate",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "20"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "021",
+      "name": "Spearow",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "21"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "022",
+      "name": "Fearow",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "22"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "025",
+      "name": "Pichu",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "25"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "026",
+      "name": "Pikachu",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "26"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "027",
+      "name": "Sandshrew",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "27"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "028",
+      "name": "Sandslash",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "28"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "035",
+      "name": "Clefairy",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "35"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "036",
+      "name": "Clefable",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "36"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "037",
+      "name": "Vulpix",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "37"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "038",
+      "name": "Ninetales",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "38"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "039",
+      "name": "Jigglypuff",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "39"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "040",
+      "name": "Wigglytuff",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "40"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "041",
+      "name": "Zubat",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "41"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "042",
+      "name": "Golbat",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "42"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "046",
+      "name": "Paras",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "46"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "047",
+      "name": "Parasect",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "47"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "050",
+      "name": "Diglett",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "50"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "051",
+      "name": "Dugtrio",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "51"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "052",
+      "name": "Meowth",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "52"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "053",
+      "name": "Persian",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "53"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "054",
+      "name": "Psyduck",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "54"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "055",
+      "name": "Golduck",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "55"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "056",
+      "name": "Mankey",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "56"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "057",
+      "name": "Primeape",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "57"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "058",
+      "name": "Growlithe",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "58"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "059",
+      "name": "Arcanine",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "59"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "060",
+      "name": "Poliwag",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "60"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "061",
+      "name": "Poliwhirl",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "61"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "062",
+      "name": "Poliwrath",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "62"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "063",
+      "name": "Abra",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "63"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "064",
+      "name": "Kadabra",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "64"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "065",
+      "name": "Alakazam",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "65"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "066",
+      "name": "Machop",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "66"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "067",
+      "name": "Machoke",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "67"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "068",
+      "name": "Machamp",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "68"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "072",
+      "name": "Tentacool",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "72"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "073",
+      "name": "Tentacruel",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "73"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "074",
+      "name": "Geodude",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "74"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "075",
+      "name": "Graveler",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "75"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "076",
+      "name": "Golem",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "76"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "079",
+      "name": "Slowpoke",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "79"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "080",
+      "name": "Slowbro",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "80"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "081",
+      "name": "Magnemite",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "81"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "082",
+      "name": "Magneton",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "82"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "086",
+      "name": "Seel",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "86"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "087",
+      "name": "Dewgong",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "87"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "088",
+      "name": "Grimer",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "88"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "089",
+      "name": "Muk",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "89"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "100",
+      "name": "Voltorb",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "100"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "101",
+      "name": "Electrode",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "101"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "102",
+      "name": "Exeggcute",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "102"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "103",
+      "name": "Exeggutor",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "103"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "104",
+      "name": "Cubone",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "104"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "105",
+      "name": "Marowak",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "105"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "113",
+      "name": "Chansey",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "113"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "115",
+      "name": "Kangaskhan",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "115"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "118",
+      "name": "Goldeen",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "118"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "119",
+      "name": "Seaking",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "119"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "120",
+      "name": "Staryu",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "120"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "121",
+      "name": "Starmie",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "121"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "123",
+      "name": "Scyther",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "123"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "125",
+      "name": "Electabuzz",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "125"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "126",
+      "name": "Magmar",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "126"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "127",
+      "name": "Pinsir",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "127"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "128",
+      "name": "Tauros",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "128"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "131",
+      "name": "Lapras",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "131"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "132",
+      "name": "Ditto",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "132"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "133",
+      "name": "Eevee",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "133"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "134",
+      "name": "Vaporeon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "134"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "135",
+      "name": "Jolteon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "135"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "136",
+      "name": "Flareon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "136"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "137",
+      "name": "Porygon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "137"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "142",
+      "name": "Aerodactyl",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "142"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "143",
+      "name": "Snorlax",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "143"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "147",
+      "name": "Dratini",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "147"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "148",
+      "name": "Dragonair",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "148"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "149",
+      "name": "Dragonite",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "149"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "165",
+      "name": "Ledyba",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "165"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "166",
+      "name": "Ledian",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "166"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "167",
+      "name": "Spinarak",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "167"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "168",
+      "name": "Ariados",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "168"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "169",
+      "name": "Crobat",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "169"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "170",
+      "name": "Chinchou",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "170"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "171",
+      "name": "Lanturn",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "171"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "172",
+      "name": "Raichu",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "172"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "173",
+      "name": "Cleffa",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "173"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "174",
+      "name": "Igglybuff",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "174"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "175",
+      "name": "Togepi",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "175"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "176",
+      "name": "Togetic",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "176"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "185",
+      "name": "Sudowoodo",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "185"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "186",
+      "name": "Politoed",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "186"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "196",
+      "name": "Espeon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "196"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "197",
+      "name": "Umbreon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "197"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "198",
+      "name": "Murkrow",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "198"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "199",
+      "name": "Slowking",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "199"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "200",
+      "name": "Misdreavus",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "200"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "209",
+      "name": "Snubbull",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "209"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "210",
+      "name": "Granbull",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "210"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "212",
+      "name": "Scizor",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "212"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "214",
+      "name": "Heracross",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "214"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "215",
+      "name": "Sneasel",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "215"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "222",
+      "name": "Corsola",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "222"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "225",
+      "name": "Delibird",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "225"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "226",
+      "name": "Mantine",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "226"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "227",
+      "name": "Skarmory",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "227"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "233",
+      "name": "Porygon2",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "233"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "239",
+      "name": "Elekid",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "239"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "240",
+      "name": "Magby",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "240"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "241",
+      "name": "Miltank",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "241"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "242",
+      "name": "Blissey",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "242"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "246",
+      "name": "Larvitar",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "246"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "247",
+      "name": "Pupitar",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "247"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "248",
+      "name": "Tyranitar",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "248"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "278",
+      "name": "Wingull",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "278"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "279",
+      "name": "Pelipper",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "279"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "280",
+      "name": "Ralts",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "280"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "281",
+      "name": "Kirlia",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "281"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "282",
+      "name": "Gardevoir",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "282"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "283",
+      "name": "Surskit",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "283"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "284",
+      "name": "Masquerain",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "284"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "296",
+      "name": "Makuhita",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "296"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "297",
+      "name": "Hariyama",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "297"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "299",
+      "name": "Nosepass",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "299"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "302",
+      "name": "Sableye",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "302"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "318",
+      "name": "Carvanha",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "318"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "319",
+      "name": "Sharpedo",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "319"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "320",
+      "name": "Wailmer",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "320"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "321",
+      "name": "Wailord",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "321"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "324",
+      "name": "Torkoal",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "324"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "327",
+      "name": "Spinda",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "327"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "328",
+      "name": "Trapinch",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "328"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "329",
+      "name": "Vibrava",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "329"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "330",
+      "name": "Flygon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "330"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "339",
+      "name": "Barboach",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "339"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "340",
+      "name": "Whiscash",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "340"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "341",
+      "name": "Corphish",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "341"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "342",
+      "name": "Crawdaunt",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "342"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "343",
+      "name": "Baltoy",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "343"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "344",
+      "name": "Claydol",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "344"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "349",
+      "name": "Feebas",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "349"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "350",
+      "name": "Milotic",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "350"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "351",
+      "name": "Castform",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "351"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "352",
+      "name": "Kecleon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "352"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "353",
+      "name": "Shuppet",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "353"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "354",
+      "name": "Banette",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "354"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "355",
+      "name": "Duskull",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "355"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "356",
+      "name": "Dusclops",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "356"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "357",
+      "name": "Tropius",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "357"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "359",
+      "name": "Absol",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "359"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "361",
+      "name": "Snorunt",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "361"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "362",
+      "name": "Glalie",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "362"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "369",
+      "name": "Relicanth",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "369"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "374",
+      "name": "Beldum",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "374"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "375",
+      "name": "Metang",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "375"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "376",
+      "name": "Metagross",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "376"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "408",
+      "name": "Cranidos",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "408"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "409",
+      "name": "Rampardos",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "409"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "410",
+      "name": "Shieldon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "410"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "411",
+      "name": "Bastiodon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "411"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "429",
+      "name": "Mismagius",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "429"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "430",
+      "name": "Honchkrow",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "430"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "438",
+      "name": "Bonsly",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "438"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "440",
+      "name": "Happiny",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "440"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "446",
+      "name": "Munchlax",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "446"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "456",
+      "name": "Finneon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "456"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "457",
+      "name": "Lumineon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "457"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "458",
+      "name": "Mantyke",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "458"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "461",
+      "name": "Weavile",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "461"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "462",
+      "name": "Magnezone",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "462"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "466",
+      "name": "Electivire",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "466"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "467",
+      "name": "Magmortar",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "467"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "468",
+      "name": "Togekiss",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "468"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "470",
+      "name": "Leafeon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "470"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "471",
+      "name": "Glaceon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "471"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "474",
+      "name": "PorygonZ",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "474"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "475",
+      "name": "Gallade",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "475"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "476",
+      "name": "Probopass",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "476"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "477",
+      "name": "Dusknoir",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "477"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "478",
+      "name": "Froslass",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "478"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "524",
+      "name": "Roggenrola",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "524"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "525",
+      "name": "Boldore",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "525"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "526",
+      "name": "Gigalith",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "526"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "546",
+      "name": "Cottonee",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "546"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "547",
+      "name": "Whimsicott",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "547"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "548",
+      "name": "Petilil",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "548"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "549",
+      "name": "Lilligant",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "549"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "551",
+      "name": "Sandile",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "551"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "552",
+      "name": "Krokorok",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "552"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "553",
+      "name": "Krookodile",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "553"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "564",
+      "name": "Tirtouga",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "564"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "565",
+      "name": "Carracosta",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "565"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "566",
+      "name": "Archen",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "566"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "567",
+      "name": "Archeops",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "567"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "572",
+      "name": "Minccino",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "572"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "573",
+      "name": "Cinccino",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "573"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "582",
+      "name": "Vanillite",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "582"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "583",
+      "name": "Vanillish",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "583"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "584",
+      "name": "Vanilluxe",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "584"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "592",
+      "name": "Frillish",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "592"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "593",
+      "name": "Jellicent",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "593"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "627",
+      "name": "Rufflet",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "627"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "628",
+      "name": "Braviary",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "628"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "629",
+      "name": "Vullaby",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "629"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "630",
+      "name": "Mandibuzz",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "630"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "636",
+      "name": "Larvesta",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "636"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "637",
+      "name": "Volcarona",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "637"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "700",
+      "name": "Sylveon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "700"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "702",
+      "name": "Dedenne",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "702"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "703",
+      "name": "Carbink",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "703"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "704",
+      "name": "Goomy",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "704"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "705",
+      "name": "Sliggoo",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "705"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "706",
+      "name": "Goodra",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "706"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "722",
+      "name": "Rowlet",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "722"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "723",
+      "name": "Dartrix",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "723"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "724",
+      "name": "Decidueye",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "724"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "725",
+      "name": "Litten",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "725"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "726",
+      "name": "Torracat",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "726"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "727",
+      "name": "Incineroar",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "727"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "728",
+      "name": "Popplio",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "728"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "729",
+      "name": "Brionne",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "729"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "730",
+      "name": "Primarina",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "730"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "731",
+      "name": "Pikipek",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "731"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "732",
+      "name": "Trumbeak",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "732"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "733",
+      "name": "Toucannon",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "733"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "734",
+      "name": "Yungoos",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "734"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "735",
+      "name": "Gumshoos",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "735"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "736",
+      "name": "Grubbin",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "736"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "737",
+      "name": "Charjabug",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "737"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "738",
+      "name": "Vikavolt",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "738"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "739",
+      "name": "Crabrawler",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "739"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "740",
+      "name": "Crabominable",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "740"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "744",
+      "name": "Rockruff",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "744"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "745",
+      "name": "Lycanroc",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "745"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "746",
+      "name": "Wishiwashi",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "746"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "747",
+      "name": "Mareanie",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "747"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "748",
+      "name": "Toxapex",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "748"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "749",
+      "name": "Mudbray",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "749"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "750",
+      "name": "Mudsdale",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "750"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "751",
+      "name": "Dewpider",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "751"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "752",
+      "name": "Araquanid",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "752"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "753",
+      "name": "Fomantis",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "753"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "754",
+      "name": "Lurantis",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "754"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "755",
+      "name": "Morelull",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "755"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "756",
+      "name": "Shiinotic",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "756"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "759",
+      "name": "Stufful",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "759"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "760",
+      "name": "Bewear",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "760"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "761",
+      "name": "Bounsweet",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "761"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "762",
+      "name": "Steenee",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "762"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "763",
+      "name": "Tsareena",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "763"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "764",
+      "name": "Comfey",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "764"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "765",
+      "name": "Oranguru",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "765"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "766",
+      "name": "Passimian",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "766"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "767",
+      "name": "Wimpod",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "767"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "768",
+      "name": "Golisopod",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "768"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "769",
+      "name": "Sandygast",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "769"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "770",
+      "name": "Palossand",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "770"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "771",
+      "name": "Pyukumuku",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "771"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "774",
+      "name": "Minior",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "774"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "775",
+      "name": "Komala",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "775"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "776",
+      "name": "Turtonator",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "776"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "777",
+      "name": "Togedemaru",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "777"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "778",
+      "name": "Mimikyu",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "778"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "779",
+      "name": "Bruxish",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "779"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "780",
+      "name": "Drampa",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "780"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "781",
+      "name": "Dhelmise",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "781"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "782",
+      "name": "Jangmo-o",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "782"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "783",
+      "name": "Hakamo-o",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "783"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "784",
+      "name": "Kommo-o",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "784"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "785",
+      "name": "TapuKoko",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "785"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "786",
+      "name": "TapuLele",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "786"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "787",
+      "name": "TapuBulu",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "787"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "788",
+      "name": "TapuFini",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "788"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "789",
+      "name": "Cosmog",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "789"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "790",
+      "name": "Cosmoem",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "790"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "791",
+      "name": "Solgaleo",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "791"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "792",
+      "name": "Lunala",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "792"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "793",
+      "name": "Nihilego",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "793"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "794",
+      "name": "Buzzwole",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "794"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "795",
+      "name": "Pheromosa",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "795"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "796",
+      "name": "Xurkitree",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "796"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "797",
+      "name": "Celesteela",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "797"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "moon"
+        }
+      }
+    },
+    {
+      "id": "798",
+      "name": "Kartana",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "798"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "sun"
+        }
+      }
+    },
+    {
+      "id": "799",
+      "name": "Guzzlord",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "799"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "800",
+      "name": "Necrozma",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "800"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "801",
+      "name": "Magearna",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "801"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    },
+    {
+      "id": "802",
+      "name": "Marshadow",
+      "regions": [
+        "alola"
+      ],
+      "caught": false,
+      "pokedex_numbers": {
+        "alola": "802"
+      },
+      "version_info": {
+        "sun_moon": {
+          "availability": "both"
+        }
+      }
+    }
+  ],
+  "version_filters": {
+    "sun_moon": {
+      "name": "☀️ サン・ムーン",
+      "options": [
+        {
+          "value": "",
+          "label": "🌍 全て表示"
+        },
+        {
+          "value": "both",
+          "label": "🟢 両バージョン"
+        },
+        {
+          "value": "sun",
+          "label": "☀️ サン限定"
+        },
+        {
+          "value": "moon",
+          "label": "🌙 ムーン限定"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "pokemon": [
+    { "id": 1, "name": "Chespin", "availability": "both" },
+    { "id": 2, "name": "Quilladin", "availability": "both" },
+    { "id": 3, "name": "Chesnaught", "availability": "both" },
+    { "id": 4, "name": "Fennekin", "availability": "both" },
+    { "id": 5, "name": "Braixen", "availability": "both" },
+    { "id": 6, "name": "Delphox", "availability": "both" },
+    { "id": 7, "name": "Froakie", "availability": "both" },
+    { "id": 8, "name": "Frogadier", "availability": "both" },
+    { "id": 9, "name": "Greninja", "availability": "both" },
+    { "id": 10, "name": "Bunnelby", "availability": "both" },
+    { "id": 142, "name": "Swirlix", "availability": "x" },
+    { "id": 143, "name": "Slurpuff", "availability": "x" },
+    { "id": 144, "name": "Spritzee", "availability": "y" },
+    { "id": 145, "name": "Aromatisse", "availability": "y" },
+    { "id": 148, "name": "Clauncher", "availability": "x" },
+    { "id": 149, "name": "Clawitzer", "availability": "x" },
+    { "id": 150, "name": "Skrelp", "availability": "y" },
+    { "id": 151, "name": "Dragalge", "availability": "y" },
+    { "id": 716, "name": "Xerneas", "availability": "x" },
+    { "id": 717, "name": "Yveltal", "availability": "y" },
+    { "id": 718, "name": "Zygarde", "availability": "both" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "pokemon": [
+    { "id": 1, "name": "Treecko", "availability": "both" },
+    { "id": 2, "name": "Grovyle", "availability": "both" },
+    { "id": 3, "name": "Sceptile", "availability": "both" },
+    { "id": 4, "name": "Torchic", "availability": "both" },
+    { "id": 5, "name": "Combusken", "availability": "both" },
+    { "id": 6, "name": "Blaziken", "availability": "both" },
+    { "id": 7, "name": "Mudkip", "availability": "both" },
+    { "id": 8, "name": "Marshtomp", "availability": "both" },
+    { "id": 9, "name": "Swampert", "availability": "both" },
+    { "id": 10, "name": "Poochyena", "availability": "both" },
+    { "id": 120, "name": "Seedot", "availability": "omega_ruby" },
+    { "id": 121, "name": "Nuzleaf", "availability": "omega_ruby" },
+    { "id": 122, "name": "Shiftry", "availability": "omega_ruby" },
+    { "id": 123, "name": "Lotad", "availability": "alpha_sapphire" },
+    { "id": 124, "name": "Lombre", "availability": "alpha_sapphire" },
+    { "id": 125, "name": "Ludicolo", "availability": "alpha_sapphire" },
+    { "id": 140, "name": "Mawile", "availability": "omega_ruby" },
+    { "id": 141, "name": "Sableye", "availability": "alpha_sapphire" },
+    { "id": 199, "name": "Zangoose", "availability": "omega_ruby" },
+    { "id": 200, "name": "Seviper", "availability": "alpha_sapphire" },
+    { "id": 208, "name": "Groudon", "availability": "omega_ruby" },
+    { "id": 209, "name": "Kyogre", "availability": "alpha_sapphire" },
+    { "id": 210, "name": "Rayquaza", "availability": "both" },
+    { "id": 211, "name": "Latios", "availability": "omega_ruby" },
+    { "id": 212, "name": "Latias", "availability": "alpha_sapphire" }
+  ]
+}

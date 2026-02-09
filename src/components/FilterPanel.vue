@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { GameConfig, FilterState } from '../index.js'
+import type { GameConfig, FilterState } from '@/types'
 
 interface VersionFilterOption {
   value: string

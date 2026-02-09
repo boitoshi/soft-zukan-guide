@@ -2,7 +2,7 @@
  * useLocalStorage Composable (TypeScript版)
  * ローカルストレージでの進捗保存・読み込みを担当
  */
-import type { Pokemon, PokemonProgress, UseLocalStorageReturn } from '../index.js'
+import type { Pokemon, PokemonProgress, UseLocalStorageReturn } from '@/types'
 
 export function useLocalStorage(): UseLocalStorageReturn {
   // 進捗保存

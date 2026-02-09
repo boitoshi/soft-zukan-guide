@@ -1,16 +1,17 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 import './assets/main.css'
 import { registerServiceWorker, initializePWAInstall } from './utils/pwa.js'
-
-// TailwindCSSはCDNから読み込まれるので、ここでは不要
 
 // Vue アプリ作成
 const app = createApp(App)
 
+// Vue Router
+app.use(router)
+
 // PWA 初期化
 if (location.protocol === 'https:' || location.hostname === 'localhost') {
-  // HTTPSまたはローカル環境でのみService Worker登録
   registerServiceWorker()
     .then((success) => {
       if (success) {

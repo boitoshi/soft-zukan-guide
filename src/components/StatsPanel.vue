@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ZukanStats } from '../index.js'
+import type { ZukanStats } from '@/types'
 
 interface Props {
   stats?: ZukanStats

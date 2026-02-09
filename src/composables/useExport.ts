@@ -2,7 +2,7 @@
  * useExport Composable (TypeScript版)
  * 進捗データのエクスポート機能を担当
  */
-import type { Pokemon, GameConfig, ZukanData } from '../index.js'
+import type { Pokemon, GameConfig, ZukanData } from '@/types'
 
 export interface ExportData {
   gameInfo: {
