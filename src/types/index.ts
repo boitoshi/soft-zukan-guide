@@ -51,6 +51,8 @@ export interface GameConfig {
   displayName: string;
   game: string;
   seriesId: string;
+  platform?: 'switch' | '3ds';
+  softZukan?: boolean;
   dataFile: string;
   regions: ZukanRegion[];
   stats?: ZukanStats;
@@ -105,11 +107,12 @@ export interface UseGameDataReturn {
   error: import('vue').Ref<string | null>;
   isLoading: import('vue').Ref<boolean>;
   loadAvailableGames: () => Promise<GameConfig[]>;
-  loadGameData: (gameId: string, localStorage?: UseLocalStorageReturn) => Promise<ZukanData>;
-  selectGame: (gameId: string, localStorage?: UseLocalStorageReturn) => Promise<boolean>;
-  backToGameSelection: (localStorage?: UseLocalStorageReturn) => void;
+  loadGameData: (gameId: string) => Promise<ZukanData>;
+  selectGame: (gameId: string) => Promise<boolean>;
+  backToGameSelection: () => void;
   getGameIcon: (gameId: string) => string;
-  toggleCaught: (pokemonId: string, localStorage?: UseLocalStorageReturn) => void;
+  toggleCaught: (pokemonName: string) => void;
+  isCaughtInCurrentGame: (pokemonName: string) => boolean;
   clearError: () => void;
   caughtCount: import('vue').ComputedRef<number>;
   remainingCount: import('vue').ComputedRef<number>;

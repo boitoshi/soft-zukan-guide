@@ -1,19 +1,23 @@
 /**
  * useGameData Composable (TypeScript版)
  * ゲームデータの読み込み・管理を担当
+ *
+ * caught 状態は useGlobalProgress から導出（ポケモン名ベース）
+ * per-game localStorage への直接保存は行わない
  */
-import { ref, computed } from "vue";
+import { ref, computed } from 'vue';
 import type {
   ZukanData,
   GameConfig,
   Pokemon,
-  UseLocalStorageReturn,
   UseGameDataReturn,
-  ZukanStats,
   ZukanConfigFile,
-} from '@/types'
-import { getGameIcon as getGameIconFromConstants } from '@/constants/icons'
-import type { Ref, ComputedRef } from 'vue'
+} from '@/types';
+import { getGameIcon as getGameIconFromConstants } from '@/constants/icons';
+import { useGlobalProgress } from '@/composables/useGlobalProgress';
+import type { ComputedRef } from 'vue';
+
+const SELECTED_GAME_KEY = 'selectedGame';
 
 export function useGameData(): UseGameDataReturn {
   // リアクティブデータ
@@ -32,7 +36,9 @@ export function useGameData(): UseGameDataReturn {
   const error = ref<string | null>(null);
   const isLoading = ref<boolean>(false);
 
-  // エラー状態をクリア
+  // グローバル進捗管理（ポケモン名ベース）
+  const globalProgress = useGlobalProgress();
+
   const clearError = (): void => {
     error.value = null;
   };
@@ -43,7 +49,7 @@ export function useGameData(): UseGameDataReturn {
     error.value = null;
 
     try {
-      const configResponse = await fetch("/zukan-config.json");
+      const configResponse = await fetch('/zukan-config.json');
       if (!configResponse.ok) {
         throw new Error(
           `設定ファイルの読み込みに失敗しました (${configResponse.status})`,
@@ -53,7 +59,6 @@ export function useGameData(): UseGameDataReturn {
 
       const games: GameConfig[] = [];
 
-      // 新形式: gamesプロパティから読み込み
       if (config.games && Array.isArray(config.games)) {
         for (const gameConfig of config.games) {
           try {
@@ -65,37 +70,41 @@ export function useGameData(): UseGameDataReturn {
                 stats: gameData.stats,
               });
             }
-          } catch (error) {
+          } catch (err) {
             console.log(`ゲーム ${gameConfig.id} のデータが見つかりません`);
           }
         }
       }
 
-      // 旧形式との互換性: testプロパティがある場合
+      // 旧形式との互換性
       if (config.test) {
         try {
-          const dataResponse = await fetch("/test_zukan_data.json");
+          const dataResponse = await fetch('/test_zukan_data.json');
           if (dataResponse.ok) {
             const gameData = (await dataResponse.json()) as ZukanData;
             games.push({
-              id: "test",
+              id: 'test',
               ...config.test,
-              dataFile: "/test_zukan_data.json",
+              dataFile: '/test_zukan_data.json',
               stats: gameData.stats,
             });
           }
-        } catch (error) {
-          console.log("テストデータが見つかりません");
+        } catch (err) {
+          console.log('テストデータが見つかりません');
         }
       }
 
       availableGames.value = games;
+
+      // グローバル進捗を読み込み
+      globalProgress.loadGlobalProgress();
+
       return games;
     } catch (err) {
       const errorMessage =
-        err instanceof Error ? err.message : "不明なエラーが発生しました";
+        err instanceof Error ? err.message : '不明なエラーが発生しました';
       error.value = `ゲーム設定の読み込みに失敗しました: ${errorMessage}`;
-      console.error("ゲーム設定の読み込みに失敗しました:", err);
+      console.error('ゲーム設定の読み込みに失敗しました:', err);
       return [];
     } finally {
       isLoading.value = false;
@@ -103,15 +112,11 @@ export function useGameData(): UseGameDataReturn {
   };
 
   // 特定のゲームデータを読み込み
-  const loadGameData = async (
-    gameId: string,
-    localStorage?: UseLocalStorageReturn,
-  ): Promise<ZukanData> => {
+  const loadGameData = async (gameId: string): Promise<ZukanData> => {
     isLoading.value = true;
     error.value = null;
 
     try {
-      // ゲーム設定を取得
       const gameInfo = availableGames.value.find((g) => g.id === gameId);
       if (!gameInfo) {
         throw new Error(`ゲーム「${gameId}」の設定が見つかりません`);
@@ -126,20 +131,15 @@ export function useGameData(): UseGameDataReturn {
 
       const data = (await response.json()) as ZukanData;
 
-      // ローカルストレージから進捗を復元
-      if (localStorage) {
-        localStorage.loadProgress(gameId, data.pokemon);
-      }
-
+      // caught 状態は zukanData には書き込まない
+      // globalProgress から都度導出する
       zukanData.value = data;
-
-      // 選択されたゲーム情報を更新
       selectedGame.value = gameInfo;
 
       return data;
     } catch (err) {
       const errorMessage =
-        err instanceof Error ? err.message : "不明なエラーが発生しました";
+        err instanceof Error ? err.message : '不明なエラーが発生しました';
       error.value = `ゲーム「${gameId}」のデータ読み込みに失敗しました: ${errorMessage}`;
       console.error(`ゲーム ${gameId} のデータ読み込みに失敗しました:`, err);
       throw err;
@@ -149,48 +149,54 @@ export function useGameData(): UseGameDataReturn {
   };
 
   // ゲーム選択
-  const selectGame = async (
-    gameId: string,
-    localStorage?: UseLocalStorageReturn,
-  ): Promise<boolean> => {
+  const selectGame = async (gameId: string): Promise<boolean> => {
     try {
-      await loadGameData(gameId, localStorage);
-      if (localStorage) {
-        localStorage.saveSelectedGame(gameId);
+      await loadGameData(gameId);
+      try {
+        localStorage.setItem(SELECTED_GAME_KEY, gameId);
+      } catch (e) {
+        // localStorage が使えない環境でもアプリは動作する
       }
       return true;
     } catch (err) {
-      // エラーはloadGameDataで既に設定されているので、ここでは追記のみ
-      console.error("ゲーム選択に失敗しました:", err);
+      console.error('ゲーム選択に失敗しました:', err);
       return false;
     }
   };
 
   // ゲーム選択をリセット
-  const backToGameSelection = (localStorage?: UseLocalStorageReturn): void => {
+  const backToGameSelection = (): void => {
     selectedGame.value = null;
     zukanData.value = {
-      stats: {
-        total: 0,
-        duplicates: 0,
-        regions: {},
-      },
+      stats: { total: 0, duplicates: 0, regions: {} },
       pokemon: [],
     };
-    if (localStorage) {
-      localStorage.clearSelectedGame();
+    try {
+      localStorage.removeItem(SELECTED_GAME_KEY);
+    } catch (e) {
+      // ignore
     }
   };
 
-  // ゲームアイコン取得（共有定数に委譲）
+  // ゲームアイコン取得
   const getGameIcon = (gameId: string): string => {
-    return getGameIconFromConstants(gameId)
-  }
+    return getGameIconFromConstants(gameId);
+  };
 
-  // 統計計算
+  // ポケモン名で caught 判定（現在選択中のゲーム）
+  const isCaughtInCurrentGame = (pokemonName: string): boolean => {
+    if (!selectedGame.value) return false;
+    return globalProgress.isCaughtInGame(pokemonName, selectedGame.value.id);
+  };
+
+  // 統計計算（globalProgress から導出）
   const caughtCount: ComputedRef<number> = computed(() => {
+    if (!selectedGame.value) return 0;
+    const gameId = selectedGame.value.id;
     return (
-      zukanData.value.pokemon?.filter((p: Pokemon) => p.caught).length || 0
+      zukanData.value.pokemon?.filter((p: Pokemon) =>
+        globalProgress.isCaughtInGame(p.name, gameId),
+      ).length || 0
     );
   });
 
@@ -213,45 +219,32 @@ export function useGameData(): UseGameDataReturn {
     );
   });
 
-  // ポケモンのゲット状況を切り替える
-  const toggleCaught = (
-    pokemonId: string,
-    localStorage?: UseLocalStorageReturn,
-  ): void => {
-    const pokemon = zukanData.value.pokemon?.find(
-      (p: Pokemon) => p.id === pokemonId,
-    );
-    if (pokemon) {
-      pokemon.caught = !pokemon.caught;
+  // ポケモンのゲット状況を切り替える（名前ベース）
+  const toggleCaught = (pokemonName: string): void => {
+    if (!selectedGame.value) return;
+    const gameId = selectedGame.value.id;
 
-      // ローカルストレージに保存
-      if (localStorage && selectedGame.value) {
-        localStorage.saveProgress(
-          selectedGame.value.id,
-          zukanData.value.pokemon,
-        );
-      }
+    if (globalProgress.isCaughtInGame(pokemonName, gameId)) {
+      globalProgress.markUncaught(pokemonName, gameId);
+    } else {
+      globalProgress.markCaught(pokemonName, gameId);
     }
   };
 
   return {
-    // リアクティブデータ
     zukanData,
     availableGames,
     selectedGame,
     error,
     isLoading,
-
-    // メソッド
     loadAvailableGames,
     loadGameData,
     selectGame,
     backToGameSelection,
     getGameIcon,
     toggleCaught,
+    isCaughtInCurrentGame,
     clearError,
-
-    // 計算済みプロパティ
     caughtCount,
     remainingCount,
     progressPercent,

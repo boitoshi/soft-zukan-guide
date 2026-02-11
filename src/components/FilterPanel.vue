@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import type { GameConfig, FilterState } from '@/types'
 
 interface VersionFilterOption {
@@ -26,21 +27,9 @@ const emit = defineEmits<{
   'reset-filters': []
 }>()
 
-// フィルター値更新
-const updateFilter = (key: keyof FilterState, value: string): void => {
-  const newFilters = { ...props.modelValue, [key]: value }
-  emit('update:modelValue', newFilters)
-}
-
-// 型安全なイベントハンドラー
-const handleSelectChange = (key: keyof FilterState) => (event: Event) => {
-  const target = event.target as HTMLSelectElement
-  updateFilter(key, target.value)
-}
-
-const handleInputChange = (key: keyof FilterState) => (event: Event) => {
-  const target = event.target as HTMLInputElement
-  updateFilter(key, target.value)
+// フィルター値更新（カリー化しない直接関数）
+const updateFilter = (key: string, value: string): void => {
+  emit('update:modelValue', { ...props.modelValue, [key]: value })
 }
 
 // フィルターリセット
@@ -49,134 +38,120 @@ const resetFilters = (): void => {
 }
 
 // 地域フィルターオプション
-const getRegionOptions = () => {
-  const options = [
-    { value: '', label: '🌍 全ての地域' },
-    { value: 'duplicates', label: '🔄 重複ポケモン' }
+const regionOptions = computed(() => {
+  const options: { value: string; label: string }[] = [
+    { value: '', label: '全ての地域' }
   ]
-
-  // 選択されたゲームの地域を追加
   if (props.selectedGame?.regions) {
     props.selectedGame.regions.forEach(region => {
-      options.push({
-        value: region.id,
-        label: region.name
-      })
+      options.push({ value: region.id, label: region.name })
     })
   }
-
   return options
+})
+
+// バージョンフィルターのオプション（空値の重複を除去）
+const getVersionOptions = (filter: VersionFilter) => {
+  return filter.options.filter(opt => opt.value !== '')
 }
 
-// 進捗状況フィルターオプション
-const statusOptions = [
-  { value: '', label: '📋 全て表示' },
-  { value: 'caught', label: '✅ ゲット済み' },
-  { value: 'uncaught', label: '❌ 未ゲット' }
-]
-
-// アクティブフィルター数の計算
-const getActiveFilterCount = (): number => {
+// アクティブフィルター数
+const activeFilterCount = computed((): number => {
   let count = 0
   if (props.modelValue.region) count++
   if (props.modelValue.status) count++
   if (props.modelValue.search) count++
+  if (props.modelValue.multipleDex) count++
+  // バージョンフィルターのカウント
+  if (props.versionFilters) {
+    Object.keys(props.versionFilters).forEach(key => {
+      if (props.modelValue[key]) count++
+    })
+  }
   return count
-}
+})
 </script>
 
 <template>
-  <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-6">
-    <div class="p-6 border-b bg-gradient-to-r from-green-50 to-blue-50">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center">
-          <span class="text-2xl mr-3">🔍</span>
-          <div>
-            <h2 class="text-xl font-bold text-gray-800">フィルター</h2>
-            <p class="text-gray-600 text-sm">ポケモンを絞り込んで表示</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-2">
-          <span v-if="getActiveFilterCount() > 0" class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
-            {{ getActiveFilterCount() }}個のフィルター
-          </span>
-          <button
-            @click="resetFilters"
-            class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded-lg text-sm font-medium transition-colors"
-          >
-            🔄 リセット
-          </button>
-        </div>
+  <div class="bg-white rounded-xl border border-gray-200 p-3 mb-3">
+    <!-- フィルターヘッダー -->
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-semibold text-gray-600">🔍 フィルター</span>
+      <div class="flex items-center gap-2">
+        <span v-if="activeFilterCount > 0" class="text-[10px] text-blue-600 font-medium">
+          {{ activeFilterCount }}件適用中
+        </span>
+        <button
+          v-if="activeFilterCount > 0"
+          @click="resetFilters"
+          class="text-[10px] text-gray-500 hover:text-gray-700 underline"
+        >
+          リセット
+        </button>
       </div>
     </div>
 
-    <div class="p-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <!-- 地域フィルター -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">📍 地域・図鑑</label>          <select
-            :value="modelValue.region"
-            @change="handleSelectChange('region')"
-            class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-          >
-            <option v-for="option in getRegionOptions()" :key="option.value" :value="option.value">
-              {{ option.label }}
-            </option>
-          </select>
-        </div>
+    <!-- フィルター行 -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+      <!-- 地域 -->
+      <select
+        :value="modelValue.region"
+        @change="updateFilter('region', ($event.target as HTMLSelectElement).value)"
+        class="text-xs p-1.5 border border-gray-200 rounded-lg bg-gray-50 focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+      >
+        <option v-for="opt in regionOptions" :key="opt.value" :value="opt.value">
+          {{ opt.label }}
+        </option>
+      </select>
 
-        <!-- 進捗状況フィルター -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">📊 進捗状況</label>          <select
-            :value="modelValue.status"
-            @change="handleSelectChange('status')"
-            class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-          >
-            <option v-for="option in statusOptions" :key="option.value" :value="option.value">
-              {{ option.label }}
-            </option>
-          </select>
-        </div>
+      <!-- 進捗 -->
+      <select
+        :value="modelValue.status"
+        @change="updateFilter('status', ($event.target as HTMLSelectElement).value)"
+        class="text-xs p-1.5 border border-gray-200 rounded-lg bg-gray-50 focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+      >
+        <option value="">全て表示</option>
+        <option value="caught">✅ ゲット済み</option>
+        <option value="uncaught">❌ 未ゲット</option>
+      </select>
 
-        <!-- 検索フィルター -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">🔍 ポケモン名検索</label>          <input
-            type="text"
-            :value="modelValue.search"
-            @input="handleInputChange('search')"
-            placeholder="ポケモン名を入力..."
-            class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-          />
-        </div>
-      </div>
+      <!-- 検索 -->
+      <input
+        type="text"
+        :value="modelValue.search"
+        @input="updateFilter('search', ($event.target as HTMLInputElement).value)"
+        placeholder="名前で検索..."
+        class="text-xs p-1.5 border border-gray-200 rounded-lg bg-gray-50 focus:ring-1 focus:ring-blue-400 focus:border-blue-400 col-span-2 md:col-span-1"
+      />
+    </div>
 
-      <!-- バージョン限定フィルター -->
-      <div v-if="versionFilters && Object.keys(versionFilters).length > 0" class="mt-6">
-        <h3 class="text-lg font-semibold text-gray-800 mb-4">🎮 バージョン限定フィルター</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div v-for="(filter, key) in versionFilters" :key="key">
-            <label class="block text-sm font-medium text-gray-700 mb-2">{{ filter.name }}</label>            <select
-              :value="modelValue[key as keyof FilterState] || ''"
-              @change="handleSelectChange(key as keyof FilterState)"
-              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="">全て</option>
-              <option v-for="option in filter.options" :key="option.value" :value="option.value">
-                {{ option.label }}
-              </option>
-            </select>
-          </div>
-        </div>
+    <!-- 複数図鑑フィルター（地域が2つ以上ある場合のみ表示） -->
+    <div v-if="selectedGame?.regions && selectedGame.regions.length > 1" class="mt-2">
+      <label class="inline-flex items-center gap-1.5 cursor-pointer">
+        <input
+          type="checkbox"
+          :checked="modelValue.multipleDex === 'only'"
+          @change="updateFilter('multipleDex', ($event.target as HTMLInputElement).checked ? 'only' : '')"
+          class="rounded border-gray-300 text-blue-600 focus:ring-blue-400 h-3.5 w-3.5"
+        />
+        <span class="text-xs text-gray-600">🔄 複数図鑑に登録されたポケモンのみ</span>
+      </label>
+    </div>
+
+    <!-- バージョンフィルター -->
+    <div v-if="versionFilters && Object.keys(versionFilters).length > 0" class="mt-2">
+      <div v-for="(filter, key) in versionFilters" :key="key">
+        <select
+          :value="modelValue[key as keyof FilterState] || ''"
+          @change="updateFilter(key as string, ($event.target as HTMLSelectElement).value)"
+          class="w-full text-xs p-1.5 border border-gray-200 rounded-lg bg-gray-50 focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+        >
+          <option value="">🎮 {{ filter.name }}：指定なし</option>
+          <option v-for="opt in getVersionOptions(filter)" :key="opt.value" :value="opt.value">
+            {{ opt.label }}
+          </option>
+        </select>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-/* フォーカス時のスタイル強化 */
-select:focus,
-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-}
-</style>

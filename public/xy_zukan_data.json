@@ -12,7 +12,7 @@
   "pokemon": [
     {
       "id": "010",
-      "name": "Caterpie",
+      "name": "キャタピー",
       "regions": [
         "kalos"
       ],
@@ -28,7 +28,7 @@
     },
     {
       "id": "011",
-      "name": "Metapod",
+      "name": "トランセル",
       "regions": [
         "kalos"
       ],
@@ -44,7 +44,7 @@
     },
     {
       "id": "012",
-      "name": "Butterfree",
+      "name": "バタフリー",
       "regions": [
         "kalos"
       ],
@@ -60,7 +60,7 @@
     },
     {
       "id": "013",
-      "name": "Weedle",
+      "name": "ビードル",
       "regions": [
         "kalos"
       ],
@@ -76,7 +76,7 @@
     },
     {
       "id": "014",
-      "name": "Kakuna",
+      "name": "コクーン",
       "regions": [
         "kalos"
       ],
@@ -92,7 +92,7 @@
     },
     {
       "id": "015",
-      "name": "Beedrill",
+      "name": "スピアー",
       "regions": [
         "kalos"
       ],
@@ -108,7 +108,7 @@
     },
     {
       "id": "016",
-      "name": "Pidgey",
+      "name": "ポッポ",
       "regions": [
         "kalos"
       ],
@@ -124,7 +124,7 @@
     },
     {
       "id": "017",
-      "name": "Pidgeotto",
+      "name": "ピジョン",
       "regions": [
         "kalos"
       ],
@@ -140,7 +140,7 @@
     },
     {
       "id": "018",
-      "name": "Pidgeot",
+      "name": "ピジョット",
       "regions": [
         "kalos"
       ],
@@ -156,7 +156,7 @@
     },
     {
       "id": "025",
-      "name": "Pikachu",
+      "name": "ピカチュウ",
       "regions": [
         "kalos"
       ],
@@ -172,7 +172,7 @@
     },
     {
       "id": "026",
-      "name": "Raichu",
+      "name": "ライチュウ",
       "regions": [
         "kalos"
       ],
@@ -188,7 +188,7 @@
     },
     {
       "id": "039",
-      "name": "Jigglypuff",
+      "name": "プリン",
       "regions": [
         "kalos"
       ],
@@ -204,7 +204,7 @@
     },
     {
       "id": "040",
-      "name": "Wigglytuff",
+      "name": "プクリン",
       "regions": [
         "kalos"
       ],
@@ -220,7 +220,7 @@
     },
     {
       "id": "041",
-      "name": "Zubat",
+      "name": "ズバット",
       "regions": [
         "kalos"
       ],
@@ -236,7 +236,7 @@
     },
     {
       "id": "042",
-      "name": "Golbat",
+      "name": "ゴルバット",
       "regions": [
         "kalos"
       ],
@@ -252,7 +252,7 @@
     },
     {
       "id": "063",
-      "name": "Abra",
+      "name": "ケーシィ",
       "regions": [
         "kalos"
       ],
@@ -268,7 +268,7 @@
     },
     {
       "id": "064",
-      "name": "Kadabra",
+      "name": "ユンゲラー",
       "regions": [
         "kalos"
       ],
@@ -284,7 +284,7 @@
     },
     {
       "id": "065",
-      "name": "Alakazam",
+      "name": "フーディン",
       "regions": [
         "kalos"
       ],
@@ -300,7 +300,7 @@
     },
     {
       "id": "069",
-      "name": "Bellsprout",
+      "name": "マダツボミ",
       "regions": [
         "kalos"
       ],
@@ -316,7 +316,7 @@
     },
     {
       "id": "070",
-      "name": "Weepinbell",
+      "name": "ウツドン",
       "regions": [
         "kalos"
       ],
@@ -332,7 +332,7 @@
     },
     {
       "id": "071",
-      "name": "Victreebel",
+      "name": "ウツボット",
       "regions": [
         "kalos"
       ],
@@ -348,7 +348,7 @@
     },
     {
       "id": "074",
-      "name": "Geodude",
+      "name": "イシツブテ",
       "regions": [
         "kalos"
       ],
@@ -364,7 +364,7 @@
     },
     {
       "id": "075",
-      "name": "Graveler",
+      "name": "ゴローン",
       "regions": [
         "kalos"
       ],
@@ -380,7 +380,7 @@
     },
     {
       "id": "076",
-      "name": "Golem",
+      "name": "ゴローニャ",
       "regions": [
         "kalos"
       ],
@@ -396,7 +396,7 @@
     },
     {
       "id": "086",
-      "name": "Seel",
+      "name": "パウワウ",
       "regions": [
         "kalos"
       ],
@@ -412,7 +412,7 @@
     },
     {
       "id": "087",
-      "name": "Dewgong",
+      "name": "ジュゴン",
       "regions": [
         "kalos"
       ],
@@ -428,7 +428,7 @@
     },
     {
       "id": "090",
-      "name": "Shellder",
+      "name": "シェルダー",
       "regions": [
         "kalos"
       ],
@@ -444,7 +444,7 @@
     },
     {
       "id": "091",
-      "name": "Cloyster",
+      "name": "パルシェン",
       "regions": [
         "kalos"
       ],
@@ -460,7 +460,7 @@
     },
     {
       "id": "095",
-      "name": "Onix",
+      "name": "イワーク",
       "regions": [
         "kalos"
       ],
@@ -476,7 +476,7 @@
     },
     {
       "id": "111",
-      "name": "Rhyhorn",
+      "name": "サイホーン",
       "regions": [
         "kalos"
       ],
@@ -492,7 +492,7 @@
     },
     {
       "id": "112",
-      "name": "Rhydon",
+      "name": "サイドン",
       "regions": [
         "kalos"
       ],
@@ -508,7 +508,7 @@
     },
     {
       "id": "118",
-      "name": "Goldeen",
+      "name": "トサキント",
       "regions": [
         "kalos"
       ],
@@ -524,7 +524,7 @@
     },
     {
       "id": "119",
-      "name": "Seaking",
+      "name": "アズマオウ",
       "regions": [
         "kalos"
       ],
@@ -540,7 +540,7 @@
     },
     {
       "id": "120",
-      "name": "Staryu",
+      "name": "ヒトデマン",
       "regions": [
         "kalos"
       ],
@@ -556,7 +556,7 @@
     },
     {
       "id": "121",
-      "name": "Starmie",
+      "name": "スターミー",
       "regions": [
         "kalos"
       ],
@@ -572,7 +572,7 @@
     },
     {
       "id": "127",
-      "name": "Pinsir",
+      "name": "カイロス",
       "regions": [
         "kalos"
       ],
@@ -588,7 +588,7 @@
     },
     {
       "id": "129",
-      "name": "Magikarp",
+      "name": "コイキング",
       "regions": [
         "kalos"
       ],
@@ -604,7 +604,7 @@
     },
     {
       "id": "130",
-      "name": "Gyarados",
+      "name": "ギャラドス",
       "regions": [
         "kalos"
       ],
@@ -620,7 +620,7 @@
     },
     {
       "id": "131",
-      "name": "Lapras",
+      "name": "ラプラス",
       "regions": [
         "kalos"
       ],
@@ -636,7 +636,7 @@
     },
     {
       "id": "132",
-      "name": "Ditto",
+      "name": "メタモン",
       "regions": [
         "kalos"
       ],
@@ -652,7 +652,7 @@
     },
     {
       "id": "133",
-      "name": "Eevee",
+      "name": "イーブイ",
       "regions": [
         "kalos"
       ],
@@ -668,7 +668,7 @@
     },
     {
       "id": "134",
-      "name": "Vaporeon",
+      "name": "シャワーズ",
       "regions": [
         "kalos"
       ],
@@ -684,7 +684,7 @@
     },
     {
       "id": "135",
-      "name": "Jolteon",
+      "name": "サンダース",
       "regions": [
         "kalos"
       ],
@@ -700,7 +700,7 @@
     },
     {
       "id": "136",
-      "name": "Flareon",
+      "name": "ブースター",
       "regions": [
         "kalos"
       ],
@@ -716,7 +716,7 @@
     },
     {
       "id": "143",
-      "name": "Snorlax",
+      "name": "カビゴン",
       "regions": [
         "kalos"
       ],
@@ -732,7 +732,7 @@
     },
     {
       "id": "144",
-      "name": "Articuno",
+      "name": "フリーザー",
       "regions": [
         "kalos"
       ],
@@ -748,7 +748,7 @@
     },
     {
       "id": "145",
-      "name": "Zapdos",
+      "name": "サンダー",
       "regions": [
         "kalos"
       ],
@@ -764,7 +764,7 @@
     },
     {
       "id": "146",
-      "name": "Moltres",
+      "name": "ファイヤー",
       "regions": [
         "kalos"
       ],
@@ -780,7 +780,7 @@
     },
     {
       "id": "150",
-      "name": "Mewtwo",
+      "name": "ミュウツー",
       "regions": [
         "kalos"
       ],
@@ -796,7 +796,7 @@
     },
     {
       "id": "169",
-      "name": "Crobat",
+      "name": "クロバット",
       "regions": [
         "kalos"
       ],
@@ -812,7 +812,7 @@
     },
     {
       "id": "172",
-      "name": "Pichu",
+      "name": "ピチュー",
       "regions": [
         "kalos"
       ],
@@ -828,7 +828,7 @@
     },
     {
       "id": "174",
-      "name": "Igglybuff",
+      "name": "ププリン",
       "regions": [
         "kalos"
       ],
@@ -844,7 +844,7 @@
     },
     {
       "id": "183",
-      "name": "Marill",
+      "name": "マリル",
       "regions": [
         "kalos"
       ],
@@ -860,7 +860,7 @@
     },
     {
       "id": "184",
-      "name": "Azumarill",
+      "name": "マリルリ",
       "regions": [
         "kalos"
       ],
@@ -876,7 +876,7 @@
     },
     {
       "id": "196",
-      "name": "Espeon",
+      "name": "エーフィ",
       "regions": [
         "kalos"
       ],
@@ -892,7 +892,7 @@
     },
     {
       "id": "197",
-      "name": "Umbreon",
+      "name": "ブラッキー",
       "regions": [
         "kalos"
       ],
@@ -908,7 +908,7 @@
     },
     {
       "id": "208",
-      "name": "Steelix",
+      "name": "ハガネール",
       "regions": [
         "kalos"
       ],
@@ -924,7 +924,7 @@
     },
     {
       "id": "214",
-      "name": "Heracross",
+      "name": "ヘラクロス",
       "regions": [
         "kalos"
       ],
@@ -940,7 +940,7 @@
     },
     {
       "id": "225",
-      "name": "Delibird",
+      "name": "デリバード",
       "regions": [
         "kalos"
       ],
@@ -956,7 +956,7 @@
     },
     {
       "id": "228",
-      "name": "Houndour",
+      "name": "デルビル",
       "regions": [
         "kalos"
       ],
@@ -972,7 +972,7 @@
     },
     {
       "id": "229",
-      "name": "Houndoom",
+      "name": "ヘルガー",
       "regions": [
         "kalos"
       ],
@@ -988,7 +988,7 @@
     },
     {
       "id": "246",
-      "name": "Larvitar",
+      "name": "ヨーギラス",
       "regions": [
         "kalos"
       ],
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "247",
-      "name": "Pupitar",
+      "name": "サナギラス",
       "regions": [
         "kalos"
       ],
@@ -1020,7 +1020,7 @@
     },
     {
       "id": "248",
-      "name": "Tyranitar",
+      "name": "バンギラス",
       "regions": [
         "kalos"
       ],
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "261",
-      "name": "Poochyena",
+      "name": "ポチエナ",
       "regions": [
         "kalos"
       ],
@@ -1052,7 +1052,7 @@
     },
     {
       "id": "262",
-      "name": "Mightyena",
+      "name": "グラエナ",
       "regions": [
         "kalos"
       ],
@@ -1068,7 +1068,7 @@
     },
     {
       "id": "280",
-      "name": "Ralts",
+      "name": "ラルトス",
       "regions": [
         "kalos"
       ],
@@ -1084,7 +1084,7 @@
     },
     {
       "id": "281",
-      "name": "Kirlia",
+      "name": "キルリア",
       "regions": [
         "kalos"
       ],
@@ -1100,7 +1100,7 @@
     },
     {
       "id": "282",
-      "name": "Gardevoir",
+      "name": "サーナイト",
       "regions": [
         "kalos"
       ],
@@ -1116,7 +1116,7 @@
     },
     {
       "id": "283",
-      "name": "Surskit",
+      "name": "アメタマ",
       "regions": [
         "kalos"
       ],
@@ -1132,7 +1132,7 @@
     },
     {
       "id": "284",
-      "name": "Masquerain",
+      "name": "アメモース",
       "regions": [
         "kalos"
       ],
@@ -1148,7 +1148,7 @@
     },
     {
       "id": "298",
-      "name": "Azurill",
+      "name": "ルリリ",
       "regions": [
         "kalos"
       ],
@@ -1164,7 +1164,7 @@
     },
     {
       "id": "300",
-      "name": "Skitty",
+      "name": "エネコ",
       "regions": [
         "kalos"
       ],
@@ -1180,7 +1180,7 @@
     },
     {
       "id": "301",
-      "name": "Delcatty",
+      "name": "エネコロロ",
       "regions": [
         "kalos"
       ],
@@ -1196,7 +1196,7 @@
     },
     {
       "id": "302",
-      "name": "Sableye",
+      "name": "ヤミラミ",
       "regions": [
         "kalos"
       ],
@@ -1212,7 +1212,7 @@
     },
     {
       "id": "303",
-      "name": "Mawile",
+      "name": "クチート",
       "regions": [
         "kalos"
       ],
@@ -1228,7 +1228,7 @@
     },
     {
       "id": "304",
-      "name": "Aron",
+      "name": "ココドラ",
       "regions": [
         "kalos"
       ],
@@ -1244,7 +1244,7 @@
     },
     {
       "id": "305",
-      "name": "Lairon",
+      "name": "コドラ",
       "regions": [
         "kalos"
       ],
@@ -1260,7 +1260,7 @@
     },
     {
       "id": "306",
-      "name": "Aggron",
+      "name": "ボスゴドラ",
       "regions": [
         "kalos"
       ],
@@ -1276,7 +1276,7 @@
     },
     {
       "id": "309",
-      "name": "Electrike",
+      "name": "ラクライ",
       "regions": [
         "kalos"
       ],
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "310",
-      "name": "Manectric",
+      "name": "ライボルト",
       "regions": [
         "kalos"
       ],
@@ -1308,7 +1308,7 @@
     },
     {
       "id": "311",
-      "name": "Plusle",
+      "name": "プラスル",
       "regions": [
         "kalos"
       ],
@@ -1324,7 +1324,7 @@
     },
     {
       "id": "312",
-      "name": "Minun",
+      "name": "マイナン",
       "regions": [
         "kalos"
       ],
@@ -1340,7 +1340,7 @@
     },
     {
       "id": "315",
-      "name": "Roselia",
+      "name": "ロゼリア",
       "regions": [
         "kalos"
       ],
@@ -1356,7 +1356,7 @@
     },
     {
       "id": "328",
-      "name": "Trapinch",
+      "name": "ナックラー",
       "regions": [
         "kalos"
       ],
@@ -1372,7 +1372,7 @@
     },
     {
       "id": "329",
-      "name": "Vibrava",
+      "name": "ビブラーバ",
       "regions": [
         "kalos"
       ],
@@ -1388,7 +1388,7 @@
     },
     {
       "id": "330",
-      "name": "Flygon",
+      "name": "フライゴン",
       "regions": [
         "kalos"
       ],
@@ -1404,7 +1404,7 @@
     },
     {
       "id": "335",
-      "name": "Zangoose",
+      "name": "ザングース",
       "regions": [
         "kalos"
       ],
@@ -1420,7 +1420,7 @@
     },
     {
       "id": "336",
-      "name": "Seviper",
+      "name": "ハブネーク",
       "regions": [
         "kalos"
       ],
@@ -1436,7 +1436,7 @@
     },
     {
       "id": "341",
-      "name": "Corphish",
+      "name": "ヘイガニ",
       "regions": [
         "kalos"
       ],
@@ -1452,7 +1452,7 @@
     },
     {
       "id": "342",
-      "name": "Crawdaunt",
+      "name": "シザリガー",
       "regions": [
         "kalos"
       ],
@@ -1468,7 +1468,7 @@
     },
     {
       "id": "349",
-      "name": "Feebas",
+      "name": "ヒンバス",
       "regions": [
         "kalos"
       ],
@@ -1484,7 +1484,7 @@
     },
     {
       "id": "350",
-      "name": "Milotic",
+      "name": "ミロカロス",
       "regions": [
         "kalos"
       ],
@@ -1500,7 +1500,7 @@
     },
     {
       "id": "353",
-      "name": "Shuppet",
+      "name": "カゲボウズ",
       "regions": [
         "kalos"
       ],
@@ -1516,7 +1516,7 @@
     },
     {
       "id": "354",
-      "name": "Banette",
+      "name": "ジュペッタ",
       "regions": [
         "kalos"
       ],
@@ -1532,7 +1532,7 @@
     },
     {
       "id": "355",
-      "name": "Duskull",
+      "name": "ヨマワル",
       "regions": [
         "kalos"
       ],
@@ -1548,7 +1548,7 @@
     },
     {
       "id": "356",
-      "name": "Dusclops",
+      "name": "サマヨール",
       "regions": [
         "kalos"
       ],
@@ -1564,7 +1564,7 @@
     },
     {
       "id": "359",
-      "name": "Absol",
+      "name": "アブソル",
       "regions": [
         "kalos"
       ],
@@ -1580,7 +1580,7 @@
     },
     {
       "id": "361",
-      "name": "Snorunt",
+      "name": "ユキワラシ",
       "regions": [
         "kalos"
       ],
@@ -1596,7 +1596,7 @@
     },
     {
       "id": "362",
-      "name": "Glalie",
+      "name": "オニゴーリ",
       "regions": [
         "kalos"
       ],
@@ -1612,7 +1612,7 @@
     },
     {
       "id": "371",
-      "name": "Bagon",
+      "name": "タツベイ",
       "regions": [
         "kalos"
       ],
@@ -1628,7 +1628,7 @@
     },
     {
       "id": "372",
-      "name": "Shelgon",
+      "name": "コモルー",
       "regions": [
         "kalos"
       ],
@@ -1644,7 +1644,7 @@
     },
     {
       "id": "373",
-      "name": "Salamence",
+      "name": "ボーマンダ",
       "regions": [
         "kalos"
       ],
@@ -1660,7 +1660,7 @@
     },
     {
       "id": "406",
-      "name": "Budew",
+      "name": "スボミー",
       "regions": [
         "kalos"
       ],
@@ -1676,7 +1676,7 @@
     },
     {
       "id": "407",
-      "name": "Roserade",
+      "name": "ロズレイド",
       "regions": [
         "kalos"
       ],
@@ -1692,7 +1692,7 @@
     },
     {
       "id": "412",
-      "name": "Burmy",
+      "name": "ミノムッチ",
       "regions": [
         "kalos"
       ],
@@ -1708,7 +1708,7 @@
     },
     {
       "id": "413",
-      "name": "Wormadam",
+      "name": "ミノマダム",
       "regions": [
         "kalos"
       ],
@@ -1724,7 +1724,7 @@
     },
     {
       "id": "414",
-      "name": "Mothim",
+      "name": "ガーメイル",
       "regions": [
         "kalos"
       ],
@@ -1740,7 +1740,7 @@
     },
     {
       "id": "434",
-      "name": "Stunky",
+      "name": "スカンプー",
       "regions": [
         "kalos"
       ],
@@ -1756,7 +1756,7 @@
     },
     {
       "id": "435",
-      "name": "Skuntank",
+      "name": "スカタンク",
       "regions": [
         "kalos"
       ],
@@ -1772,7 +1772,7 @@
     },
     {
       "id": "443",
-      "name": "Gible",
+      "name": "フカマル",
       "regions": [
         "kalos"
       ],
@@ -1788,7 +1788,7 @@
     },
     {
       "id": "444",
-      "name": "Gabite",
+      "name": "ガバイト",
       "regions": [
         "kalos"
       ],
@@ -1804,7 +1804,7 @@
     },
     {
       "id": "445",
-      "name": "Garchomp",
+      "name": "ガブリアス",
       "regions": [
         "kalos"
       ],
@@ -1820,7 +1820,7 @@
     },
     {
       "id": "446",
-      "name": "Munchlax",
+      "name": "ゴンベ",
       "regions": [
         "kalos"
       ],
@@ -1836,7 +1836,7 @@
     },
     {
       "id": "464",
-      "name": "Rhyperior",
+      "name": "ドサイドン",
       "regions": [
         "kalos"
       ],
@@ -1852,7 +1852,7 @@
     },
     {
       "id": "470",
-      "name": "Leafeon",
+      "name": "リーフィア",
       "regions": [
         "kalos"
       ],
@@ -1868,7 +1868,7 @@
     },
     {
       "id": "471",
-      "name": "Glaceon",
+      "name": "グレイシア",
       "regions": [
         "kalos"
       ],
@@ -1884,7 +1884,7 @@
     },
     {
       "id": "475",
-      "name": "Gallade",
+      "name": "エルレイド",
       "regions": [
         "kalos"
       ],
@@ -1900,7 +1900,7 @@
     },
     {
       "id": "477",
-      "name": "Dusknoir",
+      "name": "ヨノワール",
       "regions": [
         "kalos"
       ],
@@ -1916,7 +1916,7 @@
     },
     {
       "id": "478",
-      "name": "Froslass",
+      "name": "ユキメノコ",
       "regions": [
         "kalos"
       ],
@@ -1932,7 +1932,7 @@
     },
     {
       "id": "507",
-      "name": "Herdier",
+      "name": "ハーデリア",
       "regions": [
         "kalos"
       ],
@@ -1948,7 +1948,7 @@
     },
     {
       "id": "508",
-      "name": "Stoutland",
+      "name": "ムーランド",
       "regions": [
         "kalos"
       ],
@@ -1964,7 +1964,7 @@
     },
     {
       "id": "509",
-      "name": "Purrloin",
+      "name": "チョロネコ",
       "regions": [
         "kalos"
       ],
@@ -1980,7 +1980,7 @@
     },
     {
       "id": "510",
-      "name": "Liepard",
+      "name": "レパルダス",
       "regions": [
         "kalos"
       ],
@@ -1996,7 +1996,7 @@
     },
     {
       "id": "538",
-      "name": "Throh",
+      "name": "ナゲキ",
       "regions": [
         "kalos"
       ],
@@ -2012,7 +2012,7 @@
     },
     {
       "id": "539",
-      "name": "Sawk",
+      "name": "ダゲキ",
       "regions": [
         "kalos"
       ],
@@ -2028,7 +2028,7 @@
     },
     {
       "id": "551",
-      "name": "Sandile",
+      "name": "メグロコ",
       "regions": [
         "kalos"
       ],
@@ -2044,7 +2044,7 @@
     },
     {
       "id": "552",
-      "name": "Krokorok",
+      "name": "ワルビル",
       "regions": [
         "kalos"
       ],
@@ -2060,7 +2060,7 @@
     },
     {
       "id": "553",
-      "name": "Krookodile",
+      "name": "ワルビアル",
       "regions": [
         "kalos"
       ],
@@ -2076,7 +2076,7 @@
     },
     {
       "id": "557",
-      "name": "Dwebble",
+      "name": "イシズマイ",
       "regions": [
         "kalos"
       ],
@@ -2092,7 +2092,7 @@
     },
     {
       "id": "558",
-      "name": "Crustle",
+      "name": "イワパレス",
       "regions": [
         "kalos"
       ],
@@ -2108,7 +2108,7 @@
     },
     {
       "id": "559",
-      "name": "Scraggy",
+      "name": "ズルッグ",
       "regions": [
         "kalos"
       ],
@@ -2124,7 +2124,7 @@
     },
     {
       "id": "560",
-      "name": "Scrafty",
+      "name": "ズルズキン",
       "regions": [
         "kalos"
       ],
@@ -2140,7 +2140,7 @@
     },
     {
       "id": "572",
-      "name": "Minccino",
+      "name": "チラーミィ",
       "regions": [
         "kalos"
       ],
@@ -2156,7 +2156,7 @@
     },
     {
       "id": "573",
-      "name": "Cinccino",
+      "name": "チラチーノ",
       "regions": [
         "kalos"
       ],
@@ -2172,7 +2172,7 @@
     },
     {
       "id": "582",
-      "name": "Vanillite",
+      "name": "バニプッチ",
       "regions": [
         "kalos"
       ],
@@ -2188,7 +2188,7 @@
     },
     {
       "id": "583",
-      "name": "Vanillish",
+      "name": "バニリッチ",
       "regions": [
         "kalos"
       ],
@@ -2204,7 +2204,7 @@
     },
     {
       "id": "584",
-      "name": "Vanilluxe",
+      "name": "バイバニラ",
       "regions": [
         "kalos"
       ],
@@ -2220,7 +2220,7 @@
     },
     {
       "id": "610",
-      "name": "Axew",
+      "name": "キバゴ",
       "regions": [
         "kalos"
       ],
@@ -2236,7 +2236,7 @@
     },
     {
       "id": "611",
-      "name": "Fraxure",
+      "name": "オノンド",
       "regions": [
         "kalos"
       ],
@@ -2252,7 +2252,7 @@
     },
     {
       "id": "612",
-      "name": "Haxorus",
+      "name": "オノノクス",
       "regions": [
         "kalos"
       ],
@@ -2268,7 +2268,7 @@
     },
     {
       "id": "650",
-      "name": "Chespin",
+      "name": "ハリマロン",
       "regions": [
         "kalos"
       ],
@@ -2284,7 +2284,7 @@
     },
     {
       "id": "651",
-      "name": "Quilladin",
+      "name": "ハリボーグ",
       "regions": [
         "kalos"
       ],
@@ -2300,7 +2300,7 @@
     },
     {
       "id": "652",
-      "name": "Chesnaught",
+      "name": "ブリガロン",
       "regions": [
         "kalos"
       ],
@@ -2316,7 +2316,7 @@
     },
     {
       "id": "653",
-      "name": "Fennekin",
+      "name": "フォッコ",
       "regions": [
         "kalos"
       ],
@@ -2332,7 +2332,7 @@
     },
     {
       "id": "654",
-      "name": "Braixen",
+      "name": "テールナー",
       "regions": [
         "kalos"
       ],
@@ -2348,7 +2348,7 @@
     },
     {
       "id": "655",
-      "name": "Delphox",
+      "name": "マフォクシー",
       "regions": [
         "kalos"
       ],
@@ -2364,7 +2364,7 @@
     },
     {
       "id": "656",
-      "name": "Froakie",
+      "name": "ケロマツ",
       "regions": [
         "kalos"
       ],
@@ -2380,7 +2380,7 @@
     },
     {
       "id": "657",
-      "name": "Frogadier",
+      "name": "ゲコガシラ",
       "regions": [
         "kalos"
       ],
@@ -2396,7 +2396,7 @@
     },
     {
       "id": "658",
-      "name": "Greninja",
+      "name": "ゲッコウガ",
       "regions": [
         "kalos"
       ],
@@ -2412,7 +2412,7 @@
     },
     {
       "id": "659",
-      "name": "Bunnelby",
+      "name": "ホルビー",
       "regions": [
         "kalos"
       ],
@@ -2428,7 +2428,7 @@
     },
     {
       "id": "660",
-      "name": "Diggersby",
+      "name": "ホルード",
       "regions": [
         "kalos"
       ],
@@ -2444,7 +2444,7 @@
     },
     {
       "id": "661",
-      "name": "Fletchling",
+      "name": "ヤヤコマ",
       "regions": [
         "kalos"
       ],
@@ -2460,7 +2460,7 @@
     },
     {
       "id": "662",
-      "name": "Fletchinder",
+      "name": "ヒノヤコマ",
       "regions": [
         "kalos"
       ],
@@ -2476,7 +2476,7 @@
     },
     {
       "id": "663",
-      "name": "Talonflame",
+      "name": "ファイアロー",
       "regions": [
         "kalos"
       ],
@@ -2492,7 +2492,7 @@
     },
     {
       "id": "664",
-      "name": "Scatterbug",
+      "name": "コフキムシ",
       "regions": [
         "kalos"
       ],
@@ -2508,7 +2508,7 @@
     },
     {
       "id": "665",
-      "name": "Spewpa",
+      "name": "コフーライ",
       "regions": [
         "kalos"
       ],
@@ -2524,7 +2524,7 @@
     },
     {
       "id": "666",
-      "name": "Vivillon",
+      "name": "ビビヨン",
       "regions": [
         "kalos"
       ],
@@ -2540,7 +2540,7 @@
     },
     {
       "id": "667",
-      "name": "Litleo",
+      "name": "シシコ",
       "regions": [
         "kalos"
       ],
@@ -2556,7 +2556,7 @@
     },
     {
       "id": "668",
-      "name": "Pyroar",
+      "name": "カエンジシ",
       "regions": [
         "kalos"
       ],
@@ -2572,7 +2572,7 @@
     },
     {
       "id": "669",
-      "name": "Flabebe",
+      "name": "フラベベ",
       "regions": [
         "kalos"
       ],
@@ -2588,7 +2588,7 @@
     },
     {
       "id": "670",
-      "name": "Floette",
+      "name": "フラエッテ",
       "regions": [
         "kalos"
       ],
@@ -2604,7 +2604,7 @@
     },
     {
       "id": "671",
-      "name": "Florges",
+      "name": "フラージェス",
       "regions": [
         "kalos"
       ],
@@ -2620,7 +2620,7 @@
     },
     {
       "id": "672",
-      "name": "Skiddo",
+      "name": "メェークル",
       "regions": [
         "kalos"
       ],
@@ -2636,7 +2636,7 @@
     },
     {
       "id": "673",
-      "name": "Gogoat",
+      "name": "ゴーゴート",
       "regions": [
         "kalos"
       ],
@@ -2652,7 +2652,7 @@
     },
     {
       "id": "674",
-      "name": "Pancham",
+      "name": "ヤンチャム",
       "regions": [
         "kalos"
       ],
@@ -2668,7 +2668,7 @@
     },
     {
       "id": "675",
-      "name": "Pangoro",
+      "name": "ゴロンダ",
       "regions": [
         "kalos"
       ],
@@ -2684,7 +2684,7 @@
     },
     {
       "id": "676",
-      "name": "Furfrou",
+      "name": "トリミアン",
       "regions": [
         "kalos"
       ],
@@ -2700,7 +2700,7 @@
     },
     {
       "id": "677",
-      "name": "Espurr",
+      "name": "ニャスパー",
       "regions": [
         "kalos"
       ],
@@ -2716,7 +2716,7 @@
     },
     {
       "id": "678",
-      "name": "Meowstic",
+      "name": "ニャオニクス",
       "regions": [
         "kalos"
       ],
@@ -2732,7 +2732,7 @@
     },
     {
       "id": "679",
-      "name": "Honedge",
+      "name": "ヒトツキ",
       "regions": [
         "kalos"
       ],
@@ -2748,7 +2748,7 @@
     },
     {
       "id": "680",
-      "name": "Doublade",
+      "name": "ニダンギル",
       "regions": [
         "kalos"
       ],
@@ -2764,7 +2764,7 @@
     },
     {
       "id": "681",
-      "name": "Aegislash",
+      "name": "ギルガルド",
       "regions": [
         "kalos"
       ],
@@ -2780,7 +2780,7 @@
     },
     {
       "id": "682",
-      "name": "Spritzee",
+      "name": "シュシュプ",
       "regions": [
         "kalos"
       ],
@@ -2796,7 +2796,7 @@
     },
     {
       "id": "683",
-      "name": "Aromatisse",
+      "name": "フレフワン",
       "regions": [
         "kalos"
       ],
@@ -2812,7 +2812,7 @@
     },
     {
       "id": "684",
-      "name": "Swirlix",
+      "name": "ペロッパフ",
       "regions": [
         "kalos"
       ],
@@ -2828,7 +2828,7 @@
     },
     {
       "id": "685",
-      "name": "Slurpuff",
+      "name": "ペロリーム",
       "regions": [
         "kalos"
       ],
@@ -2844,7 +2844,7 @@
     },
     {
       "id": "686",
-      "name": "Inkay",
+      "name": "マーイーカ",
       "regions": [
         "kalos"
       ],
@@ -2860,7 +2860,7 @@
     },
     {
       "id": "687",
-      "name": "Malamar",
+      "name": "カラマネロ",
       "regions": [
         "kalos"
       ],
@@ -2876,7 +2876,7 @@
     },
     {
       "id": "688",
-      "name": "Binacle",
+      "name": "カメテテ",
       "regions": [
         "kalos"
       ],
@@ -2892,7 +2892,7 @@
     },
     {
       "id": "689",
-      "name": "Barbaracle",
+      "name": "ガメノデス",
       "regions": [
         "kalos"
       ],
@@ -2908,7 +2908,7 @@
     },
     {
       "id": "690",
-      "name": "Skrelp",
+      "name": "クズモー",
       "regions": [
         "kalos"
       ],
@@ -2924,7 +2924,7 @@
     },
     {
       "id": "691",
-      "name": "Dragalge",
+      "name": "ドラミドロ",
       "regions": [
         "kalos"
       ],
@@ -2940,7 +2940,7 @@
     },
     {
       "id": "692",
-      "name": "Clauncher",
+      "name": "ウデッポウ",
       "regions": [
         "kalos"
       ],
@@ -2956,7 +2956,7 @@
     },
     {
       "id": "693",
-      "name": "Clawitzer",
+      "name": "ブロスター",
       "regions": [
         "kalos"
       ],
@@ -2972,7 +2972,7 @@
     },
     {
       "id": "694",
-      "name": "Helioptile",
+      "name": "エリキテル",
       "regions": [
         "kalos"
       ],
@@ -2988,7 +2988,7 @@
     },
     {
       "id": "695",
-      "name": "Heliolisk",
+      "name": "エレザード",
       "regions": [
         "kalos"
       ],
@@ -3004,7 +3004,7 @@
     },
     {
       "id": "696",
-      "name": "Tyrunt",
+      "name": "チゴラス",
       "regions": [
         "kalos"
       ],
@@ -3020,7 +3020,7 @@
     },
     {
       "id": "697",
-      "name": "Tyrantrum",
+      "name": "ガチゴラス",
       "regions": [
         "kalos"
       ],
@@ -3036,7 +3036,7 @@
     },
     {
       "id": "698",
-      "name": "Amaura",
+      "name": "アマルス",
       "regions": [
         "kalos"
       ],
@@ -3052,7 +3052,7 @@
     },
     {
       "id": "699",
-      "name": "Aurorus",
+      "name": "アマルルガ",
       "regions": [
         "kalos"
       ],
@@ -3068,7 +3068,7 @@
     },
     {
       "id": "700",
-      "name": "Sylveon",
+      "name": "ニンフィア",
       "regions": [
         "kalos"
       ],
@@ -3084,7 +3084,7 @@
     },
     {
       "id": "701",
-      "name": "Hawlucha",
+      "name": "ルチャブル",
       "regions": [
         "kalos"
       ],
@@ -3100,7 +3100,7 @@
     },
     {
       "id": "704",
-      "name": "Goomy",
+      "name": "ヌメラ",
       "regions": [
         "kalos"
       ],
@@ -3116,7 +3116,7 @@
     },
     {
       "id": "705",
-      "name": "Sliggoo",
+      "name": "ヌメイル",
       "regions": [
         "kalos"
       ],
@@ -3132,7 +3132,7 @@
     },
     {
       "id": "706",
-      "name": "Goodra",
+      "name": "ヌメルゴン",
       "regions": [
         "kalos"
       ],
@@ -3148,7 +3148,7 @@
     },
     {
       "id": "707",
-      "name": "Klefki",
+      "name": "クレッフィ",
       "regions": [
         "kalos"
       ],
@@ -3164,7 +3164,7 @@
     },
     {
       "id": "708",
-      "name": "Phantump",
+      "name": "ボクレー",
       "regions": [
         "kalos"
       ],
@@ -3180,7 +3180,7 @@
     },
     {
       "id": "709",
-      "name": "Trevenant",
+      "name": "オーロット",
       "regions": [
         "kalos"
       ],
@@ -3196,7 +3196,7 @@
     },
     {
       "id": "710",
-      "name": "Pumpkaboo",
+      "name": "バケッチャ",
       "regions": [
         "kalos"
       ],
@@ -3212,7 +3212,7 @@
     },
     {
       "id": "711",
-      "name": "Gourgeist",
+      "name": "パンプジン",
       "regions": [
         "kalos"
       ],
@@ -3228,7 +3228,7 @@
     },
     {
       "id": "712",
-      "name": "Bergmite",
+      "name": "カチコール",
       "regions": [
         "kalos"
       ],
@@ -3244,7 +3244,7 @@
     },
     {
       "id": "713",
-      "name": "Avalugg",
+      "name": "クレベース",
       "regions": [
         "kalos"
       ],
@@ -3260,7 +3260,7 @@
     },
     {
       "id": "714",
-      "name": "Noibat",
+      "name": "オンバット",
       "regions": [
         "kalos"
       ],
@@ -3276,7 +3276,7 @@
     },
     {
       "id": "715",
-      "name": "Noivern",
+      "name": "オンバーン",
       "regions": [
         "kalos"
       ],
@@ -3292,7 +3292,7 @@
     },
     {
       "id": "716",
-      "name": "Xerneas",
+      "name": "ゼルネアス",
       "regions": [
         "kalos"
       ],
@@ -3308,7 +3308,7 @@
     },
     {
       "id": "717",
-      "name": "Yveltal",
+      "name": "イベルタル",
       "regions": [
         "kalos"
       ],
@@ -3324,7 +3324,7 @@
     },
     {
       "id": "718",
-      "name": "Zygarde",
+      "name": "ジガルデ",
       "regions": [
         "kalos"
       ],
@@ -3344,12 +3344,8 @@
       "name": "❎ X・Y",
       "options": [
         {
-          "value": "",
-          "label": "🌍 全て表示"
-        },
-        {
           "value": "both",
-          "label": "🟢 両バージョン"
+          "label": "🟢 バージョン共通（限定なし）"
         },
         {
           "value": "x",

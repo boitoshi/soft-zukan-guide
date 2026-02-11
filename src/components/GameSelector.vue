@@ -84,7 +84,7 @@ const backToGameSelection = (): void => {
           <div class="text-sm text-gray-600">
             <p>{{ game.stats?.total || 0 }}匹</p>
             <p v-if="game.stats?.duplicates" class="text-xs mt-1">
-              重複: {{ game.stats.duplicates }}匹
+              複数図鑑: {{ game.stats.duplicates }}匹
             </p>
           </div>
         </button>

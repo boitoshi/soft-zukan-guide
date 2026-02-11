@@ -1,0 +1,28 @@
+{
+  "description": "通信交換で進化するポケモン一覧。ソフト図鑑完成時に注意が必要",
+  "notes": {
+    "paldea": "SVでは「つながりのヒモ」で通信交換不要のものが多い",
+    "galar": "剣盾では通信交換が必要"
+  },
+  "pokemon": [
+    { "name": "カイリキー", "from": "ゴーリキー", "method": "通信交換", "svLinkCord": true },
+    { "name": "ゲンガー", "from": "ゴースト", "method": "通信交換", "svLinkCord": true },
+    { "name": "フーディン", "from": "ユンゲラー", "method": "通信交換", "svLinkCord": true },
+    { "name": "ゴローニャ", "from": "ゴローン", "method": "通信交換", "svLinkCord": true },
+    { "name": "ギガイアス", "from": "ガントル", "method": "通信交換", "svLinkCord": true },
+    { "name": "ローブシン", "from": "ドテッコツ", "method": "通信交換", "svLinkCord": true },
+    { "name": "ハッサム", "from": "ストライク", "method": "メタルコートを持たせて通信交換", "svLinkCord": false },
+    { "name": "ハガネール", "from": "イワーク", "method": "メタルコートを持たせて通信交換", "svLinkCord": false },
+    { "name": "ドサイドン", "from": "サイドン", "method": "プロテクターを持たせて通信交換", "svLinkCord": false },
+    { "name": "エレキブル", "from": "エレブー", "method": "エレキブースターを持たせて通信交換", "svLinkCord": false },
+    { "name": "ブーバーン", "from": "ブーバー", "method": "マグマブースターを持たせて通信交換", "svLinkCord": false },
+    { "name": "ポリゴン2", "from": "ポリゴン", "method": "アップグレードを持たせて通信交換", "svLinkCord": false },
+    { "name": "ポリゴンZ", "from": "ポリゴン2", "method": "あやしいパッチを持たせて通信交換", "svLinkCord": false },
+    { "name": "キングドラ", "from": "シードラ", "method": "りゅうのウロコを持たせて通信交換", "svLinkCord": false },
+    { "name": "ヤドキング", "from": "ヤドン", "method": "おうじゃのしるしを持たせて通信交換", "svLinkCord": false },
+    { "name": "ニョロトノ", "from": "ニョロゾ", "method": "おうじゃのしるしを持たせて通信交換", "svLinkCord": false },
+    { "name": "ミロカロス", "from": "ヒンバス", "method": "きれいなウロコを持たせて通信交換", "svLinkCord": false },
+    { "name": "シュバルゴ", "from": "カブルモ", "method": "チョボマキと通信交換", "svLinkCord": false },
+    { "name": "アギルダー", "from": "チョボマキ", "method": "カブルモと通信交換", "svLinkCord": false }
+  ]
+}

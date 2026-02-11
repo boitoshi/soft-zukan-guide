@@ -125,129 +125,103 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-6">
+  <div class="container mx-auto px-3 py-4 md:px-4 md:py-6 max-w-4xl">
     <!-- ヘッダー -->
-    <div v-if="!selectedGame" class="text-center mb-4">
-      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">📋 ポケモン図鑑一覧</h1>
-      <p class="text-sm text-gray-600">図鑑別表示 - 備考欄で重複確認</p>
-    </div>
-
-    <div v-else class="text-center mb-2">
-      <h1 class="text-lg font-bold text-gray-700 mb-1">📋 図鑑一覧</h1>
+    <div class="text-center mb-3">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800">📋 図鑑一覧</h1>
+      <p class="text-xs text-gray-500 mt-1">図鑑別ポケモン一覧・重複確認</p>
     </div>
 
     <!-- ゲーム選択セクション -->
-    <Transition name="slide-down">
-      <div v-if="!selectedGame && !isLoading" class="mb-8">
-        <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">🎯 図鑑を選択してください</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          <div
-            v-for="game in availableGames"
-            :key="game.id"
-            @click="selectGame(game.id)"
-            class="bg-white border-2 border-gray-200 hover:border-blue-400 rounded-lg p-6 transition-colors duration-200 cursor-pointer"
-          >
-            <div class="text-center">
-              <div class="text-4xl mb-3">{{ getGameIcon(game.id) }}</div>
-              <h3 class="text-lg font-bold text-gray-800 mb-2">{{ game.displayName }}</h3>
-              <p class="text-sm text-gray-600 mb-3">{{ game.game }}</p>
-              <div v-if="game.stats" class="text-xs text-gray-500">
-                <div>総ポケモン数: {{ game.stats.total }}匹</div>
-                <div v-if="game.stats.duplicates">重複: {{ game.stats.duplicates }}匹</div>
-              </div>
-              <div class="mt-4">
-                <span class="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded-md border border-blue-200">
-                  クリックして選択
-                </span>
-              </div>
-            </div>
+    <div v-if="!selectedGame && !isLoading" class="mb-4">
+      <div class="flex gap-2 flex-wrap justify-center">
+        <button
+          v-for="game in availableGames"
+          :key="game.id"
+          @click="selectGame(game.id)"
+          class="flex items-center gap-2 bg-white border border-gray-200 hover:border-blue-400 rounded-xl px-4 py-3 transition-colors cursor-pointer"
+        >
+          <span class="text-2xl">{{ getGameIcon(game.id) }}</span>
+          <div class="text-left">
+            <div class="text-sm font-bold text-gray-800">{{ game.displayName }}</div>
+            <div class="text-[11px] text-gray-500">{{ game.stats?.total ?? '?' }}匹</div>
           </div>
-        </div>
+        </button>
       </div>
-    </Transition>
+    </div>
 
     <!-- ローディング -->
-    <div v-if="isLoading" class="text-center py-12">
-      <div class="animate-spin inline-block w-8 h-8 border-4 border-purple-500 border-t-transparent rounded-full mb-4"></div>
-      <p class="text-gray-600">データを読み込み中...</p>
+    <div v-if="isLoading" class="text-center py-8">
+      <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto mb-3"></div>
+      <span class="text-sm text-gray-500">読み込み中...</span>
     </div>
 
     <!-- エラー -->
-    <div v-if="error" class="bg-red-50 border-2 border-red-200 rounded-lg p-6 mb-6">
-      <div class="flex items-center">
-        <span class="text-2xl mr-3">⚠️</span>
+    <div v-if="error" class="bg-red-50 border border-red-200 rounded-xl p-4 mb-4">
+      <div class="flex items-center gap-2">
+        <span>⚠️</span>
         <div>
-          <h3 class="text-lg font-bold text-red-800">エラーが発生しました</h3>
-          <p class="text-red-600">{{ error }}</p>
+          <p class="text-sm font-medium text-red-800">エラーが発生しました</p>
+          <p class="text-xs text-red-600">{{ error }}</p>
         </div>
       </div>
     </div>
 
     <!-- メインコンテンツ -->
     <div v-if="isDataLoaded">
-      <!-- ゲーム情報 -->
-      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-        <div class="flex items-center justify-between mb-4">
-          <div class="flex items-center">
-            <span class="text-3xl mr-3">{{ getGameIcon(selectedGame!.id) }}</span>
-            <div>
-              <h2 class="text-xl font-bold text-gray-800">{{ selectedGame!.displayName }}</h2>
-              <p class="text-gray-600">{{ selectedGame!.game }}</p>
-            </div>
+      <!-- ゲーム情報ヘッダー -->
+      <div class="flex items-center justify-between bg-white rounded-xl border border-gray-200 px-4 py-3 mb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">{{ getGameIcon(selectedGame!.id) }}</span>
+          <div>
+            <h2 class="text-sm font-bold text-gray-800">{{ selectedGame!.displayName }}</h2>
+            <p class="text-[11px] text-gray-500">{{ selectedGame!.game }}</p>
           </div>
-          <button
-            @click="backToSelection"
-            class="border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-800 px-4 py-2 rounded-md text-sm font-medium transition-colors"
-          >
-            🔄 ゲーム変更
-          </button>
         </div>
+        <button
+          @click="backToSelection"
+          class="text-xs text-gray-600 hover:text-gray-800 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-lg transition-colors"
+        >
+          🔄 変更
+        </button>
       </div>
 
-      <!-- 検索とタブ -->
-      <div class="bg-white border border-gray-200 rounded-lg overflow-hidden mb-6">
-        <!-- 検索バー -->
-        <div class="p-6 border-b bg-gray-50">
-          <div class="flex items-center space-x-4">
-            <div class="flex-1">
-              <input
-                v-model="searchTerm"
-                type="text"
-                placeholder="ポケモン名で検索..."
-                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
-              />
-            </div>
+      <!-- 検索・フィルター -->
+      <div class="bg-white rounded-xl border border-gray-200 overflow-hidden mb-3">
+        <div class="px-3 py-3 border-b bg-gray-50">
+          <div class="flex items-center gap-2">
+            <input
+              v-model="searchTerm"
+              type="text"
+              placeholder="🔍 ポケモン名で検索..."
+              class="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+            />
             <button
               @click="hideDuplicates = !hideDuplicates"
-              :class="[
-                'px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 border-2',
-                hideDuplicates
-                  ? 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600 hover:border-orange-600'
-                  : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-800',
-              ]"
+              class="flex-shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-colors"
+              :class="hideDuplicates
+                ? 'bg-orange-500 text-white'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'"
             >
-              {{ hideDuplicates ? '🔄 重複表示' : '❌ 重複削除' }}
+              {{ hideDuplicates ? '🔄 重複表示' : '❌ 重複非表示' }}
             </button>
-            <div class="text-sm text-gray-600">{{ uniquePokemon.length }}匹</div>
+            <span class="text-[11px] text-gray-400 flex-shrink-0">{{ uniquePokemon.length }}匹</span>
           </div>
         </div>
 
-        <!-- タブ -->
+        <!-- 地域タブ -->
         <div class="border-b border-gray-200 overflow-x-auto">
-          <nav class="flex space-x-0 min-w-max">
+          <nav class="flex min-w-max">
             <button
               v-for="tab in regionTabs"
               :key="tab.id"
               @click="activeTab = tab.id"
-              :class="[
-                'px-3 py-3 sm:px-6 text-xs sm:text-sm font-medium border-b-2 transition-colors duration-200 whitespace-nowrap',
-                activeTab === tab.id
-                  ? 'border-blue-600 text-blue-600 bg-blue-50'
-                  : 'border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-400',
-              ]"
+              class="px-3 py-2.5 text-xs font-semibold border-b-2 transition-colors whitespace-nowrap"
+              :class="activeTab === tab.id
+                ? 'border-blue-600 text-blue-600 bg-blue-50'
+                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
             >
-              <span class="block sm:inline">{{ tab.icon }}</span>
-              <span class="block sm:inline sm:ml-1">{{ tab.name.replace(/図鑑$/, '') }}</span>
+              {{ tab.icon }} {{ tab.name.replace(/図鑑$/, '') }}
             </button>
           </nav>
         </div>
@@ -257,48 +231,54 @@ onUnmounted(() => {
           <table class="w-full">
             <thead class="bg-gray-50">
               <tr>
-                <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
-                <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">ポケモン名</th>
-                <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">登録図鑑</th>
-                <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">バージョン</th>
-                <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">備考</th>
+                <th class="px-3 py-2 text-left text-[11px] font-semibold text-gray-500">No.</th>
+                <th class="px-3 py-2 text-left text-[11px] font-semibold text-gray-500">ポケモン名</th>
+                <th class="px-3 py-2 text-left text-[11px] font-semibold text-gray-500">登録図鑑</th>
+                <th class="px-3 py-2 text-left text-[11px] font-semibold text-gray-500">バージョン</th>
+                <th class="px-3 py-2 text-left text-[11px] font-semibold text-gray-500">備考</th>
               </tr>
             </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
+            <tbody class="bg-white divide-y divide-gray-100">
               <tr
                 v-for="pokemon in uniquePokemon"
                 :key="pokemon.id"
-                class="hover:bg-gray-50 transition-colors duration-200"
+                class="hover:bg-gray-50/50 transition-colors"
               >
-                <td class="px-4 py-2 text-sm text-gray-900">#{{ getPokemonNumber(pokemon) }}</td>
-                <td class="px-4 py-2 text-sm font-medium text-gray-900">{{ pokemon.name }}</td>
-                <td class="px-4 py-2 text-sm">
-                  <div class="flex flex-wrap gap-1">
+                <td class="px-3 py-1.5 text-xs text-gray-500">#{{ getPokemonNumber(pokemon) }}</td>
+                <td class="px-3 py-1.5 text-xs font-medium text-gray-800">{{ pokemon.name }}</td>
+                <td class="px-3 py-1.5">
+                  <div class="flex flex-wrap gap-0.5">
                     <span
                       v-for="region in pokemon.regions"
                       :key="region"
-                      class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full"
+                      class="text-[10px] bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-full"
                     >
                       {{ getRegionIcon(region) }}
                     </span>
                   </div>
                 </td>
-                <td class="px-4 py-2 text-sm">
-                  <div class="flex flex-wrap gap-1">
+                <td class="px-3 py-1.5">
+                  <div class="flex flex-wrap gap-0.5">
                     <span
                       v-for="badge in getPokemonVersionBadges(pokemon)"
                       :key="badge.text"
-                      :class="['inline-block text-xs px-2 py-1 rounded-full font-medium', badge.className]"
+                      :class="['text-[10px] px-1.5 py-0.5 rounded-full font-medium', badge.className]"
                     >
                       {{ badge.text }}
                     </span>
                   </div>
                 </td>
-                <td class="px-4 py-2 text-sm text-gray-600">
+                <td class="px-3 py-1.5 text-[11px]">
                   <span v-if="pokemon.regions.length > 1" class="text-orange-600 font-medium">
-                    🔄 重複（{{ pokemon.regions.length }}図鑑）
+                    🔄 {{ pokemon.regions.length }}図鑑
                   </span>
-                  <span v-else class="text-green-600">⭐ {{ pokemon.regions[0] }}専用</span>
+                  <span v-else class="text-green-600">⭐ 専用</span>
+                </td>
+              </tr>
+              <tr v-if="uniquePokemon.length === 0">
+                <td colspan="5" class="px-4 py-8 text-center text-gray-400">
+                  <div class="text-2xl mb-2">🔍</div>
+                  <div class="text-sm">該当するポケモンなし</div>
                 </td>
               </tr>
             </tbody>
@@ -317,31 +297,25 @@ onUnmounted(() => {
         <path d="m18 15-6-6-6 6" />
       </svg>
     </button>
+
+    <div class="mt-6 text-center text-gray-400 text-[10px]">
+      📋 図鑑一覧 | ソフト図鑑完成ガイド
+    </div>
   </div>
 </template>
 
 <style scoped>
-.slide-down-enter-active,
-.slide-down-leave-active {
-  transition: all 0.3s ease;
-}
-.slide-down-enter-from,
-.slide-down-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 50;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: #3b82f6;
   color: white;
-  border: 2px solid #3b82f6;
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -356,6 +330,5 @@ onUnmounted(() => {
 }
 .scroll-to-top:hover {
   background: #2563eb;
-  border-color: #2563eb;
 }
 </style>

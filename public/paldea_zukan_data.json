@@ -13052,12 +13052,8 @@
       "name": "🔴 スカーレット・バイオレット",
       "options": [
         {
-          "value": "",
-          "label": "🌍 全て表示"
-        },
-        {
           "value": "both",
-          "label": "🟢 両バージョン"
+          "label": "🟢 バージョン共通（限定なし）"
         },
         {
           "value": "scarlet",

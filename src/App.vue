@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import PageNavigation from '@/components/PageNavigation.vue'
+import FloatingActions from '@/components/FloatingActions.vue'
 </script>
 
 <template>
-  <div class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
-    <div class="container mx-auto px-4 py-8">
+  <div class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-3 py-4 md:px-4 md:py-8">
       <PageNavigation />
       <RouterView />
     </div>
+    <FloatingActions />
   </div>
 </template>

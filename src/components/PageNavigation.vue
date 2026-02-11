@@ -16,14 +16,35 @@ const navigationItems = [
     id: 'home',
     to: '/',
     icon: '🎮',
-    label: '詳細フィルター',
+    label: 'ゲーム別管理',
     description: '高機能な図鑑管理'
+  },
+  {
+    id: 'advisor',
+    to: '/advisor',
+    icon: '💡',
+    label: 'アドバイザー',
+    description: 'ソフト図鑑完成アドバイス'
+  },
+  {
+    id: 'cross-check',
+    to: '/cross-check',
+    icon: '🔄',
+    label: 'クロスチェック',
+    description: '全ゲーム横断チェックリスト'
+  },
+  {
+    id: 'guide',
+    to: '/guide',
+    icon: '📖',
+    label: 'ガイド',
+    description: '産地マーク解説・攻略ヒント'
   },
   {
     id: 'overview',
     to: '/overview',
     icon: '📋',
-    label: '図鑑一覧表示',
+    label: '図鑑一覧',
     description: 'タブ表示で全図鑑を確認'
   },
 ]
@@ -50,7 +71,7 @@ const toggleMobileMenu = () => {
 </script>
 
 <template>
-  <div class="bg-white border border-gray-200 rounded-lg p-4 mb-6">
+  <div class="bg-white border border-gray-200 rounded-lg p-3 mb-3">
     <div class="flex justify-between items-center">
       <!-- デスクトップナビゲーション -->
       <div class="hidden md:flex space-x-4">
@@ -101,9 +122,8 @@ const toggleMobileMenu = () => {
       </div>
 
       <!-- ブランド表示 -->
-      <div class="hidden md:flex items-center space-x-2">
-        <div class="text-sm text-gray-500 font-medium">🎯 ポケモン図鑑マスター</div>
-        <div class="hidden sm:block text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">v3.0</div>
+      <div class="hidden md:flex items-center">
+        <div class="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">ソフト図鑑ガイド</div>
       </div>
     </div>
 

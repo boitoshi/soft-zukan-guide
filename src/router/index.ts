@@ -14,6 +14,21 @@ const routes: RouteRecordRaw[] = [
     name: 'overview',
     component: () => import('@/views/OverviewView.vue'),
   },
+  {
+    path: '/cross-check',
+    name: 'cross-check',
+    component: () => import('@/views/CrossCheckView.vue'),
+  },
+  {
+    path: '/advisor',
+    name: 'advisor',
+    component: () => import('@/views/AdvisorView.vue'),
+  },
+  {
+    path: '/guide',
+    name: 'guide',
+    component: () => import('@/views/GuideView.vue'),
+  },
   // 旧URL互換リダイレクト
   {
     path: '/index.html',

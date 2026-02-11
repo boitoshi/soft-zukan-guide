@@ -6,6 +6,8 @@
       "displayName": "🏔️ スカーレット・バイオレット",
       "game": "スカーレット・バイオレット（パルデア・キタカミ・ブルーベリー図鑑）",
       "seriesId": "paldea",
+      "platform": "switch",
+      "softZukan": true,
       "dataFile": "/paldea_zukan_data.json",
       "regions": [
         {
@@ -32,6 +34,8 @@
       "displayName": "⚔️ ソード・シールド",
       "game": "ソード・シールド（ガラル・ヨロイ・カンムリ図鑑）",
       "seriesId": "galar",
+      "platform": "switch",
+      "softZukan": true,
       "dataFile": "/galar_zukan_data.json",
       "regions": [
         {
@@ -58,6 +62,8 @@
       "displayName": "🌺 ウルトラサン・ウルトラムーン",
       "game": "ウルトラサン・ウルトラムーン（アローラ図鑑）",
       "seriesId": "alola",
+      "platform": "3ds",
+      "softZukan": false,
       "dataFile": "/usum_zukan_data.json",
       "regions": [
         {
@@ -76,6 +82,8 @@
       "displayName": "🌺 サン・ムーン",
       "game": "サン・ムーン（アローラ図鑑）",
       "seriesId": "alola",
+      "platform": "3ds",
+      "softZukan": false,
       "dataFile": "/sm_zukan_data.json",
       "regions": [
         {
@@ -94,6 +102,8 @@
       "displayName": "🌊 オメガルビー・アルファサファイア",
       "game": "オメガルビー・アルファサファイア（ホウエン図鑑）",
       "seriesId": "hoenn",
+      "platform": "3ds",
+      "softZukan": false,
       "dataFile": "/oras_zukan_data.json",
       "regions": [
         {
@@ -112,6 +122,8 @@
       "displayName": "🗼 X・Y",
       "game": "X・Y（カロス図鑑）",
       "seriesId": "kalos",
+      "platform": "3ds",
+      "softZukan": false,
       "dataFile": "/xy_zukan_data.json",
       "regions": [
         {

@@ -1,4 +1,10 @@
 /* ポケモン図鑑マスター - メインスタイル */
+@import "tailwindcss";
+
+/* 日本語フォント設定 */
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+}
 
 /* Vue 3 + Vite環境用カスタムスタイル */
 .fade-enter-active, .fade-leave-active {

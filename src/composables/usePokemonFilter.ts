@@ -1,8 +1,10 @@
 /**
  * usePokemonFilter Composable (TypeScript版)
  * ポケモンフィルタリング機能を担当
+ *
+ * caught 判定は外部から isCaught 関数を受け取る（globalProgress ベース）
  */
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch } from 'vue';
 import type {
   ZukanData,
   GameConfig,
@@ -10,22 +12,22 @@ import type {
   FilterState,
   UsePokemonFilterReturn,
   VersionFiltersMap,
-} from '@/types'
-import { getRegionClass } from '@/constants/icons'
-import type { Ref, ComputedRef } from 'vue'
+} from '@/types';
+import type { Ref, ComputedRef } from 'vue';
 
 const buildDefaultFilters = (
   versionFilters?: VersionFiltersMap,
 ): FilterState => {
   const defaults: FilterState = {
-    region: "",
-    status: "",
-    search: "",
+    region: '',
+    status: '',
+    search: '',
+    multipleDex: '',
   };
 
   if (versionFilters) {
     Object.keys(versionFilters).forEach((key) => {
-      defaults[key] = "";
+      defaults[key] = '';
     });
   }
 
@@ -35,6 +37,7 @@ const buildDefaultFilters = (
 export function usePokemonFilter(
   zukanData: Ref<ZukanData>,
   selectedGame: Ref<GameConfig | null>,
+  isCaught?: (pokemonName: string) => boolean,
 ): UsePokemonFilterReturn {
   // フィルター状態
   const filters = ref<FilterState>(
@@ -61,22 +64,25 @@ export function usePokemonFilter(
 
     // 図鑑フィルター
     if (filters.value.region) {
-      if (filters.value.region === "duplicates") {
-        filtered = filtered.filter((p: Pokemon) => p.regions.length > 1);
-      } else if (filters.value.region === "unique") {
-        filtered = filtered.filter((p: Pokemon) => p.regions.length === 1);
-      } else {
-        filtered = filtered.filter((p: Pokemon) =>
-          p.regions.includes(filters.value.region),
-        );
-      }
+      filtered = filtered.filter((p: Pokemon) =>
+        p.regions.includes(filters.value.region),
+      );
     }
 
-    // ステータスフィルター
-    if (filters.value.status === "caught") {
-      filtered = filtered.filter((p: Pokemon) => p.caught);
-    } else if (filters.value.status === "uncaught") {
-      filtered = filtered.filter((p: Pokemon) => !p.caught);
+    // 複数図鑑フィルター（地域フィルターと AND 組み合わせ可能）
+    if (filters.value.multipleDex === 'only') {
+      filtered = filtered.filter((p: Pokemon) => p.regions.length > 1);
+    }
+
+    // ステータスフィルター（globalProgress ベース）
+    if (filters.value.status === 'caught') {
+      filtered = filtered.filter((p: Pokemon) =>
+        isCaught ? isCaught(p.name) : p.caught,
+      );
+    } else if (filters.value.status === 'uncaught') {
+      filtered = filtered.filter((p: Pokemon) =>
+        isCaught ? !isCaught(p.name) : !p.caught,
+      );
     }
 
     // 名前検索
@@ -91,7 +97,7 @@ export function usePokemonFilter(
     const versionFilters = zukanData.value.version_filters || {};
     Object.keys(versionFilters).forEach((filterKey) => {
       const value = filters.value[filterKey];
-      if (!value || value === "all") return;
+      if (!value || value === 'all') return;
       filtered = filtered.filter(
         (p: Pokemon) => p.version_info?.[filterKey]?.availability === value,
       );
@@ -107,21 +113,16 @@ export function usePokemonFilter(
 
   // 図鑑名取得
   const getRegionName = (regionId: string): string => {
-    if (!selectedGame.value) return regionId
+    if (!selectedGame.value) return regionId;
     const region = selectedGame.value.regions?.find(
       (r) => r.id === regionId,
-    )
-    return region ? region.name : regionId
-  }
+    );
+    return region ? region.name : regionId;
+  };
 
   return {
-    // リアクティブデータ
     filters,
-
-    // 計算済みプロパティ
     filteredPokemon,
-
-    // メソッド
     resetFilters,
     getRegionName,
   };

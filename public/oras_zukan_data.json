@@ -12,7 +12,7 @@
   "pokemon": [
     {
       "id": "041",
-      "name": "Zubat",
+      "name": "ズバット",
       "regions": [
         "hoenn"
       ],
@@ -28,7 +28,7 @@
     },
     {
       "id": "042",
-      "name": "Golbat",
+      "name": "ゴルバット",
       "regions": [
         "hoenn"
       ],
@@ -44,7 +44,7 @@
     },
     {
       "id": "063",
-      "name": "Abra",
+      "name": "ケーシィ",
       "regions": [
         "hoenn"
       ],
@@ -60,7 +60,7 @@
     },
     {
       "id": "064",
-      "name": "Kadabra",
+      "name": "ユンゲラー",
       "regions": [
         "hoenn"
       ],
@@ -76,7 +76,7 @@
     },
     {
       "id": "065",
-      "name": "Alakazam",
+      "name": "フーディン",
       "regions": [
         "hoenn"
       ],
@@ -92,7 +92,7 @@
     },
     {
       "id": "066",
-      "name": "Machop",
+      "name": "ワンリキー",
       "regions": [
         "hoenn"
       ],
@@ -108,7 +108,7 @@
     },
     {
       "id": "067",
-      "name": "Machoke",
+      "name": "ゴーリキー",
       "regions": [
         "hoenn"
       ],
@@ -124,7 +124,7 @@
     },
     {
       "id": "068",
-      "name": "Machamp",
+      "name": "カイリキー",
       "regions": [
         "hoenn"
       ],
@@ -140,7 +140,7 @@
     },
     {
       "id": "072",
-      "name": "Tentacool",
+      "name": "メノクラゲ",
       "regions": [
         "hoenn"
       ],
@@ -156,7 +156,7 @@
     },
     {
       "id": "073",
-      "name": "Tentacruel",
+      "name": "ドククラゲ",
       "regions": [
         "hoenn"
       ],
@@ -172,7 +172,7 @@
     },
     {
       "id": "074",
-      "name": "Geodude",
+      "name": "イシツブテ",
       "regions": [
         "hoenn"
       ],
@@ -188,7 +188,7 @@
     },
     {
       "id": "075",
-      "name": "Graveler",
+      "name": "ゴローン",
       "regions": [
         "hoenn"
       ],
@@ -204,7 +204,7 @@
     },
     {
       "id": "076",
-      "name": "Golem",
+      "name": "ゴローニャ",
       "regions": [
         "hoenn"
       ],
@@ -220,7 +220,7 @@
     },
     {
       "id": "118",
-      "name": "Goldeen",
+      "name": "トサキント",
       "regions": [
         "hoenn"
       ],
@@ -236,7 +236,7 @@
     },
     {
       "id": "119",
-      "name": "Seaking",
+      "name": "アズマオウ",
       "regions": [
         "hoenn"
       ],
@@ -252,7 +252,7 @@
     },
     {
       "id": "129",
-      "name": "Magikarp",
+      "name": "コイキング",
       "regions": [
         "hoenn"
       ],
@@ -268,7 +268,7 @@
     },
     {
       "id": "130",
-      "name": "Gyarados",
+      "name": "ギャラドス",
       "regions": [
         "hoenn"
       ],
@@ -284,7 +284,7 @@
     },
     {
       "id": "169",
-      "name": "Crobat",
+      "name": "クロバット",
       "regions": [
         "hoenn"
       ],
@@ -300,7 +300,7 @@
     },
     {
       "id": "183",
-      "name": "Marill",
+      "name": "マリル",
       "regions": [
         "hoenn"
       ],
@@ -316,7 +316,7 @@
     },
     {
       "id": "184",
-      "name": "Azumarill",
+      "name": "マリルリ",
       "regions": [
         "hoenn"
       ],
@@ -332,7 +332,7 @@
     },
     {
       "id": "202",
-      "name": "Wobbuffet",
+      "name": "ソーナンス",
       "regions": [
         "hoenn"
       ],
@@ -348,7 +348,7 @@
     },
     {
       "id": "249",
-      "name": "Lugia",
+      "name": "ルギア",
       "regions": [
         "hoenn"
       ],
@@ -364,7 +364,7 @@
     },
     {
       "id": "250",
-      "name": "Ho-Oh",
+      "name": "ホウオウ",
       "regions": [
         "hoenn"
       ],
@@ -380,7 +380,7 @@
     },
     {
       "id": "252",
-      "name": "Treecko",
+      "name": "キモリ",
       "regions": [
         "hoenn"
       ],
@@ -396,7 +396,7 @@
     },
     {
       "id": "253",
-      "name": "Grovyle",
+      "name": "ジュプトル",
       "regions": [
         "hoenn"
       ],
@@ -412,7 +412,7 @@
     },
     {
       "id": "254",
-      "name": "Sceptile",
+      "name": "ジュカイン",
       "regions": [
         "hoenn"
       ],
@@ -428,7 +428,7 @@
     },
     {
       "id": "255",
-      "name": "Torchic",
+      "name": "アチャモ",
       "regions": [
         "hoenn"
       ],
@@ -444,7 +444,7 @@
     },
     {
       "id": "256",
-      "name": "Combusken",
+      "name": "ワカシャモ",
       "regions": [
         "hoenn"
       ],
@@ -460,7 +460,7 @@
     },
     {
       "id": "257",
-      "name": "Blaziken",
+      "name": "バシャーモ",
       "regions": [
         "hoenn"
       ],
@@ -476,7 +476,7 @@
     },
     {
       "id": "258",
-      "name": "Mudkip",
+      "name": "ミズゴロウ",
       "regions": [
         "hoenn"
       ],
@@ -492,7 +492,7 @@
     },
     {
       "id": "259",
-      "name": "Marshtomp",
+      "name": "ヌマクロー",
       "regions": [
         "hoenn"
       ],
@@ -508,7 +508,7 @@
     },
     {
       "id": "260",
-      "name": "Swampert",
+      "name": "ラグラージ",
       "regions": [
         "hoenn"
       ],
@@ -524,7 +524,7 @@
     },
     {
       "id": "261",
-      "name": "Poochyena",
+      "name": "ポチエナ",
       "regions": [
         "hoenn"
       ],
@@ -540,7 +540,7 @@
     },
     {
       "id": "262",
-      "name": "Mightyena",
+      "name": "グラエナ",
       "regions": [
         "hoenn"
       ],
@@ -556,7 +556,7 @@
     },
     {
       "id": "263",
-      "name": "Zigzagoon",
+      "name": "ジグザグマ",
       "regions": [
         "hoenn"
       ],
@@ -572,7 +572,7 @@
     },
     {
       "id": "264",
-      "name": "Linoone",
+      "name": "マッスグマ",
       "regions": [
         "hoenn"
       ],
@@ -588,7 +588,7 @@
     },
     {
       "id": "265",
-      "name": "Wurmple",
+      "name": "ケムッソ",
       "regions": [
         "hoenn"
       ],
@@ -604,7 +604,7 @@
     },
     {
       "id": "266",
-      "name": "Silcoon",
+      "name": "カラサリス",
       "regions": [
         "hoenn"
       ],
@@ -620,7 +620,7 @@
     },
     {
       "id": "267",
-      "name": "Beautifly",
+      "name": "アゲハント",
       "regions": [
         "hoenn"
       ],
@@ -636,7 +636,7 @@
     },
     {
       "id": "268",
-      "name": "Cascoon",
+      "name": "マユルド",
       "regions": [
         "hoenn"
       ],
@@ -652,7 +652,7 @@
     },
     {
       "id": "269",
-      "name": "Dustox",
+      "name": "ドクケイル",
       "regions": [
         "hoenn"
       ],
@@ -668,7 +668,7 @@
     },
     {
       "id": "270",
-      "name": "Lotad",
+      "name": "ハスボー",
       "regions": [
         "hoenn"
       ],
@@ -684,7 +684,7 @@
     },
     {
       "id": "271",
-      "name": "Lombre",
+      "name": "ハスブレロ",
       "regions": [
         "hoenn"
       ],
@@ -700,7 +700,7 @@
     },
     {
       "id": "272",
-      "name": "Ludicolo",
+      "name": "ルンパッパ",
       "regions": [
         "hoenn"
       ],
@@ -716,7 +716,7 @@
     },
     {
       "id": "273",
-      "name": "Seedot",
+      "name": "タネボー",
       "regions": [
         "hoenn"
       ],
@@ -732,7 +732,7 @@
     },
     {
       "id": "274",
-      "name": "Nuzleaf",
+      "name": "コノハナ",
       "regions": [
         "hoenn"
       ],
@@ -748,7 +748,7 @@
     },
     {
       "id": "275",
-      "name": "Shiftry",
+      "name": "ダーテング",
       "regions": [
         "hoenn"
       ],
@@ -764,7 +764,7 @@
     },
     {
       "id": "276",
-      "name": "Taillow",
+      "name": "スバメ",
       "regions": [
         "hoenn"
       ],
@@ -780,7 +780,7 @@
     },
     {
       "id": "277",
-      "name": "Swellow",
+      "name": "オオスバメ",
       "regions": [
         "hoenn"
       ],
@@ -796,7 +796,7 @@
     },
     {
       "id": "278",
-      "name": "Wingull",
+      "name": "キャモメ",
       "regions": [
         "hoenn"
       ],
@@ -812,7 +812,7 @@
     },
     {
       "id": "279",
-      "name": "Pelipper",
+      "name": "ペリッパー",
       "regions": [
         "hoenn"
       ],
@@ -828,7 +828,7 @@
     },
     {
       "id": "280",
-      "name": "Ralts",
+      "name": "ラルトス",
       "regions": [
         "hoenn"
       ],
@@ -844,7 +844,7 @@
     },
     {
       "id": "281",
-      "name": "Kirlia",
+      "name": "キルリア",
       "regions": [
         "hoenn"
       ],
@@ -860,7 +860,7 @@
     },
     {
       "id": "282",
-      "name": "Gardevoir",
+      "name": "サーナイト",
       "regions": [
         "hoenn"
       ],
@@ -876,7 +876,7 @@
     },
     {
       "id": "283",
-      "name": "Surskit",
+      "name": "アメタマ",
       "regions": [
         "hoenn"
       ],
@@ -892,7 +892,7 @@
     },
     {
       "id": "284",
-      "name": "Masquerain",
+      "name": "アメモース",
       "regions": [
         "hoenn"
       ],
@@ -908,7 +908,7 @@
     },
     {
       "id": "285",
-      "name": "Shroomish",
+      "name": "キノココ",
       "regions": [
         "hoenn"
       ],
@@ -924,7 +924,7 @@
     },
     {
       "id": "286",
-      "name": "Breloom",
+      "name": "キノガッサ",
       "regions": [
         "hoenn"
       ],
@@ -940,7 +940,7 @@
     },
     {
       "id": "287",
-      "name": "Slakoth",
+      "name": "ナマケロ",
       "regions": [
         "hoenn"
       ],
@@ -956,7 +956,7 @@
     },
     {
       "id": "288",
-      "name": "Vigoroth",
+      "name": "ヤルキモノ",
       "regions": [
         "hoenn"
       ],
@@ -972,7 +972,7 @@
     },
     {
       "id": "289",
-      "name": "Slaking",
+      "name": "ケッキング",
       "regions": [
         "hoenn"
       ],
@@ -988,7 +988,7 @@
     },
     {
       "id": "290",
-      "name": "Nincada",
+      "name": "ツチニン",
       "regions": [
         "hoenn"
       ],
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "291",
-      "name": "Ninjask",
+      "name": "テッカニン",
       "regions": [
         "hoenn"
       ],
@@ -1020,7 +1020,7 @@
     },
     {
       "id": "292",
-      "name": "Shedinja",
+      "name": "ヌケニン",
       "regions": [
         "hoenn"
       ],
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "293",
-      "name": "Whismur",
+      "name": "ゴニョニョ",
       "regions": [
         "hoenn"
       ],
@@ -1052,7 +1052,7 @@
     },
     {
       "id": "294",
-      "name": "Loudred",
+      "name": "ドゴーム",
       "regions": [
         "hoenn"
       ],
@@ -1068,7 +1068,7 @@
     },
     {
       "id": "295",
-      "name": "Exploud",
+      "name": "バクオング",
       "regions": [
         "hoenn"
       ],
@@ -1084,7 +1084,7 @@
     },
     {
       "id": "296",
-      "name": "Makuhita",
+      "name": "マクノシタ",
       "regions": [
         "hoenn"
       ],
@@ -1100,7 +1100,7 @@
     },
     {
       "id": "297",
-      "name": "Hariyama",
+      "name": "ハリテヤマ",
       "regions": [
         "hoenn"
       ],
@@ -1116,7 +1116,7 @@
     },
     {
       "id": "298",
-      "name": "Azurill",
+      "name": "ルリリ",
       "regions": [
         "hoenn"
       ],
@@ -1132,7 +1132,7 @@
     },
     {
       "id": "299",
-      "name": "Nosepass",
+      "name": "ノズパス",
       "regions": [
         "hoenn"
       ],
@@ -1148,7 +1148,7 @@
     },
     {
       "id": "300",
-      "name": "Skitty",
+      "name": "エネコ",
       "regions": [
         "hoenn"
       ],
@@ -1164,7 +1164,7 @@
     },
     {
       "id": "301",
-      "name": "Delcatty",
+      "name": "エネコロロ",
       "regions": [
         "hoenn"
       ],
@@ -1180,7 +1180,7 @@
     },
     {
       "id": "302",
-      "name": "Sableye",
+      "name": "ヤミラミ",
       "regions": [
         "hoenn"
       ],
@@ -1196,7 +1196,7 @@
     },
     {
       "id": "303",
-      "name": "Mawile",
+      "name": "クチート",
       "regions": [
         "hoenn"
       ],
@@ -1212,7 +1212,7 @@
     },
     {
       "id": "304",
-      "name": "Aron",
+      "name": "ココドラ",
       "regions": [
         "hoenn"
       ],
@@ -1228,7 +1228,7 @@
     },
     {
       "id": "305",
-      "name": "Lairon",
+      "name": "コドラ",
       "regions": [
         "hoenn"
       ],
@@ -1244,7 +1244,7 @@
     },
     {
       "id": "306",
-      "name": "Aggron",
+      "name": "ボスゴドラ",
       "regions": [
         "hoenn"
       ],
@@ -1260,7 +1260,7 @@
     },
     {
       "id": "307",
-      "name": "Meditite",
+      "name": "アサナン",
       "regions": [
         "hoenn"
       ],
@@ -1276,7 +1276,7 @@
     },
     {
       "id": "308",
-      "name": "Medicham",
+      "name": "チャーレム",
       "regions": [
         "hoenn"
       ],
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "309",
-      "name": "Electrike",
+      "name": "ラクライ",
       "regions": [
         "hoenn"
       ],
@@ -1308,7 +1308,7 @@
     },
     {
       "id": "310",
-      "name": "Manectric",
+      "name": "ライボルト",
       "regions": [
         "hoenn"
       ],
@@ -1324,7 +1324,7 @@
     },
     {
       "id": "311",
-      "name": "Plusle",
+      "name": "プラスル",
       "regions": [
         "hoenn"
       ],
@@ -1340,7 +1340,7 @@
     },
     {
       "id": "312",
-      "name": "Minun",
+      "name": "マイナン",
       "regions": [
         "hoenn"
       ],
@@ -1356,7 +1356,7 @@
     },
     {
       "id": "313",
-      "name": "Volbeat",
+      "name": "バルビート",
       "regions": [
         "hoenn"
       ],
@@ -1372,7 +1372,7 @@
     },
     {
       "id": "314",
-      "name": "Illumise",
+      "name": "イルミーゼ",
       "regions": [
         "hoenn"
       ],
@@ -1388,7 +1388,7 @@
     },
     {
       "id": "315",
-      "name": "Roselia",
+      "name": "ロゼリア",
       "regions": [
         "hoenn"
       ],
@@ -1404,7 +1404,7 @@
     },
     {
       "id": "316",
-      "name": "Gulpin",
+      "name": "ゴクリン",
       "regions": [
         "hoenn"
       ],
@@ -1420,7 +1420,7 @@
     },
     {
       "id": "317",
-      "name": "Swalot",
+      "name": "マルノーム",
       "regions": [
         "hoenn"
       ],
@@ -1436,7 +1436,7 @@
     },
     {
       "id": "318",
-      "name": "Carvanha",
+      "name": "キバニア",
       "regions": [
         "hoenn"
       ],
@@ -1452,7 +1452,7 @@
     },
     {
       "id": "319",
-      "name": "Sharpedo",
+      "name": "サメハダー",
       "regions": [
         "hoenn"
       ],
@@ -1468,7 +1468,7 @@
     },
     {
       "id": "320",
-      "name": "Wailmer",
+      "name": "ホエルコ",
       "regions": [
         "hoenn"
       ],
@@ -1484,7 +1484,7 @@
     },
     {
       "id": "321",
-      "name": "Wailord",
+      "name": "ホエルオー",
       "regions": [
         "hoenn"
       ],
@@ -1500,7 +1500,7 @@
     },
     {
       "id": "322",
-      "name": "Numel",
+      "name": "ドンメル",
       "regions": [
         "hoenn"
       ],
@@ -1516,7 +1516,7 @@
     },
     {
       "id": "323",
-      "name": "Camerupt",
+      "name": "バクーダ",
       "regions": [
         "hoenn"
       ],
@@ -1532,7 +1532,7 @@
     },
     {
       "id": "324",
-      "name": "Torkoal",
+      "name": "コータス",
       "regions": [
         "hoenn"
       ],
@@ -1548,7 +1548,7 @@
     },
     {
       "id": "325",
-      "name": "Spoink",
+      "name": "バネブー",
       "regions": [
         "hoenn"
       ],
@@ -1564,7 +1564,7 @@
     },
     {
       "id": "326",
-      "name": "Grumpig",
+      "name": "ブーピッグ",
       "regions": [
         "hoenn"
       ],
@@ -1580,7 +1580,7 @@
     },
     {
       "id": "327",
-      "name": "Spinda",
+      "name": "パッチール",
       "regions": [
         "hoenn"
       ],
@@ -1596,7 +1596,7 @@
     },
     {
       "id": "328",
-      "name": "Trapinch",
+      "name": "ナックラー",
       "regions": [
         "hoenn"
       ],
@@ -1612,7 +1612,7 @@
     },
     {
       "id": "329",
-      "name": "Vibrava",
+      "name": "ビブラーバ",
       "regions": [
         "hoenn"
       ],
@@ -1628,7 +1628,7 @@
     },
     {
       "id": "330",
-      "name": "Flygon",
+      "name": "フライゴン",
       "regions": [
         "hoenn"
       ],
@@ -1644,7 +1644,7 @@
     },
     {
       "id": "331",
-      "name": "Cacnea",
+      "name": "サボネア",
       "regions": [
         "hoenn"
       ],
@@ -1660,7 +1660,7 @@
     },
     {
       "id": "332",
-      "name": "Cacturne",
+      "name": "ノクタス",
       "regions": [
         "hoenn"
       ],
@@ -1676,7 +1676,7 @@
     },
     {
       "id": "333",
-      "name": "Swablu",
+      "name": "チルット",
       "regions": [
         "hoenn"
       ],
@@ -1692,7 +1692,7 @@
     },
     {
       "id": "334",
-      "name": "Altaria",
+      "name": "チルタリス",
       "regions": [
         "hoenn"
       ],
@@ -1708,7 +1708,7 @@
     },
     {
       "id": "335",
-      "name": "Zangoose",
+      "name": "ザングース",
       "regions": [
         "hoenn"
       ],
@@ -1724,7 +1724,7 @@
     },
     {
       "id": "336",
-      "name": "Seviper",
+      "name": "ハブネーク",
       "regions": [
         "hoenn"
       ],
@@ -1740,7 +1740,7 @@
     },
     {
       "id": "337",
-      "name": "Lunatone",
+      "name": "ルナトーン",
       "regions": [
         "hoenn"
       ],
@@ -1756,7 +1756,7 @@
     },
     {
       "id": "338",
-      "name": "Solrock",
+      "name": "ソルロック",
       "regions": [
         "hoenn"
       ],
@@ -1772,7 +1772,7 @@
     },
     {
       "id": "339",
-      "name": "Barboach",
+      "name": "ドジョッチ",
       "regions": [
         "hoenn"
       ],
@@ -1788,7 +1788,7 @@
     },
     {
       "id": "340",
-      "name": "Whiscash",
+      "name": "ナマズン",
       "regions": [
         "hoenn"
       ],
@@ -1804,7 +1804,7 @@
     },
     {
       "id": "341",
-      "name": "Corphish",
+      "name": "ヘイガニ",
       "regions": [
         "hoenn"
       ],
@@ -1820,7 +1820,7 @@
     },
     {
       "id": "342",
-      "name": "Crawdaunt",
+      "name": "シザリガー",
       "regions": [
         "hoenn"
       ],
@@ -1836,7 +1836,7 @@
     },
     {
       "id": "343",
-      "name": "Baltoy",
+      "name": "ヤジロン",
       "regions": [
         "hoenn"
       ],
@@ -1852,7 +1852,7 @@
     },
     {
       "id": "344",
-      "name": "Claydol",
+      "name": "ネンドール",
       "regions": [
         "hoenn"
       ],
@@ -1868,7 +1868,7 @@
     },
     {
       "id": "345",
-      "name": "Lileep",
+      "name": "リリーラ",
       "regions": [
         "hoenn"
       ],
@@ -1884,7 +1884,7 @@
     },
     {
       "id": "346",
-      "name": "Cradily",
+      "name": "ユレイドル",
       "regions": [
         "hoenn"
       ],
@@ -1900,7 +1900,7 @@
     },
     {
       "id": "347",
-      "name": "Anorith",
+      "name": "アノプス",
       "regions": [
         "hoenn"
       ],
@@ -1916,7 +1916,7 @@
     },
     {
       "id": "348",
-      "name": "Armaldo",
+      "name": "アーマルド",
       "regions": [
         "hoenn"
       ],
@@ -1932,7 +1932,7 @@
     },
     {
       "id": "349",
-      "name": "Feebas",
+      "name": "ヒンバス",
       "regions": [
         "hoenn"
       ],
@@ -1948,7 +1948,7 @@
     },
     {
       "id": "350",
-      "name": "Milotic",
+      "name": "ミロカロス",
       "regions": [
         "hoenn"
       ],
@@ -1964,7 +1964,7 @@
     },
     {
       "id": "351",
-      "name": "Castform",
+      "name": "ポワルン",
       "regions": [
         "hoenn"
       ],
@@ -1980,7 +1980,7 @@
     },
     {
       "id": "352",
-      "name": "Kecleon",
+      "name": "カクレオン",
       "regions": [
         "hoenn"
       ],
@@ -1996,7 +1996,7 @@
     },
     {
       "id": "353",
-      "name": "Shuppet",
+      "name": "カゲボウズ",
       "regions": [
         "hoenn"
       ],
@@ -2012,7 +2012,7 @@
     },
     {
       "id": "354",
-      "name": "Banette",
+      "name": "ジュペッタ",
       "regions": [
         "hoenn"
       ],
@@ -2028,7 +2028,7 @@
     },
     {
       "id": "355",
-      "name": "Duskull",
+      "name": "ヨマワル",
       "regions": [
         "hoenn"
       ],
@@ -2044,7 +2044,7 @@
     },
     {
       "id": "356",
-      "name": "Dusclops",
+      "name": "サマヨール",
       "regions": [
         "hoenn"
       ],
@@ -2060,7 +2060,7 @@
     },
     {
       "id": "357",
-      "name": "Tropius",
+      "name": "トロピウス",
       "regions": [
         "hoenn"
       ],
@@ -2076,7 +2076,7 @@
     },
     {
       "id": "358",
-      "name": "Chimecho",
+      "name": "チリーン",
       "regions": [
         "hoenn"
       ],
@@ -2092,7 +2092,7 @@
     },
     {
       "id": "359",
-      "name": "Absol",
+      "name": "アブソル",
       "regions": [
         "hoenn"
       ],
@@ -2108,7 +2108,7 @@
     },
     {
       "id": "360",
-      "name": "Wynaut",
+      "name": "ソーナノ",
       "regions": [
         "hoenn"
       ],
@@ -2124,7 +2124,7 @@
     },
     {
       "id": "361",
-      "name": "Snorunt",
+      "name": "ユキワラシ",
       "regions": [
         "hoenn"
       ],
@@ -2140,7 +2140,7 @@
     },
     {
       "id": "362",
-      "name": "Glalie",
+      "name": "オニゴーリ",
       "regions": [
         "hoenn"
       ],
@@ -2156,7 +2156,7 @@
     },
     {
       "id": "363",
-      "name": "Spheal",
+      "name": "タマザラシ",
       "regions": [
         "hoenn"
       ],
@@ -2172,7 +2172,7 @@
     },
     {
       "id": "364",
-      "name": "Sealeo",
+      "name": "トドグラー",
       "regions": [
         "hoenn"
       ],
@@ -2188,7 +2188,7 @@
     },
     {
       "id": "365",
-      "name": "Walrein",
+      "name": "トドゼルガ",
       "regions": [
         "hoenn"
       ],
@@ -2204,7 +2204,7 @@
     },
     {
       "id": "366",
-      "name": "Clamperl",
+      "name": "パールル",
       "regions": [
         "hoenn"
       ],
@@ -2220,7 +2220,7 @@
     },
     {
       "id": "367",
-      "name": "Huntail",
+      "name": "ハンテール",
       "regions": [
         "hoenn"
       ],
@@ -2236,7 +2236,7 @@
     },
     {
       "id": "368",
-      "name": "Gorebyss",
+      "name": "サクラビス",
       "regions": [
         "hoenn"
       ],
@@ -2252,7 +2252,7 @@
     },
     {
       "id": "369",
-      "name": "Relicanth",
+      "name": "ジーランス",
       "regions": [
         "hoenn"
       ],
@@ -2268,7 +2268,7 @@
     },
     {
       "id": "370",
-      "name": "Luvdisc",
+      "name": "ラブカス",
       "regions": [
         "hoenn"
       ],
@@ -2284,7 +2284,7 @@
     },
     {
       "id": "371",
-      "name": "Bagon",
+      "name": "タツベイ",
       "regions": [
         "hoenn"
       ],
@@ -2300,7 +2300,7 @@
     },
     {
       "id": "372",
-      "name": "Shelgon",
+      "name": "コモルー",
       "regions": [
         "hoenn"
       ],
@@ -2316,7 +2316,7 @@
     },
     {
       "id": "373",
-      "name": "Salamence",
+      "name": "ボーマンダ",
       "regions": [
         "hoenn"
       ],
@@ -2332,7 +2332,7 @@
     },
     {
       "id": "374",
-      "name": "Beldum",
+      "name": "ダンバル",
       "regions": [
         "hoenn"
       ],
@@ -2348,7 +2348,7 @@
     },
     {
       "id": "375",
-      "name": "Metang",
+      "name": "メタング",
       "regions": [
         "hoenn"
       ],
@@ -2364,7 +2364,7 @@
     },
     {
       "id": "376",
-      "name": "Metagross",
+      "name": "メタグロス",
       "regions": [
         "hoenn"
       ],
@@ -2380,7 +2380,7 @@
     },
     {
       "id": "377",
-      "name": "Regirock",
+      "name": "レジロック",
       "regions": [
         "hoenn"
       ],
@@ -2396,7 +2396,7 @@
     },
     {
       "id": "378",
-      "name": "Regice",
+      "name": "レジアイス",
       "regions": [
         "hoenn"
       ],
@@ -2412,7 +2412,7 @@
     },
     {
       "id": "379",
-      "name": "Registeel",
+      "name": "レジスチル",
       "regions": [
         "hoenn"
       ],
@@ -2428,7 +2428,7 @@
     },
     {
       "id": "380",
-      "name": "Latias",
+      "name": "ラティアス",
       "regions": [
         "hoenn"
       ],
@@ -2444,7 +2444,7 @@
     },
     {
       "id": "381",
-      "name": "Latios",
+      "name": "ラティオス",
       "regions": [
         "hoenn"
       ],
@@ -2460,7 +2460,7 @@
     },
     {
       "id": "382",
-      "name": "Kyogre",
+      "name": "カイオーガ",
       "regions": [
         "hoenn"
       ],
@@ -2476,7 +2476,7 @@
     },
     {
       "id": "383",
-      "name": "Groudon",
+      "name": "グラードン",
       "regions": [
         "hoenn"
       ],
@@ -2492,7 +2492,7 @@
     },
     {
       "id": "384",
-      "name": "Rayquaza",
+      "name": "レックウザ",
       "regions": [
         "hoenn"
       ],
@@ -2508,7 +2508,7 @@
     },
     {
       "id": "385",
-      "name": "Jirachi",
+      "name": "ジラーチ",
       "regions": [
         "hoenn"
       ],
@@ -2524,7 +2524,7 @@
     },
     {
       "id": "386",
-      "name": "Deoxys",
+      "name": "デオキシス",
       "regions": [
         "hoenn"
       ],
@@ -2540,7 +2540,7 @@
     },
     {
       "id": "406",
-      "name": "Budew",
+      "name": "スボミー",
       "regions": [
         "hoenn"
       ],
@@ -2556,7 +2556,7 @@
     },
     {
       "id": "407",
-      "name": "Roserade",
+      "name": "ロズレイド",
       "regions": [
         "hoenn"
       ],
@@ -2572,7 +2572,7 @@
     },
     {
       "id": "433",
-      "name": "Chingling",
+      "name": "リーシャン",
       "regions": [
         "hoenn"
       ],
@@ -2588,7 +2588,7 @@
     },
     {
       "id": "475",
-      "name": "Gallade",
+      "name": "エルレイド",
       "regions": [
         "hoenn"
       ],
@@ -2604,7 +2604,7 @@
     },
     {
       "id": "476",
-      "name": "Probopass",
+      "name": "ダイノーズ",
       "regions": [
         "hoenn"
       ],
@@ -2620,7 +2620,7 @@
     },
     {
       "id": "477",
-      "name": "Dusknoir",
+      "name": "ヨノワール",
       "regions": [
         "hoenn"
       ],
@@ -2636,7 +2636,7 @@
     },
     {
       "id": "478",
-      "name": "Froslass",
+      "name": "ユキメノコ",
       "regions": [
         "hoenn"
       ],
@@ -2652,7 +2652,7 @@
     },
     {
       "id": "483",
-      "name": "Dialga",
+      "name": "ディアルガ",
       "regions": [
         "hoenn"
       ],
@@ -2668,7 +2668,7 @@
     },
     {
       "id": "484",
-      "name": "Palkia",
+      "name": "パルキア",
       "regions": [
         "hoenn"
       ],
@@ -2684,7 +2684,7 @@
     },
     {
       "id": "641",
-      "name": "Tornadus",
+      "name": "トルネロス",
       "regions": [
         "hoenn"
       ],
@@ -2700,7 +2700,7 @@
     },
     {
       "id": "642",
-      "name": "Thundurus",
+      "name": "ボルトロス",
       "regions": [
         "hoenn"
       ],
@@ -2716,7 +2716,7 @@
     },
     {
       "id": "643",
-      "name": "Reshiram",
+      "name": "レシラム",
       "regions": [
         "hoenn"
       ],
@@ -2732,7 +2732,7 @@
     },
     {
       "id": "644",
-      "name": "Zekrom",
+      "name": "ゼクロム",
       "regions": [
         "hoenn"
       ],
@@ -2748,7 +2748,7 @@
     },
     {
       "id": "645",
-      "name": "Landorus",
+      "name": "ランドロス",
       "regions": [
         "hoenn"
       ],
@@ -2764,7 +2764,7 @@
     },
     {
       "id": "646",
-      "name": "Kyurem",
+      "name": "キュレム",
       "regions": [
         "hoenn"
       ],
@@ -2784,12 +2784,8 @@
       "name": "🔥 オメガルビー・アルファサファイア",
       "options": [
         {
-          "value": "",
-          "label": "🌍 全て表示"
-        },
-        {
           "value": "both",
-          "label": "🟢 両バージョン"
+          "label": "🟢 バージョン共通（限定なし）"
         },
         {
           "value": "omega_ruby",
