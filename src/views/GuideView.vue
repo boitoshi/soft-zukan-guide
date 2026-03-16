@@ -5,11 +5,50 @@ import { GAME_ICON_MAP } from '@/constants/icons'
 
 const master = usePokemonMaster()
 const isReady = ref(false)
-const activeSection = ref<'sanchi' | 'trade' | 'tips'>('sanchi')
+const activeSection = ref<'sanchi' | 'trade' | 'tips' | 'version'>('sanchi')
+
+interface VersionExclusive {
+  scarlet: string[]
+  violet: string[]
+  sword: string[]
+  shield: string[]
+}
+const versionExclusive = ref<VersionExclusive>({ scarlet: [], violet: [], sword: [], shield: [] })
 
 onMounted(async () => {
   await master.loadMasterData()
   isReady.value = true
+
+  // バージョン限定データ読み込み
+  try {
+    const [paldeaRes, galarRes] = await Promise.all([
+      fetch('/paldea_zukan_data.json'),
+      fetch('/galar_zukan_data.json'),
+    ])
+    const paldeaData = await paldeaRes.json()
+    const galarData = await galarRes.json()
+    const unique = (arr: string[]) => [...new Set(arr)]
+    versionExclusive.value = {
+      scarlet: unique(paldeaData.pokemon
+        .filter((p: { version_info?: { scarlet_violet?: { availability: string } } }) =>
+          p.version_info?.scarlet_violet?.availability === 'scarlet')
+        .map((p: { name: string }) => p.name)),
+      violet: unique(paldeaData.pokemon
+        .filter((p: { version_info?: { scarlet_violet?: { availability: string } } }) =>
+          p.version_info?.scarlet_violet?.availability === 'violet')
+        .map((p: { name: string }) => p.name)),
+      sword: unique(galarData.pokemon
+        .filter((p: { version_info?: { sword_shield?: { availability: string } } }) =>
+          p.version_info?.sword_shield?.availability === 'sword')
+        .map((p: { name: string }) => p.name)),
+      shield: unique(galarData.pokemon
+        .filter((p: { version_info?: { sword_shield?: { availability: string } } }) =>
+          p.version_info?.sword_shield?.availability === 'shield')
+        .map((p: { name: string }) => p.name)),
+    }
+  } catch {
+    // データ読み込み失敗時は空のまま
+  }
 })
 
 // 通信交換進化ポケモン一覧
@@ -58,6 +97,11 @@ const itemTradePokemon = computed(() => tradeEvoPokemon.value.filter(p => !p.svL
         class="flex-shrink-0 px-3 py-2 rounded-xl text-xs font-bold transition-all"
         :class="activeSection === 'tips' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600'"
       >💡 攻略ヒント</button>
+      <button
+        @click="activeSection = 'version'"
+        class="flex-shrink-0 px-3 py-2 rounded-xl text-xs font-bold transition-all"
+        :class="activeSection === 'version' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600'"
+      >🔒 バージョン限定</button>
     </div>
 
     <!-- ==================== -->
@@ -297,6 +341,79 @@ const itemTradePokemon = computed(() => tradeEvoPokemon.value.filter(p => !p.svL
           <div class="flex items-start gap-2 text-xs text-gray-700">
             <span class="bg-indigo-100 text-indigo-700 rounded-full w-5 h-5 flex items-center justify-center flex-shrink-0 text-[10px] font-bold">4</span>
             <span>捕まえたら「🎮 ゲーム別管理」でチェック → 進捗が全ページに反映</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== -->
+    <!-- バージョン限定 -->
+    <!-- ==================== -->
+    <div v-if="activeSection === 'version'" class="space-y-4">
+      <div class="bg-amber-50 rounded-xl border border-amber-200 p-3">
+        <p class="text-xs text-amber-700 leading-relaxed">
+          ⚠️ バージョン限定ポケモンはそのバージョンでしか捕まえられない。友達と交換するか、2台持ちで両方プレイするのが効率的。
+        </p>
+      </div>
+
+      <!-- SV -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4">
+        <h2 class="text-base font-bold text-gray-800 mb-3">🔴🟣 スカーレット・バイオレット</h2>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <div class="text-xs font-semibold text-red-600 mb-2">
+              🔴 スカーレット限定 <span class="bg-red-100 text-red-700 px-1.5 py-0.5 rounded-full text-[10px]">{{ versionExclusive.scarlet.length }}匹</span>
+            </div>
+            <div class="space-y-0.5">
+              <div
+                v-for="name in versionExclusive.scarlet"
+                :key="name"
+                class="text-xs px-2 py-1 bg-red-50 text-red-800 rounded"
+              >{{ name }}</div>
+            </div>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-purple-600 mb-2">
+              🟣 バイオレット限定 <span class="bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded-full text-[10px]">{{ versionExclusive.violet.length }}匹</span>
+            </div>
+            <div class="space-y-0.5">
+              <div
+                v-for="name in versionExclusive.violet"
+                :key="name"
+                class="text-xs px-2 py-1 bg-purple-50 text-purple-800 rounded"
+              >{{ name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SwSh -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4">
+        <h2 class="text-base font-bold text-gray-800 mb-3">⚔️🛡️ ソード・シールド</h2>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <div class="text-xs font-semibold text-blue-600 mb-2">
+              🗡️ ソード限定 <span class="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-full text-[10px]">{{ versionExclusive.sword.length }}匹</span>
+            </div>
+            <div class="space-y-0.5">
+              <div
+                v-for="name in versionExclusive.sword"
+                :key="name"
+                class="text-xs px-2 py-1 bg-blue-50 text-blue-800 rounded"
+              >{{ name }}</div>
+            </div>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-pink-600 mb-2">
+              🛡️ シールド限定 <span class="bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded-full text-[10px]">{{ versionExclusive.shield.length }}匹</span>
+            </div>
+            <div class="space-y-0.5">
+              <div
+                v-for="name in versionExclusive.shield"
+                :key="name"
+                class="text-xs px-2 py-1 bg-pink-50 text-pink-800 rounded"
+              >{{ name }}</div>
+            </div>
           </div>
         </div>
       </div>

@@ -33,6 +33,15 @@ const versionBadges = computed(() =>
   buildVersionBadges(props.pokemon.version_info, props.versionFilters),
 );
 
+// バージョン限定かどうかを判定（'scarlet'|'violet'|'sword'|'shield'|null）
+const exclusiveVersion = computed((): string | null => {
+  if (!props.pokemon.version_info) return null;
+  for (const info of Object.values(props.pokemon.version_info)) {
+    if (info.availability && info.availability !== 'both') return info.availability;
+  }
+  return null;
+});
+
 // 他ゲームで所持チェック
 const globalProgress = useGlobalProgress();
 const otherGamesCaught = computed(() => {
@@ -48,8 +57,15 @@ const otherGamesCaught = computed(() => {
     @click="handleClick"
     role="checkbox"
     :aria-checked="isCaught"
-    class="flex items-center gap-2.5 px-3 py-2.5 border-b border-gray-100 cursor-pointer transition-colors active:bg-blue-100"
-    :class="isCaught ? 'bg-green-50 hover:bg-green-100' : 'hover:bg-gray-50'"
+    class="flex items-center gap-2.5 px-3 py-2.5 border-b border-gray-100 cursor-pointer transition-colors active:bg-blue-100 border-l-2"
+    :class="[
+      isCaught ? 'bg-green-50 hover:bg-green-100' : 'hover:bg-gray-50',
+      exclusiveVersion === 'scarlet' ? 'border-l-red-400' :
+      exclusiveVersion === 'violet' ? 'border-l-purple-400' :
+      exclusiveVersion === 'sword' ? 'border-l-blue-400' :
+      exclusiveVersion === 'shield' ? 'border-l-pink-400' :
+      'border-l-transparent',
+    ]"
   >
     <!-- チェックボックス -->
     <div
