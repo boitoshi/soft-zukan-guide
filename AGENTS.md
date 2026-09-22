@@ -119,7 +119,7 @@ soft-zukan-guide/
 │           └── vue-refactoring-summary.md # Vue 3 リファクタリング完了レポート
 ├── 📄 プロジェクト情報
 │   ├── README.md                    # 一般向けプロジェクト説明
-│   ├── CLAUDE.md                    # このファイル（Claude Code向け技術情報）
+│   ├── AGENTS.md                    # このファイル（Claude Code向け技術情報）
 │   └── package.json                 # npm設定（開発用）
 └── 🧪 テスト・実験ファイル
     ├── test-config.json             # テスト用設定
@@ -340,7 +340,7 @@ git add doc/ && git commit -m "ドキュメント更新"
 ### ✅ ドキュメント管理
 - [ ] 設計書は `doc/design/` に配置
 - [ ] 実装サマリーは `doc/implementation/completed/` に配置
-- [ ] CLAUDE.md は技術情報のみ記載
+- [ ] AGENTS.md は技術情報のみ記載
 - [ ] README.md は一般向け情報のみ記載
 
 ## 🚨 開発ルール（必ず守ること）
