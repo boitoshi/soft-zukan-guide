@@ -75,3 +75,7 @@ server.php
 
 # 旧版のHTMLファイルはリファレンス用に残しておく
 # app.html
+
+# Local environment settings
+.env.*
+!.env.example
